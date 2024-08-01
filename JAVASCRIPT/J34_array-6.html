@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트의 내장 객체- Array</title>
+  <style>
+    body {
+      font-size: 2em;
+      text-align: center;
+    }
+    h1 {
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>기존 배열을 변경 시키는 splice() 메서드</h1>
+  <script>
+    const nums = [1,2,3];
+    const chars = ["a", "b", "c", "d"];
+
+    const newChars = chars.splice(2);
+    document.write("반환된 배열 : " + newChars + "<p>변경된 배열 : " + chars);
+    document.write("<hr>")
+
+    // 인수를 2개 주는경우
+    const study = ["html", "css", "web", "jquery"];
+    const newStudy = study.splice(2, 1);
+    document.write("반환된 배열 : " + newStudy + "<p>변경된 배열 : " + study);
+
+    document.write("<hr>");
+
+    // 인수를 3개 주는 경우
+    const newStudy2 = study.splice(2,1,"js");   // 2번지에서 한개 꺼내고 그 자리에 js를 넣음
+    document.write("반환된 배열 : " + newStudy2 + "<p>변경된 배열 : " + study);
+
+  </script>
+</body>
+</html>

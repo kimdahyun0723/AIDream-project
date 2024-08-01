@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>매개변수가 있는 함수</title>
+</head>
+<body>
+  <button onclick="greeting('한정교', '부장')">눌러보세요!</button>
+  <script>
+    function greeting(name, position) {
+      alert(name + " " + position + "님을 환영합니다.");
+      console.log(name + "\t" + position);
+    }
+      // greeting 함수의 매개변수 name, position 은 지역변수 이므로 함수 스코프 밖에서 사용불가
+      // console.log(name + "\t" + position);
+  </script>
+</body>
+</html>

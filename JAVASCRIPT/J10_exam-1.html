@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자리 배치도</title>
+</head>
+<body>
+  <h1>자리 배치도</h1>
+  <script>
+    let people = prompt("입장객은 모두 몇 명 입니까?");
+    let numOfSeat = prompt("한줄에 몇명씩 앉을까요?");
+    let result = 0;
+    if (people % numOfSeat === 0) {
+      result = parseInt(people/numOfSeat);
+    } else {
+      result = parseInt(people / numOfSeat) + 1;
+    }
+    document.write("모두 " + result + "개의 줄이 필요합니다.")
+  </script>
+</body>
+</html>

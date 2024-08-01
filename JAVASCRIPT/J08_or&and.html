@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OR, AND연산자를 이용해 조건 체크하기</title>
+</head>
+<body>
+  <script>
+    let numOne = prompt("50미만의 정수를 입력하세요.");
+    let numTwo = prompt("50미만의 정수를 입력하세요.");
+
+    if (numOne < 10 || numTwo < 10) {
+      alert("두수중 한개의 수는 10보다 작아요");
+    } else {
+      alert("두수 모두 10보다 크거나 같아요");
+    }
+
+    if (numOne < 50 && numTwo < 50) {
+      alert("두수 모두 50보다 작아요");
+    } else {
+      alert("조건에 맞지 않는 숫자가 있습니다.");
+    }
+  </script>
+</body>
+</html>

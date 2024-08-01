@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>텍스트 필드에 입력한 값을 화면에 표시하기</title>
+</head>
+<body>
+  <div id="container">
+    <h1>Web Programming</h1>
+    <p>공부할 주제를 입력해 보세요.</p>
+    <form action="">
+      <input type="text" id="subject" autofocus>
+      <button onclick="newRegister();">추가</button>
+    </form>
+    <hr>
+    <ul id = "itemList"></ul>
+  </div>
+  <script>
+    function newRegister() {
+      event.preventDefault();
+      const newLi = document.createElement("li");
+      const subject = document.querySelector("#subject");
+      console.log(subject);
+      console.log(subject.value);
+      const newText = document.createTextNode(subject.value);
+      newLi.appendChild(newText);
+      // ul>li 를 추가하는 코드
+      // document.getElementById("itemList").appendChild(newLi);
+
+      // ul>li를 맨앞에 추가
+      document.querySelector("#itemList").insertBefore(newLi, document.querySelector("#itemList").childNodes[0]);
+
+      subject.value = "";
+
+      const items = document.querySelectorAll("li");
+      for (let i = 0; i < items.length; i++) {
+        items[i].addEventListener("click", function() {
+          if (this.parentNode) {
+            this.parentNode.removeChild(this);
+          }
+        });
+      }
+    }
+  </script>
+</body>
+</html>

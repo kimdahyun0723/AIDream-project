@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나무 모달창</title>
+  <style>
+    #container{
+      width: 420px;
+      margin: 0 auto;
+    }
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    ul li{
+      display: inline-block;
+    }
+
+    #lightbox {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.7);
+      top: 0;
+      left: 0;
+      display: none;
+    }
+
+    #lightbox img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 5px solid #eee;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="container">
+    <ul>
+      <li><img  src="images/tree-1-thumb.jpg" class="pic" data-src="images/tree-1.jpg"></li>
+      <li><img  src="images/tree-2-thumb.jpg" class="pic" data-src="images/tree-2.jpg"></li>
+      <li><img  src="images/tree-3-thumb.jpg" class="pic" data-src="images/tree-3.jpg"></li>
+      <li><img  src="images/tree-4-thumb.jpg" class="pic" data-src="images/tree-4.jpg"></li>
+      <li><img  src="images/tree-5-thumb.jpg" class="pic" data-src="images/tree-5.jpg"></li>
+      <li><img  src="images/tree-6-thumb.jpg" class="pic" data-src="images/tree-6.jpg"></li>
+    </ul>
+  </div>
+  <div id="lightbox">
+    <img src="images/tree-1.jpg" id="lightboxImage">
+  </div>
+  <script>
+    const pics = document.getElementsByClassName("pic");
+    console.log(pics);
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    for (let i = 0; i < pics.length; i++) {
+      pics[i].addEventListener("click", showLightBox);
+    }
+
+    lightbox.onclick = () => lightbox.style.display = "none";
+
+    function showLightBox() {
+      const big = this.getAttribute("data-src");
+      console.log(big);
+
+      // 두코드는 같은 동작
+      lightboxImage.setAttribute("src", big);
+      // lightboxImage.src = big;
+
+      lightbox.style.display = "block";
+    }
+  </script>
+</body>
+</html>

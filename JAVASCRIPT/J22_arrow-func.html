@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>화살표 함수</title>
+</head>
+<body>
+  <script>
+    // 화살표 함수 이전
+    const hi = function() {
+      return "안녕하세요";
+    }
+    //화살표 함수로 변경
+    // 화살표 함수로 변경의 경우 ; 을 중괄호 밖으로 배치
+    const hello = () => { return "안녕하세요"};
+
+    // return 과 중괄호 생략 가능
+    const morning = () => "안녕하세요";
+
+    // 매개 변수가 한개 있을때
+    const hi2 = function(user) {
+      document.write(user + "님 ㅎㅇ");
+    }
+    // 화살표로 변경!
+    const hello2 = user => { document.write(user + "님 ㅎㅇ <br>")};
+    // 마찬가지로 중괄호 생략가능
+    const morning2 = user => document.write(user + "님 ㅎㅇ <br>");
+
+    //매개 변수가 2개 있을때
+    const add = function(a, b) {
+      return a + b;
+    }
+    const add2 = (a, b) => { return a + b};
+    const add3 = (a, b) => a + b;
+
+    morning2("한정교");
+    document.write(morning());
+
+    // 매개변수가 있는 함수는 매개변수를 넣어서 활용가능!
+    let user = prompt("이름을 입력하세요");
+    hello2(user);
+  </script>
+</body>
+</html>

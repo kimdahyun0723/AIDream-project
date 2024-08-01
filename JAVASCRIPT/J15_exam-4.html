@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exam1 의 문제 실제 자리를 출력해보자</title>
+  <style>
+    table {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    tr td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    .box1 {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>자리 배치도</h1>
+  <script>
+    let people = prompt("사람수를 입력하세요.");
+    let numberOfSeat = prompt("한줄에 몇명씩 앉을까요?");
+    let i;
+    let j;
+    let seat = 0;
+    if (people % numberOfSeat == 0) {
+      seat = parseInt(people / numberOfSeat);
+    } else {
+      seat = parseInt(people / numberOfSeat) + 1;
+    }
+    document.write("<table>")
+    for (j = 0; j < seat; j++) {
+    document.write("<tr class = box" + j  + ">");
+      for (i = 1; i <= numberOfSeat; i++) {
+        seatNo = j * numberOfSeat + i;
+        if (seatNo > people) {
+          document.write("<td>  </td>")
+        } else {
+          document.write("<td> 좌석" + seatNo + "</td>");
+        }
+      }
+      document.write("</tr>")
+  }
+  document.write("</table>")
+  </script>
+</body>
+</html>

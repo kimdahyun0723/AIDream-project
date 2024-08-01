@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if 문으로 3의 배수 메세지 창에 출력하기</title>
+</head>
+<body>
+  <h1>개발자 모드를 확인하세요</h1>
+  <script>
+    var userNumber = prompt("숫자를 입력하세요");
+    if (userNumber !== null) {
+      if (userNumber % 3 === 0) {
+        alert("3의 배수입니다.");
+        console.log(userNumber + "는 " + typeof(userNumber) + "타입입니다.");
+      } else {
+        alert("3의 배수가 아닙니다.");
+        console.log(userNumber + "는 " + typeof(userNumber) + "타입입니다.");
+      }
+    } else {
+      alert("입력이 취소되었습니다.");
+      console.log(userNumber + "는 " + typeof(userNumber) + "타입입니다.");
+    }
+
+    // enter, 확인 = 0
+    // esc, 취소 = null;
+    // 프롬프트의 입력값은 string이다.
+
+    // 삼항 연산자 활용하기 (자바와 같다!)
+    if (userNumber !== null) {
+      (userNumber % 3 === 0) ? console.log(userNumber + "는 " + typeof(userNumber) + "타입입니다.") : console.log(userNumber + "는 " + typeof(userNumber) + "타입입니다.");
+    } 
+  </script>
+</body>
+</html>

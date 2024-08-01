@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트의 내장 객체- Array</title>
+  <style>
+    body {
+      font-size: 2em;
+      text-align: center;
+    }
+    h1 {
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>배열 2개를 합쳐서 새로운 배열 만들기</h1>
+  <script>
+    const nums = [1,2,3];
+    const chars = ["a", "b", "c", "d"];
+
+    const numschars = nums.concat(chars);
+    const charsnums = chars.concat(nums);
+    document.write("nums에 chars를 cocant : " + numschars + "<br>");
+    document.write("chars 에 nums 를 concat : " + charsnums);
+  </script>
+</body>
+</html>

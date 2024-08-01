@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트의 내장 객체- Array</title>
+  <style>
+    body {
+      font-size: 2em;
+      text-align: center;
+    }
+    h1 {
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>기존 배열을 유지하는 slice() 메서드</h1>
+  <script>
+    const colors = ["red", "white", "green", "purple", "black"];
+    let colors2 = colors.slice(2);  //2번지부터 끝까지 꺼내기
+    call(colors2, colors);
+    document.write("<hr>");
+
+    // 인수가 2개인 경우
+    colors2 = colors.slice(2, 4);   //2번지부터 ~ (4-1)번지까지 꺼내기
+    call(colors2, colors);
+
+    function call(arr1, arr2) {
+      document.write("뽑아온 배열 : " + arr1 + "<p> 기존배열 : " + arr2);
+    }
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트 이벤트</title>
+  <style>
+    #picture {
+      background: url(images/flower.jpg) no-repeat;
+      background-size: cover;
+    }
+    div {
+      width: 500px;
+      height: 400px;
+      position: relative;
+      margin: 0 auto;
+    }
+    button {
+      position: absolute;
+      left: 3%;
+      bottom: 3%;
+    }
+    .display {
+      display: none;
+    }
+    #size {
+      width: 500px;
+      height: 180px;
+    }
+  </style>
+</head>
+<body>
+  <div id="picture">
+    <button id="show">상세 설명 보기</button>
+  </div>
+  <div id="size" class="display">
+    <h2>등심붓꽃</h2>
+    <p>북아메리카 원산으로 각지에서 관상초로 흔히 심고있는 귀화 식물이다. 길가나 잔디밭에서 흔히 볼 수있다.
+      아주 작은 씨앗을 무수히 많이 가지고 있는데 바람을 이용해 씨앗들을 날려보내거나, 뿌리줄기를 통해 동일한
+    개체들을 많이 만들어 냄으로써 번식한다.</p>
+  <button id="hidden">상세 설명 닫기</button>
+  </div>
+  <script>
+    document.querySelector("#show").onclick = show;
+    function show() {
+      document.querySelector(".display").style.display = 'block';
+      document.querySelector("#show").style.display = 'none';
+    }
+    document.querySelector("#hidden").onclick = show2;
+    function show2() {
+      document.querySelector(".display").style.display = 'none';
+      document.querySelector("#show").style.display = 'block';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM이벤트 객체</title>
+  <style>
+    #container {
+      width: 300px;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img src="images/coffee-blue.jpg" alt="blue" id="cup">
+  </div>
+  <script>
+    const cup = document.querySelector("#cup");
+    cup.onclick = (event) => {
+      alert("이벤트 유형 : " + event.type + ", 이벤트 발생 위치 : " + event.pageX + ", " + event.pageY);
+      // 화살표 함수에서는 this 안먹음;;
+      // alert("클릭한 이미지 파일 : " + this.src);
+    }
+
+    // cup.onclick = function(event) {
+    //   alert("이벤트 유형 : " + event.type + ", 이벤트 발생 위치 : " + event.pageX + ", " + event.pageY); 
+    //   alert("클릭한 이미지 파일 : " + this.src);
+    // }
+  </script>
+</body>
+</html>
