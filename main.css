@@ -6,7 +6,7 @@
 
 /* 인트로 영상 */
 body {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .bg-video {
@@ -50,6 +50,7 @@ body {
 #greeting.visible {
   opacity: 1; /* 보이게 할 때 불투명도를 1로 설정 */
 }
+
 
 /* 메뉴 */
 .header{

@@ -4,24 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>배경에 영상넣기</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
-
-    <!-- <div class="bg-video" id="backgroundVideo">
+    <div class="bg-video" id="backgroundVideo">
       <video class="bg-video__content" muted>
         <source src="aidream2.mp4" type="video/mp4" />
       </video>
-        <button id="closeButton">SKIP</button>
-    </div> -->
+      <button id="closeButton">SKIP</button>
+    </div>
 
-
-    <header>
+    <header id="greeting">
       <div class="header">
-
         <div class="logo">
-          <a href="#"><img src="" alt="로고"></a>
+          <a href="#"><img src="" alt="로고" /></a>
         </div>
 
         <nav class="menu">
@@ -83,46 +80,57 @@
           </ul>
         </nav>
       </div>
+      <hr />
     </header>
 
-    <hr>
-    <main>
+    <main></main>
 
-    </main>
-
-
-    <footer>
-
-    </footer>
-
-
+    <footer></footer>
 
     <script>
       const video = document.querySelector(".bg-video__content");
       const bgVideoDiv = document.getElementById("backgroundVideo");
       const greeting = document.getElementById("greeting");
+      const header = document.querySelector("header"); // header 요소 선택
 
       video.addEventListener("ended", () => {
         bgVideoDiv.classList.add("hidden"); // 비디오가 끝나면 숨김 클래스를 추가
+        header.style.display = "block"; // header를 다시 보이게 함
         greeting.classList.add("visible"); // div 내부에 태그를 보이게 함
         greeting.style.display = "block";
       });
-      
+
       const closeButton = document.getElementById("closeButton");
-      
+
       closeButton.addEventListener("click", () => {
         video.pause(); // 비디오 정지
         bgVideoDiv.classList.add("hidden"); // 비디오를 숨김
+        header.style.display = "block"; // header를 보이게 함
         greeting.classList.add("visible"); // 인사말을 보이게 함
         greeting.style.display = "block";
       });
-      video.play(); // 비디오 재생
-      
-      const subMenu = document.getElementsByClassName("submenu");
-      const cat = document.getElementsByClassName("cat");
-      cat.addEventListener(mouseover, () => {subMenu.style.display = "block";
 
-      })
+      // 비디오 시작 시 header 숨기기
+      header.style.display = "none"; // 비디오 시작 시 header 숨김
+      video.play(); // 비디오 재생
+
+      const mainMenuItems = document.querySelectorAll(".mainmenu > li"); // mainmenu의 li 요소들 선택
+
+      mainMenuItems.forEach((menuItem) => {
+        menuItem.addEventListener("mouseover", () => {
+          const subMenus = document.querySelectorAll(".submenu"); // 모든 submenu 선택
+          subMenus.forEach((subMenu) => {
+            subMenu.style.display = "block"; // 모든 submenu 보이기
+          });
+        });
+
+        menuItem.addEventListener("mouseout", () => {
+          const subMenus = document.querySelectorAll(".submenu"); // 모든 submenu 선택
+          subMenus.forEach((subMenu) => {
+            subMenu.style.display = "none"; // 모든 submenu 숨기기
+          });
+        });
+      });
     </script>
   </body>
 </html>
