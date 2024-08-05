@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배경에 영상넣기</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+
+    <!-- <div class="bg-video" id="backgroundVideo">
+      <video class="bg-video__content" muted>
+        <source src="aidream2.mp4" type="video/mp4" />
+      </video>
+        <button id="closeButton">SKIP</button>
+    </div> -->
+
+
+    <header>
+      <div class="header">
+
+        <div class="logo">
+          <a href="#"><img src="" alt="로고"></a>
+        </div>
+
+        <nav class="menu">
+          <ul class="mainmenu">
+            <li>
+              <a href="" class="cat">소개</a>
+              <ul class="submenu">
+                <li><a href="">개요</a></li>
+                <li><a href="">발전과정</a></li>
+                <li><a href="">종류</a></li>
+                <li><a href="">활동분야</a></li>
+                <li><a href="">submenu05</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="cat">기업</a>
+              <ul class="submenu">
+                <li><a href="">submenu01</a></li>
+                <li><a href="">submenu02</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="cat">채용</a>
+              <ul class="submenu">
+                <li><a href="">submenu01</a></li>
+                <li><a href="">submenu02</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="cat">교육</a>
+              <ul class="submenu">
+                <li><a href="">국비지원</a></li>
+                <li><a href="">기업지원</a></li>
+                <li><a href="">축제,행사</a></li>
+                <li><a href="">부트캠프</a></li>
+                <li><a href="">submenu05</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="cat">뉴스</a>
+              <ul class="submenu">
+                <li><a href="">submenu01</a></li>
+                <li><a href="">submenu02</a></li>
+                <li><a href="">submenu03</a></li>
+                <li><a href="">submenu04</a></li>
+                <li><a href="">submenu05</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="cat">게시판</a>
+              <ul class="submenu">
+                <li><a href="">submenu01</a></li>
+                <li><a href="">submenu02</a></li>
+                <li><a href="">submenu03</a></li>
+                <li><a href="">submenu04</a></li>
+                <li><a href="">submenu05</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <hr>
+    <main>
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+
+
+    <script>
+      const video = document.querySelector(".bg-video__content");
+      const bgVideoDiv = document.getElementById("backgroundVideo");
+      const greeting = document.getElementById("greeting");
+
+      video.addEventListener("ended", () => {
+        bgVideoDiv.classList.add("hidden"); // 비디오가 끝나면 숨김 클래스를 추가
+        greeting.classList.add("visible"); // div 내부에 태그를 보이게 함
+        greeting.style.display = "block";
+      });
+      
+      const closeButton = document.getElementById("closeButton");
+      
+      closeButton.addEventListener("click", () => {
+        video.pause(); // 비디오 정지
+        bgVideoDiv.classList.add("hidden"); // 비디오를 숨김
+        greeting.classList.add("visible"); // 인사말을 보이게 함
+        greeting.style.display = "block";
+      });
+      video.play(); // 비디오 재생
+      
+      const subMenu = document.getElementsByClassName("submenu");
+      const cat = document.getElementsByClassName("cat");
+      cat.addEventListener(mouseover, () => {subMenu.style.display = "block";
+
+      })
+    </script>
+  </body>
+</html>
