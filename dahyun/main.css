@@ -6,6 +6,7 @@
 
 #container{
   width: 1425px;
+  height: 100vh;
   margin: 0 auto;
 }
 #header{
@@ -17,6 +18,9 @@
 #contents{
   width: 100%;
   background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 #footer{
   width: 100%;
@@ -54,13 +58,13 @@ a{
   width: 170px;
   position: relative;
   height: 400px;
+  background-color: none;
 }
 #headermenu > li:hover .headerp{
   border-bottom: 3px solid #4B89DC;
 }
 #headermenu > li:hover{
   background-color: #F4F5F7;
-
 }
 .headerp{ 
   padding: 24.5px 0;
@@ -86,3 +90,61 @@ a{
   color: #4B89DC;
 }
 
+#intro{
+  grid-row: 1/3;
+}
+
+
+#login{
+  grid-column: 2/3;
+  width: 400px;
+  height: 300px;
+  margin: 50px auto;
+  border: 1px solid #4B89DC;
+  border-radius: 30px;
+  text-align: center;
+  padding: 30px;
+}
+#login > p{
+  color: #4B89DC;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.loginForm > input{
+  width: 150px;
+  background-color: #4B89DC;
+  color: white;
+  font-size: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  height: 150px;
+  margin-bottom: 20px;
+}
+#login1 > input{
+  float: left;
+  margin-left: 10px;
+}
+.links{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.links > a{
+  color: #4B89DC;
+  text-decoration: none;
+  background-color: white;
+}
+.links > a span{
+  font-size: 13px;
+  background-color: white;
+  padding: 0 15px;
+}
+.links > a #bar{
+  border-right: 1px solid #4B89DC;
+  padding-right: 20px;
+}
+
+#image{
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
