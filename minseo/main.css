@@ -1,12 +1,13 @@
-*{
+/* 전체 요소에 대한 기본 스타일 설정 */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 인트로 영상 */
+/* 인트로 영상 관련 스타일 */
 body {
-  overflow: hidden;
+  overflow: hidden; /* 스크롤바 숨김 */
 }
 
 .bg-video {
@@ -15,11 +16,12 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: -1; /* 배경으로 설정 */
   opacity: 1; /* 초기 불투명도 */
   transition: opacity 1s ease; /* 페이드 아웃 효과 */
 }
 
+/* 닫기 버튼 스타일 */
 #closeButton {
   position: absolute;
   top: 10px; 
@@ -31,65 +33,73 @@ body {
   cursor: pointer;
 }
 
+/* 숨겨진 비디오 배경 스타일 */
 .bg-video.hidden {
   opacity: 0; /* 숨길 때 불투명도를 0으로 설정 */
 }
 
+/* 비디오 콘텐츠 스타일 */
 .bg-video__content {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: cover; /* 비디오를 화면에 맞게 조정 */
 }
 
+/* 인사말 텍스트 스타일 */
 #greeting {
   text-align: center;
   opacity: 0; /* 초기 불투명도 0 (숨김) */
   transition: opacity 1s ease; /* 부드러운 전환 효과 */
   display: none;
 }
+
 #greeting.visible {
   opacity: 1; /* 보이게 할 때 불투명도를 1로 설정 */
 }
 
-
-/* 메뉴 */
-.header{
+/* 메뉴 관련 스타일 */
+.header {
   width: 1240px;
   padding: 0 20px;
-  /* background-color: #eee; */
   display: flex;
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  /* overflow: hidden; */
   margin: 0 auto;
   height: 100px;
   position: relative;
 }
-a{
+
+a {
   text-decoration: none;
 }
-.menu  a:hover{
+
+/* 메뉴 항목 호버 효과 */
+.menu a:hover {
   color: #5778ff;
-  
 }
-.mainmenu > li{
+
+/* 메인 메뉴 스타일 */
+.mainmenu > li {
   list-style: none;
   display: inline-block;
   padding: 40px 60px;
 }
-.mainmenu > li > a{
+
+.mainmenu > li > a {
   position: relative;
 }
-.submenu{
+
+/* 서브 메뉴 스타일 */
+.submenu {
   display: none;
   position: absolute;
   top: 100px;
   margin-top: 20px;
 }
-.submenu > li{
+
+.submenu > li {
   list-style: none;
   margin-left: -27px;
   padding: 10px 0;
 }
-
