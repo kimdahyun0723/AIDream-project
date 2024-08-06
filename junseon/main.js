@@ -1,4 +1,3 @@
-  document.addEventListener('DOMContentLoaded', function() {
     const headerMenuItems = document.querySelectorAll('#headermenu > li');
 
     headerMenuItems.forEach(item => {
@@ -16,4 +15,3 @@
         });
       });
     });
-  });
