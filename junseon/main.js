@@ -1,12 +1,19 @@
-const headerMenuLi = document.querySelectorAll("#headermenu > li"); // mainmenu의 li 요소들 선택
-const subMenu = document.getElementsByClassName("submenu");
+  document.addEventListener('DOMContentLoaded', function() {
+    const headerMenuItems = document.querySelectorAll('#headermenu > li');
 
-headerMenuLi.addEventListener("mouseover", () =>{
-  subMenu.style.display = "block";
-});
+    headerMenuItems.forEach(item => {
+      item.addEventListener('mouseenter', () => {
+        const allSubmenus = document.querySelectorAll('.submenu');
+        allSubmenus.forEach(submenu => {
+          submenu.style.display = 'block';
+        });
+      });
 
-headerMenuLi.addEventListener("mouseout", () =>{
-  subMenu.style.display = "none";
-});
-
-
+      item.addEventListener('mouseleave', () => {
+        const allSubmenus = document.querySelectorAll('.submenu');
+        allSubmenus.forEach(submenu => {
+          submenu.style.display = 'none';
+        });
+      });
+    });
+  });
