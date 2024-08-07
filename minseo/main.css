@@ -1,105 +1,178 @@
-/* 전체 요소에 대한 기본 스타일 설정 */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 인트로 영상 관련 스타일 */
-body {
-  overflow: hidden; /* 스크롤바 숨김 */
-}
-
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1; /* 배경으로 설정 */
-  opacity: 1; /* 초기 불투명도 */
-  transition: opacity 1s ease; /* 페이드 아웃 효과 */
-}
-
-/* 닫기 버튼 스타일 */
-#closeButton {
-  position: absolute;
-  top: 10px; 
-  right: 10px;
-  background: none;
-  color: white;
-  border: none;
-  text-align: center;
-  cursor: pointer;
-}
-
-/* 숨겨진 비디오 배경 스타일 */
-.bg-video.hidden {
-  opacity: 0; /* 숨길 때 불투명도를 0으로 설정 */
-}
-
-/* 비디오 콘텐츠 스타일 */
-.bg-video__content {
-  height: 100%;
-  width: 100%;
-  object-fit: cover; /* 비디오를 화면에 맞게 조정 */
-}
-
-/* 인사말 텍스트 스타일 */
-#greeting {
-  text-align: center;
-  opacity: 0; /* 초기 불투명도 0 (숨김) */
-  transition: opacity 1s ease; /* 부드러운 전환 효과 */
-  display: none;
-}
-
-#greeting.visible {
-  opacity: 1; /* 보이게 할 때 불투명도를 1로 설정 */
-}
-
-/* 메뉴 관련 스타일 */
-.header {
-  width: 1240px;
-  padding: 0 20px;
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  align-items: center;
+#container{
+  width: 1425px;
   margin: 0 auto;
-  height: 100px;
-  position: relative;
 }
-
-a {
+#header{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+#contents{
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+#footer{
+  width: 100%;
+  height: 80px;
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  font-size: 14px;
+}
+a{
   text-decoration: none;
 }
 
-/* 메뉴 항목 호버 효과 */
-.menu a:hover {
-  color: #5778ff;
+#headerlogo{
+  line-height: 100px;
+  float: left;
+  padding: 0 90px;
+}
+#headerlogo > a{
+  color: #4B89DC;
+  font-size: 40px;
 }
 
-/* 메인 메뉴 스타일 */
-.mainmenu > li {
+#menu{
+  font-weight: bold;
+  width: 100%;
+  height: 100px;
+  line-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
+}
+#menu ul{
   list-style: none;
-  display: inline-block;
-  padding: 40px 60px;
 }
-
-.mainmenu > li > a {
+#headermenu > li{
+  float: left;
+  width: 170px;
   position: relative;
+  height: 400px;
+}
+#headermenu > li:hover .headerp{
+  border-bottom: 3px solid #4B89DC;
+}
+#headermenu > li:hover{
+  background-color: #F4F5F7;
+
+}
+.headerp{ 
+  padding: 24.5px 0;
+  background-color: white;
+  border-bottom: 1px solid #eee;
 }
 
-/* 서브 메뉴 스타일 */
-.submenu {
+.submenu{
+  margin-top: 25px;
+  font-size: 18px;
+  color: black;
   display: none;
+}
+.submenu > ul{
+  width: 130px;
   position: absolute;
-  top: 100px;
-  margin-top: 20px;
+}
+#menu li:hover{
+  color: #4B89DC;
+  cursor: pointer;
+}
+.submenu a:hover{
+  color: #4B89DC;
+}
+#intro{
+  grid-row: 1/3;
+  text-align: left;
+  padding: 50px;
+}
+#login{
+  grid-column: 2/3;
+
+}
+#image{
+  grid-row: 2/3;
+  grid-column: 2/3;
 }
 
-.submenu > li {
+.large-text {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.medium-text {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.small-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.highlight {
+  color: #4B89DC; /* 또는 원하는 강조 색상 */
+}
+
+#intro .highlight-underline {
+  position: relative;
+  display: inline-block;
+}
+
+#intro .highlight-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: #4B89DC;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footerlogo h2 {
+  margin: 0;
+  color: #4B89DC;
+}
+
+#footermenu ul {
   list-style: none;
-  margin-left: -27px;
-  padding: 10px 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+#footermenu ul li {
+  margin-left: 20px;
+}
+
+#footermenu ul li:first-child {
+  margin-left: 0;
+}
+
+#footermenu ul li a {
+  text-decoration: none;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+#footermenu ul li a:hover {
+  color: #007bff;
 }
