@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>회원가입</title>
   <style>
     *{
       padding: 0;
@@ -18,6 +18,7 @@
       box-sizing: border-box;
       margin:60px auto;
       border: 2px solid #4B89DC;
+      border-radius: 20px;
       background-color: white;
       text-align: center;
     }
@@ -27,14 +28,25 @@
     h1{
       color: #4B89DC;
       font-size: 40px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     #loginForm > input{
       width: 100%;
       height: 60px;
       padding: 0 10px;
       box-sizing: border-box;
-      margin-bottom: 40px;
+      margin-bottom: 10px;
+    }
+    #loginForm > textarea{
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+    textarea::placeholder{
+      font-size: 15px;
     }
     #loginForm > input[type="submit"]{
       background-color: #4B89DC;
@@ -43,23 +55,7 @@
       border-radius: 30px;
       cursor: pointer;
     }
-    .links{
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    a{
-      color: #4B89DC;
-      text-decoration: none;
-      background-color: white;
-    }
-    a span{
-      font-size: 13px;
-      background-color: white;
-      padding: 0 10px;
-    }
-    a > #bar{
-      border-right: 1px solid #4B89DC;
-    }
+
   </style>
 </head>
 <body>
@@ -67,20 +63,16 @@
 
     <h1>SIGNUP</h1>
 
-    <form action="main.html" id="loginForm">
+    <form action="login.html" id="loginForm">
 
+      <input type="text" name="username" placeholder="이름">
       <input type="text" name="userid" placeholder="아이디">
       <input type="password" name="userpass" placeholder="비밀번호">
-
-      <input type="submit" value="로그인">
+      <input type="pass" name="pass" placeholder="비밀번호확인">
+      <textarea name="introduce" placeholder="가입 동기를 입력해주세요"></textarea>
+      <input type="submit" value="회원가입">
 
     </form>
-
-    <div class="links">
-      <a href="#" target="_blank"><span id="bar">아이디 찾기</span></a>
-      <a href="#" target="_blank"><span id="bar">비밀번호 찾기</span></a>
-      <a href="signup.html" target="_blank"><span>회원가입</span></a>
-    </div>
 
   </div>
 
