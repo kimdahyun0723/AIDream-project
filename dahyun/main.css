@@ -5,9 +5,9 @@
 }
 body{
   width: 1440px;
+  min-height: 100vh;
   height: 100%;
   margin: 0 auto;
-  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
 }
@@ -32,15 +32,13 @@ body{
   grid-template-columns: repeat(2, 1fr);
 }
 #footer{
-  width: 100%;
+  width: 100vw;
   height: 80px;
-  position: absolute;
+  background-color: #f8f9fa;
+  font-size: 14px;
+  position: fixed;
   bottom: 0;
   left: 0;
-  right: 0;
-  background-color: #f8f9fa;
-  padding: 20px 0;
-  font-size: 14px;
 }
 a{
   text-decoration: none;
@@ -224,7 +222,7 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 6px;
+  line-height: 80px;
 }
 #footerlogo h2 {
   margin: 0;
