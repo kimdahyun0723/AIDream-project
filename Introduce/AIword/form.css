@@ -1,25 +1,19 @@
+/* 영역 별 위치 지정 */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body{
-  width: 1440px;
+  width: 100%;
+  min-height: 100vh;
   height: 100%;
   margin: 0 auto;
+  display: flex;
   flex-direction: column;
 }
-main h1 {
-  margin: 42.5px 0;
-}
-main p {
-  margin: 21.67px 0;
-}
-main h2 {
-  margin: 31.67px 0;
-}
 #header{
-  width: 1440px;
+  width: 100%;
   height: 100px;
   position: fixed;
   top: 0;
@@ -27,21 +21,24 @@ main h2 {
   background-color: white;
   border-bottom: 1px solid #eee;
 }
+#headercat {
+  width: 1440px;
+  margin: 0 auto;
+}
 #contents{
-  width: 100%;
+  margin: 0 auto;
+  width: 1440px;
   min-height: 100%;
   flex-grow: 1;
   padding-top: 100px;
   padding-bottom: 80px;
   position: relative;
   background-color: white;
-  grid-template-columns: repeat(2, 1fr);
 }
 #footer{
   width: 100%;
   height: 80px;
   background-color: #f8f9fa;
-  padding: 20px 0;
   font-size: 14px;
 }
 a{
@@ -130,95 +127,6 @@ a{
   color: #4B89DC;
 }
 
-/* main section1 */
-#intro{
-  grid-column: 1/2;
-  text-align: left;
-  padding: 50px;
-}
-.large-text {
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-.medium-text {
-  font-size: 3rem;
-  margin-top: 0;
-}
-.small-text {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-.highlight {
-  color: #4B89DC; /* 또는 원하는 강조 색상 */
-}
-#intro .highlight-underline {
-  position: relative;
-  display: inline-block;
-}
-#intro .highlight-underline::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
-  height: 3px;
-  background-color: #4B89DC;
-}
-
-/* main section2 */
-#login{
-  grid-column: 2/3;
-  width: 400px;
-  height: 450px;
-  margin: 50px auto 0 auto;
-  border: 1px solid #4B89DC;
-  border-radius: 20px;
-  text-align: center;
-  box-sizing: border-box;
-  box-shadow: 10px 10px #4B89DC;
-}
-#login > img{
-  width: 400px;
-  height: 250px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-#login > p{
-  color: #4B89DC;
-  font-size: 15px;
-  margin: 25px;
-}
-.loginForm > input{
-  width: 300px;
-  height: 50px;
-  background-color: #4B89DC;
-  color: white;
-  font-size: 20px;
-  border-radius: 30px;
-  cursor: pointer;
-  border: none;
-  margin-bottom: 20px;
-}
-.links{
-  text-align: center;
-  margin-bottom: 10px;
-}
-.links > a{
-  color: #4B89DC;
-  text-decoration: none;
-  background-color: white;
-}
-.links > a span{
-  font-size: 13px;
-  background-color: white;
-  padding: 0 15px;
-}
-.links > a #bar{
-  border-right: 1px solid #4B89DC;
-  padding-right: 30px;
-}
-
 /* footer */
 .footer-content {
   max-width: 1200px;
@@ -226,7 +134,7 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 6px;
+  line-height: 80px;
 }
 #footerlogo h2 {
   margin: 0;
@@ -253,10 +161,19 @@ a{
 #footermenu ul li a:hover {
   color: #007bff;
 }
-.com{
-  color: #4b89dc;
-}
+/* 여기까지 고정 css */
 
-.line{
-  text-decoration: underline;
+
+/* 여기서 부터 메인 영역 필요한 부분 더 추가하세요*/
+.w {
+  width: 300px; /* 사각형의 너비 */
+  height: 300px; /* 사각형의 높이 */
+  border: 1px solid #ccc; /* 테두리 스타일 */
+  margin: 10px; /* 사각형 간의 간격 */
+  padding: 15px; /* 내부 여백 증가 */
+  display: inline-block; /* 사각형을 가로로 나열 */
+  vertical-align: top; /* 정렬 방식 */
+  background-color: #4B89DC; /* 박스 색상 변경 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
 }
