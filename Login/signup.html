@@ -11,16 +11,23 @@
       border: none;
       background-color: #F4F5F7;
     }
+    body{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .container{
       width: 500px;
       height: 600px;
       padding: 30px 50px;
       box-sizing: border-box;
-      margin:60px auto;
       border: 2px solid #4B89DC;
       border-radius: 20px;
       background-color: white;
       text-align: center;
+      position: fixed;
     }
     .container > *{
       background-color: white;
@@ -70,11 +77,17 @@
       <input type="password" name="userpass" placeholder="비밀번호">
       <input type="pass" name="pass" placeholder="비밀번호확인">
       <textarea name="introduce" placeholder="가입 동기를 입력해주세요"></textarea>
-      <input type="submit" value="회원가입">
+      <input type="submit" value="회원가입" onclick="signinAlert();">
 
     </form>
 
   </div>
 
+  <script>
+    const signinAlert = function(){
+      alert('회원가입 되었습니다');
+    }
+  </script>
+  
 </body>
 </html>
