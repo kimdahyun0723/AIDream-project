@@ -1,40 +1,65 @@
+/* 영역 별 위치 지정 */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
 #header{
   width: 100%;
   height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 9;
   background-color: white;
   border-bottom: 1px solid #eee;
 }
+#headercat {
+  width: 1440px;
+  margin: 0 auto;
+}
 #contents{
-  width: 100%;
+  margin: 0 auto;
+  width: 1440px;
+  min-height: 100%;
+  flex-grow: 1;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  position: relative;
   background-color: white;
 }
 #footer{
   width: 100%;
   height: 80px;
-  background-color: aquamarine;
+  background-color: #f8f9fa;
+  font-size: 14px;
 }
 a{
   text-decoration: none;
 }
 
+/* 헤더 로고 */
 #headerlogo{
   line-height: 100px;
   float: left;
-  padding: 0 90px;
+  padding: 0 80px;
   height: 100px;
 }
 #headerlogo > a{
   color: #4B89DC;
   font-size: 40px;
+  font-weight: bold;
 }
 
-  #menu{
+/* 전체 메뉴 */
+#menu{
     font-weight: bold;
     width: 100%;
     height: 100px;
@@ -42,16 +67,17 @@ a{
     margin: 0 auto;
     text-align: center;
     font-size: 22px;
-  }
+}
 #menu ul{
   list-style: none;
 }
+
+/* 메인메뉴 */
 #headermenu > li{
   float: left;
   width: 170px;
   position: relative;
 }
-
 /* 호버했을때 보더 애니메이션 추가 */
 #headermenu > li:hover::after {
   width: 100%; /* 호버 시 너비를 100%로 변경 */
@@ -68,19 +94,17 @@ a{
   transition: width 0.3s ease, left 0.3s ease; /* 애니메이션 추가 */
 }
 /* 호버했을때 보더 애니메이션 추가 */
-
-
 #headermenu > li:hover .submenu {
   display: block; /* main li 에 호버했을때 모든 서브메뉴를 보이도록 설정 */
   background-color: #F4F5F7;
 }
-
 .headerp{ 
   padding: 24.5px 0;
   background-color: white;
   border-bottom: 1px solid #eee;
 }
 
+/* 서브 메뉴 */
 .submenu{
   display: none;
   font-size: 18px;
@@ -91,9 +115,6 @@ a{
   width: 100%;
   height: 260px;
 }
-
-
-
 .submenu > ul{
   width: 130px;
   position: absolute;
@@ -105,7 +126,42 @@ a{
 .submenu a:hover{
   color: #4B89DC;
 }
-main {
-  height: 1000px;
-}
 
+/* footer */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 80px;
+}
+#footerlogo h2 {
+  margin: 0;
+  color: #4B89DC;
+  font-weight: bold;
+}
+#footermenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+#footermenu ul li {
+  margin-left: 20px;
+}
+#footermenu ul li:first-child {
+  margin-left: 0;
+}
+#footermenu ul li a {
+  text-decoration: none;
+  color: #666;
+  transition: color 0.3s ease;
+}
+#footermenu ul li a:hover {
+  color: #007bff;
+}
+/* 여기까지 고정 css */
+
+
+/* 여기서 부터 메인 영역 필요한 부분 더 추가하세요*/
