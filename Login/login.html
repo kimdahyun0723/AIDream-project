@@ -11,16 +11,23 @@
       border: none;
       background-color: #F4F5F7;
     }
+    body{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .container{
       width: 400px;
       height: 500px;
       padding: 50px;
       box-sizing: border-box;
-      margin:110px auto;
       border: 2px solid #4B89DC;
       border-radius: 20px;
       background-color: white;
       text-align: center;
+      position: fixed;
     }
     .container > *{
       background-color: white;
@@ -68,22 +75,27 @@
 
     <h1>LOGIN</h1>
 
-    <form action="../main.html" id="loginForm">
+    <form action="../Main/main.html" id="loginForm">
 
       <input type="text" name="userid" placeholder="아이디">
       <input type="password" name="userpass" placeholder="비밀번호">
 
-      <input type="submit" value="로그인">
+      <input type="submit" value="로그인" onclick="loginAlert();">
 
     </form>
 
     <div class="links">
-      <a href="../seongjun/findid.html"><span id="bar">아이디 찾기</span></a>
-      <a href="../seongjun/findpwd.html"><span id="bar">비밀번호 찾기</span></a>
+      <a href="findid.html"><span id="bar">아이디 찾기</span></a>
+      <a href="findpwd.html"><span id="bar">비밀번호 찾기</span></a>
       <a href="signup.html"><span>회원가입</span></a>
     </div>
 
   </div>
 
+  <script>
+    const loginAlert = function(){
+      alert('로그인 되었습니다');
+    }
+  </script>
 </body>
 </html>

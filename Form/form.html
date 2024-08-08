@@ -4,15 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="main.css">
-  
+  <link rel="stylesheet" href="form.css"> <!-- 링크 이름 바꾸기-->
 </head>
-<body>
-    <header id="header">
 
+<body>
+
+<!-- 고정 헤더 -->
+  <header id="header">
+
+    <div id="headercat">
+
+      <!-- 로고 누르면 메인 페이지로 이동 -->
       <div id="headerlogo">
-        <!-- 로고 누르면 메인 페이지로 이동 -->
-        <a href="#">AI Dream</a> 
+        <a href="../Main/main.html">AI Dream</a>
       </div>
 
       <nav id="menu">
@@ -60,44 +64,56 @@
           </li>
         </ul>
       </nav>
-    </header>
-    <main id="contents">
-      <section id="intro">
-        <p>세상을 이끌어가는 혁신의 기술 AI
-          <br>당신에게 AI의 모든 것을 드립니다sddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
-        <P><strong>ai dream</strong>과 함께 당신의 성장을 기원합니다</P>
-      </section>
-
-      <section id="login">
-        <p>로그인을 통해 간편하게 이용하세요</p>
-        <button type="submit">로그인</button>
-        <div class="links">
-          <a href="#" target="_blank"><span id="bar">아이디 찾기</span></a>
-          <a href="#" target="_blank"><span id="bar">비밀번호 찾기</span></a>
-          <a href="#" target="_blank"><span>회원가입</span></a>
-          </div>
-      </section>
-
-    </main>
+    </div>
+  </header>
 
 
-    <footer id="footer"> 
+<!-- 본문 -->
+  <main id="contents">
 
+    
+
+  </main>
+
+
+<!-- 고정 푸터 -->
+  <footer id="footer">
+
+    <div class="footer-content">
       <div id="footerlogo">
         <h2>AI Dream</h2>
       </div>
+      <nav id="footermenu">
+        <ul>
+          <li><a href="#" onclick="openmodal('#');">사이트 소개</a></li>
+          <li><a href="#" onclick="openmodal('#');">개인정보처리방침</a></li>
+          <li><a href="#" onclick="openmodal('#');">이용약관</a></li>
+          <li><a href="#" onclick="openmodal('#');">고객센터</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 
-      <div id="footermenu">
-        <a href="#" onclick="openmodal('#');"><span>사이트 소개</span></a>
-        <a href="#" onclick="openmodal('#');"><span>개인정보처리방침</span></a>
-        <a href="#" onclick="openmodal('#');"><span>이용약관</span></a>
-        <a href="#" onclick="openmodal('#');"><span>고객센터</span></a>
-      </div>
 
-    </footer>
-  </body>
+<script>
+  // 헤더 동작
+const headerMenuItems = document.querySelectorAll('#headermenu > li');
 
-  <button type="submit" value="" on></button>
-  <script src="main.js"></script>
+headerMenuItems.forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    const allSubmenus = document.querySelectorAll('.submenu');
+    allSubmenus.forEach(submenu => {
+          submenu.style.display = 'block';
+    });
+  });
+
+  item.addEventListener('mouseleave', () => {
+    const allSubmenus = document.querySelectorAll('.submenu');
+    allSubmenus.forEach(submenu => {
+      submenu.style.display = 'none';
+    });
+  });
+});
+</script>
 </body>
 </html>
