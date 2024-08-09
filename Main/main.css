@@ -109,8 +109,6 @@ a{
 /* 서브 메뉴 */
 .submenu{
   display: none;
-  font-size: 18px;
-  color: black;
   background: white;
   position: absolute; /* 부모 요소를 기준으로 절대 위치 설정 */
   z-index: 1000; /* 다른 요소 위에 표시되도록 z-index 설정 */
@@ -120,6 +118,10 @@ a{
 .submenu > ul{
   width: 130px;
   position: absolute;
+}
+.submenu > li > a{
+  color: black;
+  font-size: 18px;
 }
 #menu li:hover{
   color: #4B89DC;
