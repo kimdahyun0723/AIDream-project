@@ -176,3 +176,28 @@ main p {
 main h2 {
   margin: 31.67px 0;
 }
+
+main a {
+  text-decoration: none;
+}
+
+ .tooltip {
+    display: none;
+    font-size: 14px; /* 원하는 글자 크기 설정 */
+    position: absolute; /* 절대 위치 설정 */
+    left: -40px;
+    margin-top: 25px;
+    color: red;
+}
+
+main a:hover + .tooltip {
+  display: inline; /* 호버 시 보이도록 설정 */
+}
+
+main a {
+  color: black;
+}
+
+main a:hover {
+  color: #007bff;
+}
