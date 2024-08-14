@@ -107,8 +107,6 @@ a{
 /* 서브 메뉴 */
 .submenu{
   display: none;
-  font-size: 18px;
-  color: black;
   background: white;
   position: absolute; /* 부모 요소를 기준으로 절대 위치 설정 */
   z-index: 1000; /* 다른 요소 위에 표시되도록 z-index 설정 */
@@ -119,11 +117,15 @@ a{
   width: 130px;
   position: absolute;
 }
+.submenu > li > a{
+  color: black;
+  font-size: 18px;
+}
 #menu li:hover{
   color: #4B89DC;
   cursor: pointer;
 }
-.submenu a:hover{
+.submenu li:hover a{
   color: #4B89DC;
 }
 
@@ -165,6 +167,7 @@ a{
 
 
 /* 여기서 부터 메인 영역 필요한 부분 더 추가하세요*/
+
 .w {
   width: 300px; /* 사각형의 너비 */
   height: 300px; /* 사각형의 높이 */
