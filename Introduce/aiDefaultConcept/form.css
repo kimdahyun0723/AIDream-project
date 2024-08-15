@@ -5,12 +5,9 @@
   box-sizing: border-box;
 }
 body{
-  width: 100%;
-  min-height: 100vh;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  font-family: Arial, sans-serif; /* 폰트 설정 */
+  flex-direction: column; /* 세로 방향 정렬 */
+  background-color: #f9f9f9; /* 배경색 설정 */
 }
 #header{
   width: 100%;
@@ -169,29 +166,18 @@ a{
 /* 여기서 부터 메인 영역 필요한 부분 더 추가하세요*/
 main h1 {
   margin: 42.5px 0;
+  color: #4B89DC; /* h1 색상 */
 }
 main p {
   margin: 21.67px 0;
 }
 main h2 {
   margin: 31.67px 0;
+  color: #4B89DC; /* h2 색상 */
 }
 
 main a {
   text-decoration: none;
-}
-
- .tooltip {
-    display: none;
-    font-size: 14px; /* 원하는 글자 크기 설정 */
-    position: absolute; /* 절대 위치 설정 */
-    left: -40px;
-    margin-top: 25px;
-    color: red;
-}
-
-main a:hover + .tooltip {
-  display: inline; /* 호버 시 보이도록 설정 */
 }
 
 main a {
@@ -200,4 +186,20 @@ main a {
 
 main a:hover {
   color: #007bff;
+}
+
+main li {
+  text-align: left; /* li 태그 왼쪽 정렬 추가 */
+}
+
+article {
+  padding: 20px;
+}
+
+.com {
+  font-weight: bold;
+}
+
+.line {
+  text-decoration: underline;
 }
