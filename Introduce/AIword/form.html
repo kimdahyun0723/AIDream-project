@@ -1,434 +1,595 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="form.css"> <!-- 링크 이름 바꾸기-->
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+    <!-- 링크 이름 바꾸기-->
+  </head>
 
-<body>
+  <body>
+    <!-- 고정 헤더 -->
+    <header id="header">
+      <div id="headercat">
+        <div id="headerlogo">
+          <!-- 로고 누르면 메인 페이지로 이동 -->
+          <a href="/Main/main.html">AI Dream</a>
+        </div>
 
-<!-- 고정 헤더 -->
-<header id="header">
-
-  <div id="headercat">
-
-    <div id="headerlogo">
-      <!-- 로고 누르면 메인 페이지로 이동 -->
-      <a href="main.html">AI Dream</a>
-    </div>
-    
-    <nav id="menu">
-      <ul id="headermenu">
-        <li><p class="headerp">소개</p>
-          <ul class="submenu">
-            <li><a href="#">기본개념</a></li>
-            <li><a href="#">역사</a></li>
-            <li><a href="#">응용분야</a></li>
-            <li><a href="#">미래전망</a></li>
-            <li><a href="#">용어사전</a></li>
+        <nav id="menu">
+          <ul id="headermenu">
+            <li>
+              <p class="headerp">소개</p>
+              <ul class="submenu">
+                <li>
+                  <a href="/Introduce/aiDefaultConcept/form.html">기본개념</a>
+                </li>
+                <li><a href="/Introduce/his/form.html">역사</a></li>
+                <li><a href="/Introduce/bunya/form.html">응용분야</a></li>
+                <li><a href="/Introduce/ future/form.html">미래전망</a></li>
+                <li><a href="/Introduce/AIword/form.html">용어사전</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">기업</p>
+              <ul class="submenu">
+                <li><a href="#">TOP10</a></li>
+                <li><a href="#">상세조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">채용</p>
+              <ul class="submenu">
+                <li><a href="#">TOP10</a></li>
+                <li><a href="#">상세조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">교육</p>
+              <ul class="submenu">
+                <li><a href="#">국비지원</a></li>
+                <li><a href="#">기업지원</a></li>
+                <li><a href="#">취업박람회</a></li>
+                <li><a href="#">페스티벌</a></li>
+                <li><a href="#">도서/강의</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">뉴스</p>
+              <ul class="submenu">
+                <li><a href="#">최신연구/개발</a></li>
+                <li><a href="#">대회</a></li>
+                <li><a href="#">윤리/사회적 이슈</a></li>
+                <li><a href="#">기업동향</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">게시판</p>
+              <ul class="submenu">
+                <li>
+                  <a href="#"><span>질의응답</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>자유토론</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>스터디/프로젝트</span></a>
+                </li>
+              </ul>
+            </li>
           </ul>
-        </li>
-        <li><p class="headerp">기업</p>
-          <ul class="submenu">
-            <li><a href="#">TOP10</a></li>
-            <li><a href="#">상세조회</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">채용</p>
-          <ul class="submenu">
-            <li><a href="#">TOP10</a></li>
-            <li><a href="#">상세조회</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">교육</p>
-          <ul class="submenu">
-            <li><a href="#">국비지원</a></li>
-            <li><a href="#">기업지원</a></li>
-            <li><a href="#">취업박람회</a></li>
-            <li><a href="#">페스티벌</a></li>
-            <li><a href="#">도서/강의</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">뉴스</p>
-          <ul class="submenu">
-            <li><a href="#">최신연구/개발</a></li>
-            <li><a href="#">대회</a></li>
-            <li><a href="#">윤리/사회적 이슈</a></li>
-            <li><a href="#">기업동향</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">게시판</p>
-          <ul class="submenu">
-            <li><a href="#"><span>질의응답</span></a></li>
-            <li><a href="#"><span>자유토론</span></a></li>
-            <li><a href="#"><span>스터디/프로젝트</span></a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-<!-- 본문 -->
-  <main id="contents">
-  <div class="w w1">
-    <h2><a href="bigdata.html" target="_blank">Big Data(빅데이터)</a></h2>
-    <p>빅데이터는 통상적으로 사용되는 
-      데이터의 양과 다르게 수용한계를 
-      넘어서는 크기의 데이터, 즉 방대한 
-      양의 데이터를 의미</p>
-     
-  </div>
-  <div class="w w2">
-    <h2><a href="API.html" target="_blank">API</a></h2>
-    <p>API는 Application Programming Interface의 
-       약자로 컴퓨터나 프로그램 사이의 연결로 인터페이스를  
-       구축하거나 사용하는 방법을 의미</p>
-  </div>
-  <div class="w w3">
-    <h2><a href="GAN.html" target="_blank">GAN(적대적 생성 신경망)</a></h2>
-    <p>GAN은 Generative Adversarial Network의  
-      약자로 적대적 생성 신경망이라고도 불리며 실제에 가까운 이미지나 사람이 쓴 것과 같은 글 등 여러 가짜 데이터들을 생성할 수  
-      
-      있는 AI기술을 의미</p>
-  </div>
-  <div class="w w4">
-    <h2><a href="Creative Commons.html" target="_blank">Creative Commons(크리에이티브 커먼즈)</a></h2>
-    <p>Creative Commons는 저작권자가 자신의 저작물을 자유롭게 공유할 수 있도록 도와주는 저작권 라이선스</p>
-  </div>
-  <div class="w w5">
-    <h2><a href="OutputLayer.html" target="_blank">Output Layer(출력층)</a></h2>
-    <p>출력층은 은닉층에서 연산이 끝난 데이터를 은닉층에서 
-       데이터를 받고 이를 출력하는 층을 의미</p>
-  </div>
-  <div class="w w6">
-    <h2>W3Schools</h2>
-    <p>W3Schools는 온라인으로 웹 기술을 배우는 교육용 웹사이트</p>
-  </div>
-  <div class="w w7">
-    <h2><a href="GPGPU.html" target="_blank">GPGPU</a></h2>
-    <p>GPGPU는 General-Purpose Computing on  
-      Graphics Processing Units의 약어로,  
-      기존의 GPU를 활용하여 컴퓨터 그래픽스 처리를 넘어서  
-      CPU가 전통적으로 담당해온 일반 연산 작업을 수행하는 기술</p>
-  </div>
-  <div class="w w8">
-    <h2><a href="ActivationFunction.html" target="_blank">Activation Function(활성화 함수)</a></h2>
-    <p>활성화 함수는 인공신경망에서 입력값을 출력값으로  
-      바꾸어서 전달해주는 신경망속 함수들을 의미</p>
-  </div>
-  <div class="w w9">
-    <h2>Sololearn</h2>
-    <p>Sololearn은 모바일 및 웹 기반의 온라인 프로그래밍 학습 플랫폼.  
-       초보자부터 전문가까지 다양한 수준의 개발자를 대상으로 하며,   
-       다양한 프로그래밍 언어와 기술에 대한 학습 리소스와 커뮤니티 기능을 제공</p>
-  </div>
-  <div class="w w10">
-    <h2>Codepen</h2>
-    <p>Codepen은 온라인 코드 편집기 및 공유 플랙폼으로,  
-      HTML, CSS, JavaScript 등의 웹 기술을 사용하여 코드를  
-      작성하고 실행할 수 있습니다. 작성한 코드를 다른 사람들과 공유하고 
-       피드백을 주고받으며, 다른 사람들의 코드를 탐색하여  학습할 수 있습니다. </p>
-  </div>
-  <div class="w w11">
-    <h2>LOMO(적은 메모리 최적화)</h2>
-    <p>Low Memory Optimization은 
-       LLM을 파인튜닝하는데 필요한 메모리 요구량을 줄여주는 기술</p>
-  </div>
-  <div class="w w12">
-    <h2>Scikit-learn</h2>
-    <p>"Scientific Kit for Machine Learning"의 
-       줄임말로, 과학적인 기계 학습을 위한 도구 모음을 의미</p>
-  </div>
-  <div class="w w13">
-    <h2>은닉층</h2>
-    <p>은닉층은 입력층과 출력층 사이에 존재하는 하나의 층으로써 
-       신경망의 외부에서는 하나의 층으로써 신경망의 외부에서는 이  
-       계층의 노드들에게 직접 접근할 수 없으며 실질적으로 데이터를 가지고  
-       계산을 하는 층을 의미</p>
-  </div>
-  <div class="w w14">
-    <h2>ASR</h2>
-    <p>Automatic Speech Recognition의 약자로 자동 음성 인식 기술로 
-       사람의 음성을 컴퓨터가 인식하고 이를 텍스트나 명령어등으로 변환하는 기술을 의미</p>
-  </div>
- <div class="w w15">
-    <h2><a href="AI.html" target="_blank">AI</a></h2>
-    <p>Artificial Intelligence의 약자로 컴퓨터 프로그램이 인간의 지능과  
-      유사한 지능을 가지고 어떠한 작업을 수행하도록하는 기술을 의미</p>
-  </div>
-  <div class="w w16">
-    <h2>패턴인식</h2>
-    <p>패턴인식은 딥러닝과 인공지능 기술들을 활용하여 이미지, 음성, 텍스트등의  
-      패턴을 자동으로 인식하고 분류하는 기술을 의미</p>
-  </div>
- <div class="w w17">
-    <h2>트리</h2>
-    <p>트리는 계층적인 구조를 가지며, 하나의 루트노드에서 시작하여 여러 개의 
-       자식 노드를 가지고있는 형식의 자료구조</p>
-  </div>
- <div class="w w18">
-    <h2>Apache Spark</h2>
-    <p>Apache Spark는 대규모 데이터를 분산 처리하는 프레임워크</p>
-  </div>
-  <div class="w w19">
-    <h2>Optimization(최적화)</h2>
-    <p>최적화는 모델이 가장 좋은 성능을 내도록 파라미터 값을 조정하는 과정을 의미</p>
-  </div>
- <div class="w w20">
-    <h2>AGI(인공 일반 지능)</h2>
-    <p>AGI는 인간과 유사한 수준의 다양한 인지 작업을 수행하고 다양한 도메인에서  
-      학습하고 적용할 수 있는 능력을 갖춘 컴퓨터 시스템을 지칭</p>
-  </div>
-  <div class="w w21">
-    <h2>GPU</h2>
-    <p>GPU는 Graphic Processing Unit의 약자로 그래픽 처리를 위한 전용  
-      프로세서로 원래는 그래픽의 처리에 사용이 되지만 최근에는 머신러닝이나 과학 계산 
-       분야에서도 널리 사용되고 있는 장치를 의미</p>
-  </div>
- <div class="w w22">
-    <h2>Data Preprocessing(데이터 전처리)</h2>
-    <p>데이터 전처리는 머신러닝 모델에 입력할 훈련 데이터를 컴퓨터가 좀 더 편하게  
-      이해할 수 있도록 데이터를 편집하는 과정을 의미</p>
-  </div>
-  <div class="w w23">
-    <h2>ReadWorks</h2>
-    <p>읽기와 이해력을 향상시키기 위해 고안된, 교육 분야에서 널리 사용되는  
-      온라인 리딩 및 문학 이해 프로그램</p>
-  </div>
- <div class="w w24">
-    <h2>Data Base(데이터 베이스)</h2>
-    <p>데이터 베이스는 구조화된 정보 또는 조직화된 데이터들의 모음을 의미</p>
-  </div>
-  <div class="w w25">
-    <h2>NLP(자연어처리)</h2>
-    <p>자연어처리는 Natural Language Processing의 약자로 인간의 언어를  
-      컴퓨터와 같은 기계들이 이해하고 활용할 수 있도록 하는 인공지능의 주요 분야중 하나를 의미</p>
-  </div>
- <div class="w w26">
-    <h2>Query(쿼리)</h2>
-    <p>쿼리는 데이터베이스에서 데이터를 검색하거나 조작하기위한 명령어나 질의문을 의미</p>
-  </div>
- <div class="w w27">
-    <h2>Open Source</h2>
-    <p>오픈소스는 소프트웨어, 하드웨어등에 대해 소스코드를 누구나 열람하고 수정,  
-      배포할 수 있는 권한을 부여하는 라이선스를 의미</p>
-  </div>
-  <div class="w w28">
-    <h2>Padding</h2>
-    <p>패딩은 데이터를 압축하는 과정중에서 데이터가 유실되거나 손상되는 것을 예방하기  
-      위해 데이터의 외각에 특정 값(대체로 0을 사용함)을 부여하는 과정을 의미</p>
-  </div>
-  
- <div class="w w29">
-    <h2>XAI(Explainable Artificial Intelligence)(설명 가능한 인공지능)</h2>
-    <p>인공지능(AI)의 한 부류인 "설명 가능한 인공지능(Explainable AI 또는 XAI)"은  
-      기계 학습 모델의 예측을 해석하고 이해하기 쉽게 설명하는 기술을 의미</p>
-  </div>
-  <div class="w w30">
-    <h2>Semantic Search(시맨틱 검색)</h2>
-    <p>시맨틱 검색(Semantic Search)은 단순히 검색어와 문자가 일치하는 콘텐츠를  
-      찾는 게 아니라, 검색어와 문장의 의미를 파악하여 그에 상응하는 콘텐츠를 찾아내는 기술</p>
-  </div>
-  <div class="w w31">
-    <h2>Transfer Learning(전이학습)</h2>
-    <p>전이학습은 기존에 학습된 모델을 불러와 또 다른 데이터셋을 넣어주어 모델을  
-      추가로 학습시켜 모델의 성능을 짧은 시간에 올릴 수 있는 학습방법을 의미</p>
-  </div>
- <div class="w w32">
-    <h2>Recognition(객체 인식)</h2>
-    <p>객체 인식은 이미지나 비디오에서 객체를 식별하는 기술로, 객체 검출과 유사하지만, 
-       검출된 객체가 어떤 종류인지 분류하는 과정까지 포함한다는 차이가 있음</p>
-  </div>
- <div class="w w33">
-    <h2>K-Nearest neighbors(K-최근접 이웃 알고리즘)</h2>
-    <p>AI 학습 알고리즘의 종류중 하나로, 가장 가까운 이웃 샘플을 찾고  
-      이 샘플들의 타깃 값을 평균하여 예측</p>
-  </div>
-  <div class="w w34">
-    <h2>Supervised Learning(지도 학습)</h2>
-    <p>지도 학습은 모델에게 학습 데이터를 줄때 정답도 같이 알려주어 학습 데이터셋들과 
-       함께 학습시키는 방법을 의미</p>
-  </div>
- <div class="w w35">
-    <h2>Predictive Learning(예측 분석)</h2>
-    <p>예측 분석은 과거의 데이터셋을 분석하고 이를 바탕으로 미래의 결과를 예측할 수 
-       있는 하나의 기술을 의미</p>
-  </div>
-  <div class="w w36">
-    <h2>UDOP(범용문서처리)</h2>
-    <p>UDOP(Universal Document Processing)의 약자이며 2023년 마이크로소프트가  
-      제안한 문서를 이해하고 문서의 내용을 이해하고 그걸 바탕으로 답변을 생성하는 모델</p>
-  </div>
- <div class="w w37">
-    <h2>Epoch</h2>
-    <p>Epoch는 AI모델이 학습 데이터셋을 가지고 몇번이나 학습을 할것인지를 지정해주는  
-      파라미터 값을 의미</p>
-  </div>
-  <div class="w w38">
-    <h2>Decoder</h2>
-    <p>디코더는 인코더에서 압축된 정보를 이용해 새로운 정보를 생성하는데 사용되는 신경망  
-      모델의 한 종류를 의미</p>
-  </div>
- <div class="w w39">
-    <h2>Algorithm</h2>
-    <p>알고리즘은 주어진 문제를 해결하기 위한 단계적인 절차나 방법을 의미</p>
-  </div>
-  <div class="w w40">
-    <h2>MoE(전문가 믹스)</h2>
-    <p>MoE(Mixture of Experts)는 각 단어에서 알 수 있듯이, 여러 '전문가' 모델들의  
-      혼합을 의미한다. 이 방법은 모델안에 '라우터'에서 주어진 문제에 적절한 모델만을  
-      사용해 문제를 해결하는 방법</p>
-  </div>
- <div class="w 41">
-    <h2>CUDA(쿠다)</h2>
-    <p>CUDA는 Compute Unified Device Architecture의 약자로, NVIDIA가 개발한  
-      GPGPU 기술. 이걸 활용하면 개발자는 C 언어와 같은 고수준 프로그래밍 언어를 사용하여  
-      병렬 처리 위주의 알고리즘을 GPU에서 실행되어 빠르게 연산 가능</p>
-  </div>
-  <div class="w w42">
-    <h2>Computer Vision</h2>
-    <p>컴퓨터비전은 AI의 한 분야로, 컴퓨터가 이미지, 비디오등의 시각적 데이터들을 이해하고 
-       활용하는 기술들을 의미</p>
-  </div>
- <div class="w w43">
-    <h2>Token</h2>
-    <p>토큰은 자연어처리에서 문장을 단어 혹은 구두점 등을 기준으로 나눈 작은 단어의 단위를 의미</p>
-  </div>
-  <div class="w w44">
-    <h2>Crawler</h2>
-    <p>크롤러는 인터넷 상에서 웹 페이지를 수집하는 컴퓨터 프로그램으로서 일반적으로 검색 엔진과 
-       같은 정보 검색 시스템에 사용</p>
-  </div>
- <div class="w w45">
-    <h2>Unsupervised Learning(비지도 학습)</h2>
-    <p>비지도학습은 학습 데이터셋을 모델에게 전달해 줄때 정답을 알려주지 않고 학습 데이터셋만  
-      넘겨주어 모델이 직접 판단하게 하는 학습방법을 의미</p>
-  </div>
-  <div class="w w46">
-    <h2>ACM(미국계산기학회)</h2>
-    <p>ACM은 "Association for Computing Machinery"의 약자로, 컴퓨터 과학 분야에서 
-       세계적으로 유명한 학술 및 전문 기술 기관</p>
-  </div>
- <div class="w w47">
-    <h2>Hugging Face</h2>
-    <p>Hugging Face, Inc.는 기계 학습을 사용하여 애플리케이션을 구축하기 위한 도구를  
-      개발하는 미국 회사</p>
-  </div>
-  <div class="w w48">
-    <h2>Index(색인)</h2>
-    <p>색인은 데이터의 특정 열과 행의 값에 대응하는 포인터를 부여하여 데이터 검색시 빠르게  
-      찾아낼 수 있게 하는 데이터 관리 방법을 의미</p>
-  </div>
- <div class="w w49">
-    <h2>ArtPrompt</h2>
-    <p>ArtPrompt는 LLM이 ASCII 아트를 효율적으로 해석하지 못하는 취약점을 공격하는 방법</p>
-  </div>
-  <div class="w w50">
-    <h2>Bitbucket(비트버킷)</h2>
-    <p>깃 버전 관리 시스템을 사용하는 소스 코드 및 개발 프로젝트를 대상으로 한 아틀라시안  
-      소유의 웹 기반 버전 관리 저장소 호스팅 서비스</p>
-  </div>
- <div class="w w51">
-    <h2>Unstrucured Data(비정형 데이터)</h2>
-    <p>비정형 데이터는 표 형태가 아닌 다양한 형식으로 구성된 데이터로써 주로 텍스트, 이미지,  
-      음성, 동영상등의 형태를 가지고있는 데이터를 의미</p>
-  </div>
-  <div class="w w52">
-    <h2>HyperCLOVA X</h2>
-    <p>네이버에서 구축한 자연어 생성 모델로, GPT-3와 유사하지만 학습 데이터 중 한국어 비중이 
-       97%에 달하는, 한국어에 최적화한 언어 모델</p>
-  </div>
- <div class="w w53">
-    <h2>AI Courseware</h2>
-    <p>AI 코스웨어는 인공지능(AI) 기술을 교육에 접목한 학습 소프트웨어를 의미</p>
-  </div>
-  <div class="w w54">
-    <h2>Transformer</h2>
-    <p>트랜스포머는 구글에서 발표한 인코더-디코더 모델의 일종으로, 자연어 처리 분야에서 최근  
-      가장 인기있고 널리 사용되고있는 강력한 자연어처리 모델중 하나</p>
-  </div>
- <div class="w w55">
-    <h2>Optimization(최적화)</h2>
-    <p>최적화는 모델이 가장 좋은 성능을 내도록 파라미터 값을 조정하는 과정을 의미</p>
-  </div>
-  <div class="w w56">
-    <h2>Computer Vision</h2>
-    <p>컴퓨터비전은 AI의 한 분야로, 컴퓨터가 이미지, 비디오등의 시각적 데이터들을 이해하고  
-      활용하는 기술들을 의미</p>
-  </div>
- <div class="w w57">
-    <h2>Overfitting(과적합)</h2>
-    <p>주어진 하나의 데이터셋만을 가지고 너무 과하게 학습을 시킬경우 모델이 해당 데이터셋에 맞춰  
-      극단적으로 변해버려 다른 데이터셋에 대해 정확도가 많이 낮아져 버리는것을 의미</p>
-  </div>
-  <div class="w w58">
-    <h2>Vectorization</h2>
-    <p>데이터를 효율적으로 다루기 위해 숫자로 변환하는 과정</p>
-  </div>
- <div class="w w59">
-    <h2>Compiler</h2>
-    <p>컴파일러는 프로그래밍 언어로 작성된 소스코드를 기계어로 바꾸어주는 프로그램을 의미</p>
-  </div>
-  <div class="w w60">
-    <h2>K-Nearest neighbors(K-최근접 이웃 알고리즘)</h2>
-    <p>AI 학습 알고리즘의 종류중 하나로, 가장 가까운 이웃 샘플을 찾고 이 샘플들의 타깃 값을 평균하여 예측</p>
-  </div>
-  <div class="w w61">
-    <h2>Perceptron</h2>
-    <p>퍼셉트론은 인간의 뇌의 신경망 구조를 본떠 그물망 형태로 노드들을 연결하여 사람의 뇌처럼  
-      동작 하게 하는 최초의 인공신경망을 의미</p>
-  </div>
- <div class="w w62">
-    <h2>Transfer Learning(전이학습)</h2>
-    <p>전이학습은 기존에 학습된 모델을 불러와 또 다른 데이터셋을 넣어주어 모델을 추가로 학습시켜  
-      모델의 성능을 짧은 시간에 올릴 수 있는 학습방법을 의미</p>
-      <!-- 62 -->
-    </div>
-  </main>
-
-
-<!-- 고정 푸터 -->
-  <footer id="footer">
-
-    <div class="footer-content">
-      <div id="footerlogo">
-        <h2>AI Dream</h2>
+        </nav>
       </div>
-      <nav id="footermenu">
-        <ul>
-          <li><a href="#" onclick="openmodal('#');">사이트 소개</a></li>
-          <li><a href="#" onclick="openmodal('#');">개인정보처리방침</a></li>
-          <li><a href="#" onclick="openmodal('#');">이용약관</a></li>
-          <li><a href="#" onclick="openmodal('#');">고객센터</a></li>
-        </ul>
-      </nav>
-    </div>
-  </footer>
+    </header>
 
+    <!-- 본문 -->
+    <main id="contents">
+      <div class="w w1">
+        <h2><a href="bigdata.html" target="_blank">Big Data(빅데이터)</a></h2>
+        <p>
+          빅데이터는 통상적으로 사용되는 데이터의 양과 다르게 수용한계를
+          넘어서는 크기의 데이터, 즉 방대한 양의 데이터를 의미
+        </p>
+      </div>
+      <div class="w w2">
+        <h2><a href="API.html" target="_blank">API</a></h2>
+        <p>
+          API는 Application Programming Interface의 약자로 컴퓨터나 프로그램
+          사이의 연결로 인터페이스를 구축하거나 사용하는 방법을 의미
+        </p>
+      </div>
+      <div class="w w3">
+        <h2><a href="GAN.html" target="_blank">GAN(적대적 생성 신경망)</a></h2>
+        <p>
+          GAN은 Generative Adversarial Network의 약자로 적대적 생성
+          신경망이라고도 불리며 실제에 가까운 이미지나 사람이 쓴 것과 같은 글 등
+          여러 가짜 데이터들을 생성할 수 있는 AI기술을 의미
+        </p>
+      </div>
+      <div class="w w4">
+        <h2>
+          <a href="Creative Commons.html" target="_blank"
+            >Creative Commons(크리에이티브 커먼즈)</a
+          >
+        </h2>
+        <p>
+          Creative Commons는 저작권자가 자신의 저작물을 자유롭게 공유할 수
+          있도록 도와주는 저작권 라이선스
+        </p>
+      </div>
+      <div class="w w5">
+        <h2>
+          <a href="OutputLayer.html" target="_blank">Output Layer(출력층)</a>
+        </h2>
+        <p>
+          출력층은 은닉층에서 연산이 끝난 데이터를 은닉층에서 데이터를 받고 이를
+          출력하는 층을 의미
+        </p>
+      </div>
+      <div class="w w6">
+        <h2>W3Schools</h2>
+        <p>W3Schools는 온라인으로 웹 기술을 배우는 교육용 웹사이트</p>
+      </div>
+      <div class="w w7">
+        <h2><a href="GPGPU.html" target="_blank">GPGPU</a></h2>
+        <p>
+          GPGPU는 General-Purpose Computing on Graphics Processing Units의
+          약어로, 기존의 GPU를 활용하여 컴퓨터 그래픽스 처리를 넘어서 CPU가
+          전통적으로 담당해온 일반 연산 작업을 수행하는 기술
+        </p>
+      </div>
+      <div class="w w8">
+        <h2>
+          <a href="ActivationFunction.html" target="_blank"
+            >Activation Function(활성화 함수)</a
+          >
+        </h2>
+        <p>
+          활성화 함수는 인공신경망에서 입력값을 출력값으로 바꾸어서 전달해주는
+          신경망속 함수들을 의미
+        </p>
+      </div>
+      <div class="w w9">
+        <h2>Sololearn</h2>
+        <p>
+          Sololearn은 모바일 및 웹 기반의 온라인 프로그래밍 학습 플랫폼.
+          초보자부터 전문가까지 다양한 수준의 개발자를 대상으로 하며, 다양한
+          프로그래밍 언어와 기술에 대한 학습 리소스와 커뮤니티 기능을 제공
+        </p>
+      </div>
+      <div class="w w10">
+        <h2>Codepen</h2>
+        <p>
+          Codepen은 온라인 코드 편집기 및 공유 플랙폼으로, HTML, CSS, JavaScript
+          등의 웹 기술을 사용하여 코드를 작성하고 실행할 수 있습니다. 작성한
+          코드를 다른 사람들과 공유하고 피드백을 주고받으며, 다른 사람들의
+          코드를 탐색하여 학습할 수 있습니다.
+        </p>
+      </div>
+      <div class="w w11">
+        <h2>LOMO(적은 메모리 최적화)</h2>
+        <p>
+          Low Memory Optimization은 LLM을 파인튜닝하는데 필요한 메모리 요구량을
+          줄여주는 기술
+        </p>
+      </div>
+      <div class="w w12">
+        <h2>Scikit-learn</h2>
+        <p>
+          "Scientific Kit for Machine Learning"의 줄임말로, 과학적인 기계 학습을
+          위한 도구 모음을 의미
+        </p>
+      </div>
+      <div class="w w13">
+        <h2>은닉층</h2>
+        <p>
+          은닉층은 입력층과 출력층 사이에 존재하는 하나의 층으로써 신경망의
+          외부에서는 하나의 층으로써 신경망의 외부에서는 이 계층의 노드들에게
+          직접 접근할 수 없으며 실질적으로 데이터를 가지고 계산을 하는 층을 의미
+        </p>
+      </div>
+      <div class="w w14">
+        <h2>ASR</h2>
+        <p>
+          Automatic Speech Recognition의 약자로 자동 음성 인식 기술로 사람의
+          음성을 컴퓨터가 인식하고 이를 텍스트나 명령어등으로 변환하는 기술을
+          의미
+        </p>
+      </div>
+      <div class="w w15">
+        <h2><a href="AI.html" target="_blank">AI</a></h2>
+        <p>
+          Artificial Intelligence의 약자로 컴퓨터 프로그램이 인간의 지능과
+          유사한 지능을 가지고 어떠한 작업을 수행하도록하는 기술을 의미
+        </p>
+      </div>
+      <div class="w w16">
+        <h2>패턴인식</h2>
+        <p>
+          패턴인식은 딥러닝과 인공지능 기술들을 활용하여 이미지, 음성,
+          텍스트등의 패턴을 자동으로 인식하고 분류하는 기술을 의미
+        </p>
+      </div>
+      <div class="w w17">
+        <h2>트리</h2>
+        <p>
+          트리는 계층적인 구조를 가지며, 하나의 루트노드에서 시작하여 여러 개의
+          자식 노드를 가지고있는 형식의 자료구조
+        </p>
+      </div>
+      <div class="w w18">
+        <h2>Apache Spark</h2>
+        <p>Apache Spark는 대규모 데이터를 분산 처리하는 프레임워크</p>
+      </div>
+      <div class="w w19">
+        <h2>Optimization(최적화)</h2>
+        <p>
+          최적화는 모델이 가장 좋은 성능을 내도록 파라미터 값을 조정하는 과정을
+          의미
+        </p>
+      </div>
+      <div class="w w20">
+        <h2>AGI(인공 일반 지능)</h2>
+        <p>
+          AGI는 인간과 유사한 수준의 다양한 인지 작업을 수행하고 다양한
+          도메인에서 학습하고 적용할 수 있는 능력을 갖춘 컴퓨터 시스템을 지칭
+        </p>
+      </div>
+      <div class="w w21">
+        <h2>GPU</h2>
+        <p>
+          GPU는 Graphic Processing Unit의 약자로 그래픽 처리를 위한 전용
+          프로세서로 원래는 그래픽의 처리에 사용이 되지만 최근에는 머신러닝이나
+          과학 계산 분야에서도 널리 사용되고 있는 장치를 의미
+        </p>
+      </div>
+      <div class="w w22">
+        <h2>Data Preprocessing(데이터 전처리)</h2>
+        <p>
+          데이터 전처리는 머신러닝 모델에 입력할 훈련 데이터를 컴퓨터가 좀 더
+          편하게 이해할 수 있도록 데이터를 편집하는 과정을 의미
+        </p>
+      </div>
+      <div class="w w23">
+        <h2>ReadWorks</h2>
+        <p>
+          읽기와 이해력을 향상시키기 위해 고안된, 교육 분야에서 널리 사용되는
+          온라인 리딩 및 문학 이해 프로그램
+        </p>
+      </div>
+      <div class="w w24">
+        <h2>Data Base(데이터 베이스)</h2>
+        <p>
+          데이터 베이스는 구조화된 정보 또는 조직화된 데이터들의 모음을 의미
+        </p>
+      </div>
+      <div class="w w25">
+        <h2>NLP(자연어처리)</h2>
+        <p>
+          자연어처리는 Natural Language Processing의 약자로 인간의 언어를
+          컴퓨터와 같은 기계들이 이해하고 활용할 수 있도록 하는 인공지능의 주요
+          분야중 하나를 의미
+        </p>
+      </div>
+      <div class="w w26">
+        <h2>Query(쿼리)</h2>
+        <p>
+          쿼리는 데이터베이스에서 데이터를 검색하거나 조작하기위한 명령어나
+          질의문을 의미
+        </p>
+      </div>
+      <div class="w w27">
+        <h2>Open Source</h2>
+        <p>
+          오픈소스는 소프트웨어, 하드웨어등에 대해 소스코드를 누구나 열람하고
+          수정, 배포할 수 있는 권한을 부여하는 라이선스를 의미
+        </p>
+      </div>
+      <div class="w w28">
+        <h2>Padding</h2>
+        <p>
+          패딩은 데이터를 압축하는 과정중에서 데이터가 유실되거나 손상되는 것을
+          예방하기 위해 데이터의 외각에 특정 값(대체로 0을 사용함)을 부여하는
+          과정을 의미
+        </p>
+      </div>
 
-<script>
-  // 헤더 동작
-const headerMenuItems = document.querySelectorAll('#headermenu > li');
+      <div class="w w29">
+        <h2>XAI(Explainable Artificial Intelligence)(설명 가능한 인공지능)</h2>
+        <p>
+          인공지능(AI)의 한 부류인 "설명 가능한 인공지능(Explainable AI 또는
+          XAI)"은 기계 학습 모델의 예측을 해석하고 이해하기 쉽게 설명하는 기술을
+          의미
+        </p>
+      </div>
+      <div class="w w30">
+        <h2>Semantic Search(시맨틱 검색)</h2>
+        <p>
+          시맨틱 검색(Semantic Search)은 단순히 검색어와 문자가 일치하는
+          콘텐츠를 찾는 게 아니라, 검색어와 문장의 의미를 파악하여 그에 상응하는
+          콘텐츠를 찾아내는 기술
+        </p>
+      </div>
+      <div class="w w31">
+        <h2>Transfer Learning(전이학습)</h2>
+        <p>
+          전이학습은 기존에 학습된 모델을 불러와 또 다른 데이터셋을 넣어주어
+          모델을 추가로 학습시켜 모델의 성능을 짧은 시간에 올릴 수 있는
+          학습방법을 의미
+        </p>
+      </div>
+      <div class="w w32">
+        <h2>Recognition(객체 인식)</h2>
+        <p>
+          객체 인식은 이미지나 비디오에서 객체를 식별하는 기술로, 객체 검출과
+          유사하지만, 검출된 객체가 어떤 종류인지 분류하는 과정까지 포함한다는
+          차이가 있음
+        </p>
+      </div>
+      <div class="w w33">
+        <h2>K-Nearest neighbors(K-최근접 이웃 알고리즘)</h2>
+        <p>
+          AI 학습 알고리즘의 종류중 하나로, 가장 가까운 이웃 샘플을 찾고 이
+          샘플들의 타깃 값을 평균하여 예측
+        </p>
+      </div>
+      <div class="w w34">
+        <h2>Supervised Learning(지도 학습)</h2>
+        <p>
+          지도 학습은 모델에게 학습 데이터를 줄때 정답도 같이 알려주어 학습
+          데이터셋들과 함께 학습시키는 방법을 의미
+        </p>
+      </div>
+      <div class="w w35">
+        <h2>Predictive Learning(예측 분석)</h2>
+        <p>
+          예측 분석은 과거의 데이터셋을 분석하고 이를 바탕으로 미래의 결과를
+          예측할 수 있는 하나의 기술을 의미
+        </p>
+      </div>
+      <div class="w w36">
+        <h2>UDOP(범용문서처리)</h2>
+        <p>
+          UDOP(Universal Document Processing)의 약자이며 2023년 마이크로소프트가
+          제안한 문서를 이해하고 문서의 내용을 이해하고 그걸 바탕으로 답변을
+          생성하는 모델
+        </p>
+      </div>
+      <div class="w w37">
+        <h2>Epoch</h2>
+        <p>
+          Epoch는 AI모델이 학습 데이터셋을 가지고 몇번이나 학습을 할것인지를
+          지정해주는 파라미터 값을 의미
+        </p>
+      </div>
+      <div class="w w38">
+        <h2>Decoder</h2>
+        <p>
+          디코더는 인코더에서 압축된 정보를 이용해 새로운 정보를 생성하는데
+          사용되는 신경망 모델의 한 종류를 의미
+        </p>
+      </div>
+      <div class="w w39">
+        <h2>Algorithm</h2>
+        <p>
+          알고리즘은 주어진 문제를 해결하기 위한 단계적인 절차나 방법을 의미
+        </p>
+      </div>
+      <div class="w w40">
+        <h2>MoE(전문가 믹스)</h2>
+        <p>
+          MoE(Mixture of Experts)는 각 단어에서 알 수 있듯이, 여러 '전문가'
+          모델들의 혼합을 의미한다. 이 방법은 모델안에 '라우터'에서 주어진
+          문제에 적절한 모델만을 사용해 문제를 해결하는 방법
+        </p>
+      </div>
+      <div class="w 41">
+        <h2>CUDA(쿠다)</h2>
+        <p>
+          CUDA는 Compute Unified Device Architecture의 약자로, NVIDIA가 개발한
+          GPGPU 기술. 이걸 활용하면 개발자는 C 언어와 같은 고수준 프로그래밍
+          언어를 사용하여 병렬 처리 위주의 알고리즘을 GPU에서 실행되어 빠르게
+          연산 가능
+        </p>
+      </div>
+      <div class="w w42">
+        <h2>Computer Vision</h2>
+        <p>
+          컴퓨터비전은 AI의 한 분야로, 컴퓨터가 이미지, 비디오등의 시각적
+          데이터들을 이해하고 활용하는 기술들을 의미
+        </p>
+      </div>
+      <div class="w w43">
+        <h2>Token</h2>
+        <p>
+          토큰은 자연어처리에서 문장을 단어 혹은 구두점 등을 기준으로 나눈 작은
+          단어의 단위를 의미
+        </p>
+      </div>
+      <div class="w w44">
+        <h2>Crawler</h2>
+        <p>
+          크롤러는 인터넷 상에서 웹 페이지를 수집하는 컴퓨터 프로그램으로서
+          일반적으로 검색 엔진과 같은 정보 검색 시스템에 사용
+        </p>
+      </div>
+      <div class="w w45">
+        <h2>Unsupervised Learning(비지도 학습)</h2>
+        <p>
+          비지도학습은 학습 데이터셋을 모델에게 전달해 줄때 정답을 알려주지 않고
+          학습 데이터셋만 넘겨주어 모델이 직접 판단하게 하는 학습방법을 의미
+        </p>
+      </div>
+      <div class="w w46">
+        <h2>ACM(미국계산기학회)</h2>
+        <p>
+          ACM은 "Association for Computing Machinery"의 약자로, 컴퓨터 과학
+          분야에서 세계적으로 유명한 학술 및 전문 기술 기관
+        </p>
+      </div>
+      <div class="w w47">
+        <h2>Hugging Face</h2>
+        <p>
+          Hugging Face, Inc.는 기계 학습을 사용하여 애플리케이션을 구축하기 위한
+          도구를 개발하는 미국 회사
+        </p>
+      </div>
+      <div class="w w48">
+        <h2>Index(색인)</h2>
+        <p>
+          색인은 데이터의 특정 열과 행의 값에 대응하는 포인터를 부여하여 데이터
+          검색시 빠르게 찾아낼 수 있게 하는 데이터 관리 방법을 의미
+        </p>
+      </div>
+      <div class="w w49">
+        <h2>ArtPrompt</h2>
+        <p>
+          ArtPrompt는 LLM이 ASCII 아트를 효율적으로 해석하지 못하는 취약점을
+          공격하는 방법
+        </p>
+      </div>
+      <div class="w w50">
+        <h2>Bitbucket(비트버킷)</h2>
+        <p>
+          깃 버전 관리 시스템을 사용하는 소스 코드 및 개발 프로젝트를 대상으로
+          한 아틀라시안 소유의 웹 기반 버전 관리 저장소 호스팅 서비스
+        </p>
+      </div>
+      <div class="w w51">
+        <h2>Unstrucured Data(비정형 데이터)</h2>
+        <p>
+          비정형 데이터는 표 형태가 아닌 다양한 형식으로 구성된 데이터로써 주로
+          텍스트, 이미지, 음성, 동영상등의 형태를 가지고있는 데이터를 의미
+        </p>
+      </div>
+      <div class="w w52">
+        <h2>HyperCLOVA X</h2>
+        <p>
+          네이버에서 구축한 자연어 생성 모델로, GPT-3와 유사하지만 학습 데이터
+          중 한국어 비중이 97%에 달하는, 한국어에 최적화한 언어 모델
+        </p>
+      </div>
+      <div class="w w53">
+        <h2>AI Courseware</h2>
+        <p>
+          AI 코스웨어는 인공지능(AI) 기술을 교육에 접목한 학습 소프트웨어를 의미
+        </p>
+      </div>
+      <div class="w w54">
+        <h2>Transformer</h2>
+        <p>
+          트랜스포머는 구글에서 발표한 인코더-디코더 모델의 일종으로, 자연어
+          처리 분야에서 최근 가장 인기있고 널리 사용되고있는 강력한 자연어처리
+          모델중 하나
+        </p>
+      </div>
+      <div class="w w55">
+        <h2>Optimization(최적화)</h2>
+        <p>
+          최적화는 모델이 가장 좋은 성능을 내도록 파라미터 값을 조정하는 과정을
+          의미
+        </p>
+      </div>
+      <div class="w w56">
+        <h2>Computer Vision</h2>
+        <p>
+          컴퓨터비전은 AI의 한 분야로, 컴퓨터가 이미지, 비디오등의 시각적
+          데이터들을 이해하고 활용하는 기술들을 의미
+        </p>
+      </div>
+      <div class="w w57">
+        <h2>Overfitting(과적합)</h2>
+        <p>
+          주어진 하나의 데이터셋만을 가지고 너무 과하게 학습을 시킬경우 모델이
+          해당 데이터셋에 맞춰 극단적으로 변해버려 다른 데이터셋에 대해 정확도가
+          많이 낮아져 버리는것을 의미
+        </p>
+      </div>
+      <div class="w w58">
+        <h2>Vectorization</h2>
+        <p>데이터를 효율적으로 다루기 위해 숫자로 변환하는 과정</p>
+      </div>
+      <div class="w w59">
+        <h2>Compiler</h2>
+        <p>
+          컴파일러는 프로그래밍 언어로 작성된 소스코드를 기계어로 바꾸어주는
+          프로그램을 의미
+        </p>
+      </div>
+      <div class="w w60">
+        <h2>K-Nearest neighbors(K-최근접 이웃 알고리즘)</h2>
+        <p>
+          AI 학습 알고리즘의 종류중 하나로, 가장 가까운 이웃 샘플을 찾고 이
+          샘플들의 타깃 값을 평균하여 예측
+        </p>
+      </div>
+      <div class="w w61">
+        <h2>Perceptron</h2>
+        <p>
+          퍼셉트론은 인간의 뇌의 신경망 구조를 본떠 그물망 형태로 노드들을
+          연결하여 사람의 뇌처럼 동작 하게 하는 최초의 인공신경망을 의미
+        </p>
+      </div>
+      <div class="w w62">
+        <h2>Transfer Learning(전이학습)</h2>
+        <p>
+          전이학습은 기존에 학습된 모델을 불러와 또 다른 데이터셋을 넣어주어
+          모델을 추가로 학습시켜 모델의 성능을 짧은 시간에 올릴 수 있는
+          학습방법을 의미
+        </p>
+        <!-- 62 -->
+      </div>
+    </main>
 
-headerMenuItems.forEach(item => {
-  item.addEventListener('mouseenter', () => {
-    const allSubmenus = document.querySelectorAll('.submenu');
-    allSubmenus.forEach(submenu => {
-          submenu.style.display = 'block';
-    });
-  });
+    <!-- 고정 푸터 -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div id="footerlogo">
+          <h2>AI Dream</h2>
+        </div>
+        <nav id="footermenu">
+          <ul>
+            <li><a href="#" onclick="openmodal('#');">사이트 소개</a></li>
+            <li><a href="#" onclick="openmodal('#');">개인정보처리방침</a></li>
+            <li><a href="#" onclick="openmodal('#');">이용약관</a></li>
+            <li><a href="#" onclick="openmodal('#');">고객센터</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
 
-  item.addEventListener('mouseleave', () => {
-    const allSubmenus = document.querySelectorAll('.submenu');
-    allSubmenus.forEach(submenu => {
-      submenu.style.display = 'none';
-    });
-  });
-});
-</script>
-</body>
+    <script>
+      // 헤더 동작
+      const headerMenuItems = document.querySelectorAll("#headermenu > li");
+
+      headerMenuItems.forEach((item) => {
+        item.addEventListener("mouseenter", () => {
+          const allSubmenus = document.querySelectorAll(".submenu");
+          allSubmenus.forEach((submenu) => {
+            submenu.style.display = "block";
+          });
+        });
+
+        item.addEventListener("mouseleave", () => {
+          const allSubmenus = document.querySelectorAll(".submenu");
+          allSubmenus.forEach((submenu) => {
+            submenu.style.display = "none";
+          });
+        });
+      });
+
+      // submenu의 li를 클릭해을때 li 안에 a 태그가 작동
+      const submenuItems = document.querySelectorAll(".submenu li");
+      submenuItems.forEach((item) => {
+        item.addEventListener("click", function (event) {
+          const link = item.querySelector("a");
+          if (link) {
+            window.location.href = link.href; // 링크로 이동
+          }
+          event.stopPropagation(); // 상위 li의 클릭 이벤트 방지
+        });
+      });
+    </script>
+  </body>
 </html>

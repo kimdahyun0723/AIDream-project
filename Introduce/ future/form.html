@@ -16,18 +16,18 @@
 
     <div id="headerlogo">
       <!-- 로고 누르면 메인 페이지로 이동 -->
-      <a href="main.html">AI Dream</a>
+      <a href="/Main/main.html">AI Dream</a>
     </div>
     
     <nav id="menu">
       <ul id="headermenu">
         <li><p class="headerp">소개</p>
           <ul class="submenu">
-            <li><a href="#">기본개념</a></li>
-            <li><a href="#">역사</a></li>
-            <li><a href="#">응용분야</a></li>
-            <li><a href="#">미래전망</a></li>
-            <li><a href="#">용어사전</a></li>
+            <li><a href="/Introduce/aiDefaultConcept/form.html">기본개념</a></li>
+                <li><a href="/Introduce/his/form.html">역사</a></li>
+                <li><a href="/Introduce/bunya/form.html">응용분야</a></li>
+                <li><a href="/Introduce/ future/form.html">미래전망</a></li>
+                <li><a href="/Introduce/AIword/form.html">용어사전</a></li>
           </ul>
         </li>
         <li><p class="headerp">기업</p>
@@ -128,6 +128,18 @@ headerMenuItems.forEach(item => {
     allSubmenus.forEach(submenu => {
       submenu.style.display = 'none';
     });
+  });
+});
+
+// submenu의 li를 클릭해을때 li 안에 a 태그가 작동
+const submenuItems = document.querySelectorAll(".submenu li");
+submenuItems.forEach((item) => {
+  item.addEventListener("click", function (event) {
+    const link = item.querySelector("a");
+    if (link) {
+      window.location.href = link.href; // 링크로 이동
+    }
+    event.stopPropagation(); // 상위 li의 클릭 이벤트 방지
   });
 });
 </script>

@@ -1,201 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="form.css"> <!-- 링크 이름 바꾸기-->
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+    <!-- 링크 이름 바꾸기-->
+  </head>
 
-<body>
+  <body>
+    <!-- 고정 헤더 -->
+    <header id="header">
+      <div id="headercat">
+        <div id="headerlogo">
+          <!-- 로고 누르면 메인 페이지로 이동 -->
+          <a href="/Main/main.html">AI Dream</a>
+        </div>
 
-<!-- 고정 헤더 -->
-<header id="header">
-
-  <div id="headercat">
-
-    <div id="headerlogo">
-      <!-- 로고 누르면 메인 페이지로 이동 -->
-      <a href="main.html">AI Dream</a>
-    </div>
-    
-    <nav id="menu">
-      <ul id="headermenu">
-        <li><p class="headerp">소개</p>
-          <ul class="submenu">
-            <li><a href="#">기본개념</a></li>
-            <li><a href="#">역사</a></li>
-            <li><a href="#">응용분야</a></li>
-            <li><a href="#">미래전망</a></li>
-            <li><a href="#">용어사전</a></li>
+        <nav id="menu">
+          <ul id="headermenu">
+            <li>
+              <p class="headerp">소개</p>
+              <ul class="submenu">
+                <li>
+                  <a href="/Introduce/aiDefaultConcept/form.html">기본개념</a>
+                </li>
+                <li><a href="/Introduce/his/form.html">역사</a></li>
+                <li><a href="/Introduce/bunya/form.html">응용분야</a></li>
+                <li><a href="/Introduce/ future/form.html">미래전망</a></li>
+                <li><a href="/Introduce/AIword/form.html">용어사전</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">기업</p>
+              <ul class="submenu">
+                <li><a href="#">TOP10</a></li>
+                <li><a href="#">상세조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">채용</p>
+              <ul class="submenu">
+                <li><a href="#">TOP10</a></li>
+                <li><a href="#">상세조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">교육</p>
+              <ul class="submenu">
+                <li><a href="#">국비지원</a></li>
+                <li><a href="#">기업지원</a></li>
+                <li><a href="#">취업박람회</a></li>
+                <li><a href="#">페스티벌</a></li>
+                <li><a href="#">도서/강의</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">뉴스</p>
+              <ul class="submenu">
+                <li><a href="#">최신연구/개발</a></li>
+                <li><a href="#">대회</a></li>
+                <li><a href="#">윤리/사회적 이슈</a></li>
+                <li><a href="#">기업동향</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">게시판</p>
+              <ul class="submenu">
+                <li>
+                  <a href="#"><span>질의응답</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>자유토론</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>스터디/프로젝트</span></a>
+                </li>
+              </ul>
+            </li>
           </ul>
-        </li>
-        <li><p class="headerp">기업</p>
-          <ul class="submenu">
-            <li><a href="#">TOP10</a></li>
-            <li><a href="#">상세조회</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">채용</p>
-          <ul class="submenu">
-            <li><a href="#">TOP10</a></li>
-            <li><a href="#">상세조회</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">교육</p>
-          <ul class="submenu">
-            <li><a href="#">국비지원</a></li>
-            <li><a href="#">기업지원</a></li>
-            <li><a href="#">취업박람회</a></li>
-            <li><a href="#">페스티벌</a></li>
-            <li><a href="#">도서/강의</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">뉴스</p>
-          <ul class="submenu">
-            <li><a href="#">최신연구/개발</a></li>
-            <li><a href="#">대회</a></li>
-            <li><a href="#">윤리/사회적 이슈</a></li>
-            <li><a href="#">기업동향</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">게시판</p>
-          <ul class="submenu">
-            <li><a href="#"><span>질의응답</span></a></li>
-            <li><a href="#"><span>자유토론</span></a></li>
-            <li><a href="#"><span>스터디/프로젝트</span></a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-<!-- 본문 -->
-  <main id="contents">
-    <h1>AI 응용분야</h1>
-    <p>다양한 분야에서 인공기술이 적용되고 있다. 아래 내용은 분야별로 대표 응용사례에 대한 예시와 관련회사에 대한 내용이다.</p><br>
-    <p>아래의 다양한 사례를 통해 인공지능 기술의 응용사례를 확인하고 확대해 나갈 수 있을 것이다.</p>
-    <img src="스크린샷 2024-08-07 오후 7.47.32.png" alt="인공지능 응용분야 예시"> 
-  
-    <h1>IT분야</h1>
-    <img src="chatGPT_image-300x191.jpg" alt="ChatGPT사진" width="400">
-    <li>AI를 적용한 가전제품 및 전자 기기</li>
-    <li>코드리뷰 제공 서비스</li>
-    <li>코드 생성 : ChatGPT, GPT-4</li>
-  
-    <h1>무인로봇</h1>
-    <img src="13e38c5bf4f3ccf7141784c87bd23140.png" alt="무인로봇 사진" width="400">
-    <p>무인로봇도 AI 기술이 접목되어 크게 발전하고 있다.</p>
-    <li>인간을 대신하여 위험한 지역에 대한 원격탐사 로봇</li>
-    <li>무인 드론을 이용한 배송 서비스 (현재는 제주도에서 사전시행되고 있음)</li>
-    <li>다기능 로봇 개발</li>
-  
-    <h1>산업분야</h1>
-    <img src="N46T2QQRALCQWZSLPKOZVWDYOU.jpg" alt="테슬라 사진" width="400">
-    <p>산업분야세도 인공지능 기술의 응용이 활발하게 일어나고 있다.</p>
-    <li>기상데이터를 활용하여 농작물을 기르는 스마트 농장의 생산성 향상</li>
-    <li>실시간으로 데이터를 분석하여 석유 시추에 대한 의사 결정 가능</li>
-    <li>공장 재고, 발주 상황등을 고려하여 공장의 생산성을 조절하는 스마트 공장</li>
-    <li>스마트 그리드를 이용하여 발전량을 제어</li>
-    <li>교통 관리 시스템</li>
-    <li>자율 주행차 : 테슬라</li>
-    <li>차량 및 장비에 대한 정비 및 유지보수 알림</li>
-    <li>물류에 대한 공급망 최적화</li>
-  
-    <h1>건강 및 의학</h1>
-    <img src="90609bf8de6d6e6006ee6b1732eda8cd.png" alt="ai 기반 수술" width="400">
-    <li>의료 진단 및 질병예측</li>
-    <li>환자 맞춤형 치료 계획 제시</li>
-    <li>신약 발견 및 개발</li>
-    <li>의료 이미지 분석을 통한 진단 기능</li>
-    <li>AI 기반한 로봇 수술</li>
-  
-    <h1>지식 서비스</h1>
-    <p>지식 서비스에 다양하게 적용 가능할 수 있다. 대표적인 지식 서비스로는 금융(투자), 법률, 부동산, 마케팅 및 판<br>매, 교육 등이 있다.</p>
-    <h2>금융 : 핀테크 기술(토스, 카카오페이지 등)</h2>
-    <img src="카카오페이지.png" alt="카카오페이지" width="400">
-    <li>맞춤형 금융 조언 서비스</li>
-    <li>자산에 대한 위험 평가 및 관리</li>
-    <li>고객서비스 관련 챗봇</li>
-    <li>블록 체인을 이용한 지불, 교환 서비스</li>
-    <li>클라우드 펀딩</li>
-    <li>온라인 뱅킨</li>
-    <li>금융 사기 탐지 및 방지</li>
-    
-    <h2>법률</h2>
-    <li>입법 확률 계산 서비스</li>
-    <li>판례 분석</li>
-    <li>AI 번호 서비스</li>
-  
-    <h2>부동산</h2>
-    <li>미래 부동산 가격 예측</li>
-    <li>개발 유망 지역 전망</li>
-    <li>부동산 빅데이터 분석</li>
-  
-    <h2>마케팅 및 판매</h2>
-    <li>대상 광고 및 추천 시스템 : 구글 애드센스, 네이버 애드포스트 등</li>
-    <li>고객 세분화 및 프로파일링</li>
-    <li>고객의 감정 분석</li>
-    <li>소셜 미디어 모니터링</li>
-    <li>판매 예측 및 최적화</li>
-    <li>고객 행동 예측 분석</li>
-  
-    <h2>교육</h2>
-    <li>지능형 튜터링 시스템</li>
-    <li>자동 채점 및 약점 피드백</li>
-    <li>적응형 교육 게임 서비스</li>
-    <li>맞춤형 학습 플랫폼</li>
-    <li>성적 예측 및 개선 방안 제시</li>
-  
-    <h1>예술</h1>
-    <img src="9344dd67-7a21-4009-97d2-38fac6d74e4f.jpg" alt="ai화가 이미지" width="300">
-    <li>가수의 목소리를 학습하여 커버곡 만들기</li>
-    <li>인간과 인공지능의 협업된 미술작품 생성</li>
-    <li>영화 산업에 적용</li>
-    <li>소설이나 스토리 생성</li>
-  </main>
-
-
-<!-- 고정 푸터 -->
-  <footer id="footer">
-
-    <div class="footer-content">
-      <div id="footerlogo">
-        <h2>AI Dream</h2>
+        </nav>
       </div>
-      <nav id="footermenu">
-        <ul>
-          <li><a href="#" onclick="openmodal('#');">사이트 소개</a></li>
-          <li><a href="#" onclick="openmodal('#');">개인정보처리방침</a></li>
-          <li><a href="#" onclick="openmodal('#');">이용약관</a></li>
-          <li><a href="#" onclick="openmodal('#');">고객센터</a></li>
-        </ul>
-      </nav>
-    </div>
-  </footer>
+    </header>
 
+    <!-- 본문 -->
+    <main id="contents">
+      <h1>AI 응용분야</h1>
+      <p>
+        다양한 분야에서 인공기술이 적용되고 있다. 아래 내용은 분야별로 대표
+        응용사례에 대한 예시와 관련회사에 대한 내용이다.
+      </p>
+      <br />
+      <p>
+        아래의 다양한 사례를 통해 인공지능 기술의 응용사례를 확인하고 확대해
+        나갈 수 있을 것이다.
+      </p>
+      <img
+        src="스크린샷 2024-08-07 오후 7.47.32.png"
+        alt="인공지능 응용분야 예시"
+      />
 
-<script>
-  // 헤더 동작
-const headerMenuItems = document.querySelectorAll('#headermenu > li');
+      <h1>IT분야</h1>
+      <img src="chatGPT_image-300x191.jpg" alt="ChatGPT사진" width="400" />
+      <li>AI를 적용한 가전제품 및 전자 기기</li>
+      <li>코드리뷰 제공 서비스</li>
+      <li>코드 생성 : ChatGPT, GPT-4</li>
 
-headerMenuItems.forEach(item => {
-  item.addEventListener('mouseenter', () => {
-    const allSubmenus = document.querySelectorAll('.submenu');
-    allSubmenus.forEach(submenu => {
-          submenu.style.display = 'block';
-    });
-  });
+      <h1>무인로봇</h1>
+      <img
+        src="13e38c5bf4f3ccf7141784c87bd23140.png"
+        alt="무인로봇 사진"
+        width="400"
+      />
+      <p>무인로봇도 AI 기술이 접목되어 크게 발전하고 있다.</p>
+      <li>인간을 대신하여 위험한 지역에 대한 원격탐사 로봇</li>
+      <li>
+        무인 드론을 이용한 배송 서비스 (현재는 제주도에서 사전시행되고 있음)
+      </li>
+      <li>다기능 로봇 개발</li>
 
-  item.addEventListener('mouseleave', () => {
-    const allSubmenus = document.querySelectorAll('.submenu');
-    allSubmenus.forEach(submenu => {
-      submenu.style.display = 'none';
-    });
-  });
-});
-</script>
-</body>
+      <h1>산업분야</h1>
+      <img src="N46T2QQRALCQWZSLPKOZVWDYOU.jpg" alt="테슬라 사진" width="400" />
+      <p>산업분야세도 인공지능 기술의 응용이 활발하게 일어나고 있다.</p>
+      <li>기상데이터를 활용하여 농작물을 기르는 스마트 농장의 생산성 향상</li>
+      <li>실시간으로 데이터를 분석하여 석유 시추에 대한 의사 결정 가능</li>
+      <li>
+        공장 재고, 발주 상황등을 고려하여 공장의 생산성을 조절하는 스마트 공장
+      </li>
+      <li>스마트 그리드를 이용하여 발전량을 제어</li>
+      <li>교통 관리 시스템</li>
+      <li>자율 주행차 : 테슬라</li>
+      <li>차량 및 장비에 대한 정비 및 유지보수 알림</li>
+      <li>물류에 대한 공급망 최적화</li>
+
+      <h1>건강 및 의학</h1>
+      <img
+        src="90609bf8de6d6e6006ee6b1732eda8cd.png"
+        alt="ai 기반 수술"
+        width="400"
+      />
+      <li>의료 진단 및 질병예측</li>
+      <li>환자 맞춤형 치료 계획 제시</li>
+      <li>신약 발견 및 개발</li>
+      <li>의료 이미지 분석을 통한 진단 기능</li>
+      <li>AI 기반한 로봇 수술</li>
+
+      <h1>지식 서비스</h1>
+      <p>
+        지식 서비스에 다양하게 적용 가능할 수 있다. 대표적인 지식 서비스로는
+        금융(투자), 법률, 부동산, 마케팅 및 판<br />매, 교육 등이 있다.
+      </p>
+      <h2>금융 : 핀테크 기술(토스, 카카오페이지 등)</h2>
+      <img src="카카오페이지.png" alt="카카오페이지" width="400" />
+      <li>맞춤형 금융 조언 서비스</li>
+      <li>자산에 대한 위험 평가 및 관리</li>
+      <li>고객서비스 관련 챗봇</li>
+      <li>블록 체인을 이용한 지불, 교환 서비스</li>
+      <li>클라우드 펀딩</li>
+      <li>온라인 뱅킨</li>
+      <li>금융 사기 탐지 및 방지</li>
+
+      <h2>법률</h2>
+      <li>입법 확률 계산 서비스</li>
+      <li>판례 분석</li>
+      <li>AI 번호 서비스</li>
+
+      <h2>부동산</h2>
+      <li>미래 부동산 가격 예측</li>
+      <li>개발 유망 지역 전망</li>
+      <li>부동산 빅데이터 분석</li>
+
+      <h2>마케팅 및 판매</h2>
+      <li>대상 광고 및 추천 시스템 : 구글 애드센스, 네이버 애드포스트 등</li>
+      <li>고객 세분화 및 프로파일링</li>
+      <li>고객의 감정 분석</li>
+      <li>소셜 미디어 모니터링</li>
+      <li>판매 예측 및 최적화</li>
+      <li>고객 행동 예측 분석</li>
+
+      <h2>교육</h2>
+      <li>지능형 튜터링 시스템</li>
+      <li>자동 채점 및 약점 피드백</li>
+      <li>적응형 교육 게임 서비스</li>
+      <li>맞춤형 학습 플랫폼</li>
+      <li>성적 예측 및 개선 방안 제시</li>
+
+      <h1>예술</h1>
+      <img
+        src="9344dd67-7a21-4009-97d2-38fac6d74e4f.jpg"
+        alt="ai화가 이미지"
+        width="300"
+      />
+      <li>가수의 목소리를 학습하여 커버곡 만들기</li>
+      <li>인간과 인공지능의 협업된 미술작품 생성</li>
+      <li>영화 산업에 적용</li>
+      <li>소설이나 스토리 생성</li>
+    </main>
+
+    <!-- 고정 푸터 -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div id="footerlogo">
+          <h2>AI Dream</h2>
+        </div>
+        <nav id="footermenu">
+          <ul>
+            <li><a href="#" onclick="openmodal('#');">사이트 소개</a></li>
+            <li><a href="#" onclick="openmodal('#');">개인정보처리방침</a></li>
+            <li><a href="#" onclick="openmodal('#');">이용약관</a></li>
+            <li><a href="#" onclick="openmodal('#');">고객센터</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      // 헤더 동작
+      const headerMenuItems = document.querySelectorAll("#headermenu > li");
+
+      headerMenuItems.forEach((item) => {
+        item.addEventListener("mouseenter", () => {
+          const allSubmenus = document.querySelectorAll(".submenu");
+          allSubmenus.forEach((submenu) => {
+            submenu.style.display = "block";
+          });
+        });
+
+        item.addEventListener("mouseleave", () => {
+          const allSubmenus = document.querySelectorAll(".submenu");
+          allSubmenus.forEach((submenu) => {
+            submenu.style.display = "none";
+          });
+        });
+      });
+
+      // submenu의 li를 클릭해을때 li 안에 a 태그가 작동
+      const submenuItems = document.querySelectorAll(".submenu li");
+      submenuItems.forEach((item) => {
+        item.addEventListener("click", function (event) {
+          const link = item.querySelector("a");
+          if (link) {
+            window.location.href = link.href; // 링크로 이동
+          }
+          event.stopPropagation(); // 상위 li의 클릭 이벤트 방지
+        });
+      });
+    </script>
+  </body>
 </html>
