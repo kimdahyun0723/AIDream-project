@@ -167,9 +167,18 @@ a{
 
 
 /* 여기서 부터 메인 영역 필요한 부분 더 추가하세요*/
-h1 {
-  color: #4b89dc; 
+main h1 {
+  margin: 42.5px 0;
+  color: #4b89dc; /* h1 색상 */
+  padding: 0px 0px 50px;
+  font-size: 70px;
 }
-h2{
-  color :#4B89DC;
+main p {
+  margin: 21.67px 0;
+  padding: 1%;
+  font-size: 20px;
+}
+main h2{
+  font-size: 50px;
+  color: #4b89dc; /* h1 색상 */
 }
