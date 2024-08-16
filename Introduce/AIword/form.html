@@ -335,10 +335,15 @@
         </p>
       </div>
       <div class="w w34">
-        <h2><a href="/Must-Doit/Introduce/AIword/jido.html" target="_blank">지도학습</a></h2>
-        <p>지도 학습은 모델에게 학습 데이터를 줄때 정답도 같이 알려주어 학습 데이터셋들과 
-           함께 학습시키는 방법을 의미</p>
-      </div>
+        <h2>
+          <a href="/Must-Doit/Introduce/AIword/jido.html" target="_blank"
+            >지도학습</a
+          >
+        </h2>
+        <p>
+          지도 학습은 모델에게 학습 데이터를 줄때 정답도 같이 알려주어 학습
+          데이터셋들과 함께 학습시키는 방법을 의미
+        </p>
       </div>
       <div class="w w35">
         <h2>Predictive Learning(예측 분석)</h2>
@@ -540,22 +545,52 @@
         <!-- 62 -->
       </div>
       <div class="w w63">
-        <h2><a href="/Must-Doit/Introduce/AIword/ja.html" target="_blank">자연어처리</a></h2>
-        <p>인공지능의 한 분야의 NLP(자연어 처리)는 머신러닝을 사용하여 텍스트와 데이터를 처리하고 해석. 자연어 인식 및 자연어 생성이 NLP의 유형</p>
+        <h2>
+          <a href="/Must-Doit/Introduce/AIword/ja.html" target="_blank"
+            >자연어처리</a
+          >
+        </h2>
+        <p>
+          인공지능의 한 분야의 NLP(자연어 처리)는 머신러닝을 사용하여 텍스트와
+          데이터를 처리하고 해석. 자연어 인식 및 자연어 생성이 NLP의 유형
+        </p>
       </div>
       <div class="w w64">
-        <h2><a href="/Must-Doit/Introduce/AIword/ingong.html" target="_blank">인공 신경망(ANN)</a></h2>
-        <p>ANN은 "Artificial Neural Network"의 약어로, 인공 신경망을 의미합니다. 인공 신경망은 인간의 신경 시스템에서 영감을 받아 디자인된 컴퓨터 알고리즘</p>
+        <h2>
+          <a href="/Must-Doit/Introduce/AIword/ingong.html" target="_blank"
+            >인공 신경망(ANN)</a
+          >
+        </h2>
+        <p>
+          ANN은 "Artificial Neural Network"의 약어로, 인공 신경망을 의미합니다.
+          인공 신경망은 인간의 신경 시스템에서 영감을 받아 디자인된 컴퓨터
+          알고리즘
+        </p>
       </div>
       <div class="w w65">
-        <h2><a href="/Must-Doit/Introduce/AIword/gangha.html" target="_blank">강화 학습</a></h2>
-        <p>강화 학습(Reinforcement Learning)은 기계 학습의 한 분야로, 에이전트가 주어진 환경 내에서 특정한 목표를 달성하기 위해 시행착오를 통해 학습하는 방법입니다.
-          강화 학습은 보상과 피드백을 통해 에이전트가 행동을 수행하고 최적의 정책(policy)을 학습하는 방식.</p>
+        <h2>
+          <a href="/Must-Doit/Introduce/AIword/gangha.html" target="_blank"
+            >강화 학습</a
+          >
+        </h2>
+        <p>
+          강화 학습(Reinforcement Learning)은 기계 학습의 한 분야로, 에이전트가
+          주어진 환경 내에서 특정한 목표를 달성하기 위해 시행착오를 통해
+          학습하는 방법입니다. 강화 학습은 보상과 피드백을 통해 에이전트가
+          행동을 수행하고 최적의 정책(policy)을 학습하는 방식.
+        </p>
       </div>
-    </div> <div class="w w66">
-      <h2><a href="/Must-Doit/Introduce/AIword/deep.html" target="_blank">딥 러닝</a></h2>
-      <p>딥 러닝은 인간의 두뇌에서 영감을 얻은 방식으로 데이터를 처리하도록 컴퓨터를 가르치는 인공 지능(AI) 방식.</p>
-    </div>
+      <div class="w w66">
+        <h2>
+          <a href="/Must-Doit/Introduce/AIword/deep.html" target="_blank"
+            >딥 러닝</a
+          >
+        </h2>
+        <p>
+          딥 러닝은 인간의 두뇌에서 영감을 얻은 방식으로 데이터를 처리하도록
+          컴퓨터를 가르치는 인공 지능(AI) 방식.
+        </p>
+      </div>
     </main>
 
     <!-- 고정 푸터 -->
@@ -602,6 +637,17 @@
           const link = item.querySelector("a");
           if (link) {
             window.location.href = link.href; // 링크로 이동
+          }
+          event.stopPropagation(); // 상위 li의 클릭 이벤트 방지
+        });
+      });
+
+      const box = document.querySelectorAll(".w");
+      box.forEach((item) => {
+        item.addEventListener("click", function (event) {
+          const link = item.querySelector("a");
+          if (link) {
+            window.open(link.href, "_blank"); // 새 탭에서 링크 열기
           }
           event.stopPropagation(); // 상위 li의 클릭 이벤트 방지
         });
