@@ -174,11 +174,13 @@ main h1 {
   font-size: 70px;
 }
 main p {
-  margin: 21.67px 0;
-  padding: 1%;
+ 
   font-size: 20px;
 }
 main h2{
   font-size: 50px;
   color: #4b89dc; /* h1 색상 */
+}
+main li{
+  font-size: 20px;
 }
