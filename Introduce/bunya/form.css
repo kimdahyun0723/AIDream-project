@@ -169,6 +169,7 @@ a {
 main h1 {
   color: #4b89dc; /* h1 색상 */
   font-size: 70px;
+  margin-top: 150px;
 }
 main p {
   font-size: 20px;

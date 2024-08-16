@@ -165,6 +165,7 @@ a {
 
 main h1 {
   margin: 42.5px 0;
+  margin-top: 150px;
   color: #4b89dc; /* h1 색상 */
   padding: 0px 0px 50px;
   font-size: 70px;

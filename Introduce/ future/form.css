@@ -169,6 +169,7 @@ a{
 /* 여기서 부터 메인 영역 필요한 부분 더 추가하세요*/
 main h1 {
   margin: 42.5px 0;
+  margin-top: 150px;
   color: #4b89dc; /* h1 색상 */
   padding: 0px 0px 50px;
   font-size: 70px;
@@ -180,4 +181,7 @@ main p {
 main h2 {
   margin: 31.67px 0;
   color: #4b89dc; /* h2 색상 */
+}
+.imgbox{
+ float: right;
 }
