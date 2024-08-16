@@ -169,17 +169,21 @@ a{
 main h1 {
   margin: 42.5px 0;
   color: #4B89DC; /* h1 색상 */
+  padding: 0px 0px 50px;
+  font-size: 70px;
 
   
 }
 main p {
   margin: 21.67px 0;
   padding: 1%;
+  font-size: 20px;
 
 }
 main h2 {
   margin: 31.67px 0;
   color: #4B89DC; /* h2 색상 */
+  
 }
 
 main a {
