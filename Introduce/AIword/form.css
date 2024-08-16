@@ -180,6 +180,7 @@ a {
 }
 .w p {
   word-wrap: break-word;
+  font-size: 17px;
 }
 
 main a {
