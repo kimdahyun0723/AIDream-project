@@ -164,12 +164,18 @@ a{
 
 
 /* 여기서 부터 메인 영역 필요한 부분 더 추가하세요*/
+
+
 main h1 {
   margin: 42.5px 0;
   color: #4B89DC; /* h1 색상 */
+
+  
 }
 main p {
   margin: 21.67px 0;
+  padding: 1%;
+
 }
 main h2 {
   margin: 31.67px 0;
@@ -188,10 +194,11 @@ main a:hover {
   color: #007bff;
 }
 
+
 main li {
   text-align: left; /* li 태그 왼쪽 정렬 추가 */
-}
 
+}
 article {
   padding: 20px;
 }
