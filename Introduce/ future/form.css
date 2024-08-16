@@ -181,3 +181,6 @@ main h2 {
   margin: 31.67px 0;
   color: #4b89dc; /* h2 색상 */
 }
+.imgbox{
+ float: right;
+}
