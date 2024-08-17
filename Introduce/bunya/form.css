@@ -166,18 +166,4 @@ a {
 /* 여기까지 고정 css */
 
 /* 여기서 부터 메인 영역 필요한 부분 더 추가하세요*/
-main h1 {
-  color: #4b89dc; /* h1 색상 */
-  font-size: 70px;
-  margin-top: 150px;
-}
-main p {
-  font-size: 20px;
-}
-main h2 {
-  font-size: 50px;
-  color: #4b89dc; /* h1 색상 */
-}
-main li {
-  font-size: 20px;
-}
+
