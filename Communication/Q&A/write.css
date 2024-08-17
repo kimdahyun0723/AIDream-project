@@ -204,6 +204,7 @@ main p {
 #request {
   width: 663px;
   height: 200px;
+  font-size: 16px;
 }
 .submit {
   position: absolute;
