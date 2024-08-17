@@ -194,3 +194,23 @@ h3 {
 main p {
   padding: 10px;
 }
+
+#title {
+  height: 40px;
+  width: 663px;
+  font-size: 16px;
+}
+
+#request {
+  width: 663px;
+  height: 200px;
+}
+.submit {
+  position: absolute;
+  right: 390px;
+}
+
+.tag {
+  width: 60px;
+  height: 25px;
+}

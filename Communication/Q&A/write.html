@@ -93,24 +93,19 @@
         </h3>
         <form action="">
           <div class="form">
-            <label for="title">제목</label><br /><input
-              type="text"
-              id="title"
-              style="height: 30px"
-              size="90"
-              required
-            />
+            <label for="title"><b>제목</b></label
+            ><br /><input type="text" id="title" required />
           </div>
           <p></p>
           <div class="form">
-            <label for="request">문의내용</label><br /><textarea
-              name=""
-              id="request"
-            ></textarea>
+            <label for="request"><b>문의내용</b></label
+            ><br /><textarea name="" id="request"></textarea>
           </div>
           <p></p>
-          <input type="submit" value="작성" />
-          <input type="reset" value="취소" />
+          <div class="submit">
+            <input type="submit" value="작성" class="tag" />
+            <input type="reset" value="취소" class="tag" />
+          </div>
         </form>
         <a href="javascript:history.back()" class="goBack"
           >게시판으로 돌아가기</a
