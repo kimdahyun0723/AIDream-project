@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="mypage1_company.css"> <!-- 링크 이름 바꾸기-->
+</head>
+
+<body>
+
+<!-- 고정 헤더 -->
+<header id="header">
+
+  <div id="headercat">
+
+    <div id="headerlogo">
+      <!-- 로고 누르면 메인 페이지로 이동 -->
+      <a href="../main.html">AI Dream</a>
+    </div>
+    
+    <nav id="menu">
+      <ul id="headermenu">
+        <li><p class="headerp">소개</p>
+          <ul class="submenu">
+            <li><a href="#">기본개념</a></li>
+            <li><a href="#">역사</a></li>
+            <li><a href="#">응용분야</a></li>
+            <li><a href="#">미래전망</a></li>
+            <li><a href="#">용어사전</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">기업</p>
+          <ul class="submenu">
+            <li><a href="#">TOP10</a></li>
+            <li><a href="#">상세조회</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">채용</p>
+          <ul class="submenu">
+            <li><a href="#">TOP10</a></li>
+            <li><a href="#">상세조회</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">교육</p>
+          <ul class="submenu">
+            <li><a href="#">국비지원</a></li>
+            <li><a href="#">기업지원</a></li>
+            <li><a href="#">취업박람회</a></li>
+            <li><a href="#">페스티벌</a></li>
+            <li><a href="#">도서/강의</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">뉴스</p>
+          <ul class="submenu">
+            <li><a href="#">최신연구/개발</a></li>
+            <li><a href="#">대회</a></li>
+            <li><a href="#">윤리/사회적 이슈</a></li>
+            <li><a href="#">기업동향</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">게시판</p>
+          <ul class="submenu">
+            <li><a href="#"><span>질의응답</span></a></li>
+            <li><a href="#"><span>자유토론</span></a></li>
+            <li><a href="#"><span>스터디/프로젝트</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- 본문 -->
+  <main id="contents">
+
+    <section id="leftsection">
+      <img src="icon_image/profile.png" alt="profile" id="profile">
+      <h2>마이페이지</h2> 
+      <h3>Welcome Mypage</h3>
+      <a href="../main.html" onclick="logoutAlert()">
+        <input type="button" value="로그아웃 [→" id="mainlogout">
+      </a>
+      <ul id="tag">
+        <li id="mycompany">
+          <img src="icon_image/company.png" alt="company" class="mymenu">
+          <p>나의 기업</p>
+        </li>
+        <li id="myapply">
+          <img src="icon_image/apply.png" alt="apply" class="mymenu">
+          <p>나의 채용</p>
+        </li>
+        <li id="mywriter">
+          <img src="icon_image/writer.png" alt="writer" class="mymenu">
+          <p>내가 쓴 글</p>
+        </li>
+        <li id="myproject">
+          <img src="icon_image/project.png" alt="project" class="mymenu">
+          <p>나의 프로젝트</p>
+        </li>
+
+      </ul>
+    </section>
+
+    <section id="rightsection">
+      <h1>즐겨찾기 기업 조회</h1>
+      <hr>
+      <div id="box">
+        <div id="box1" class="topbox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box1tag">
+          <a href="http://www.samsung.com/sec" target="_blank">
+            <img src="company_image/samsung_electronics.jpg" alt="삼성전자" class="logo">
+            <h2>[삼성전자]</h2>
+            <p>기업 : 대기업</p>
+            <p>산업 : 이동전화기 제조업</p>
+            <p>주소 : 경기도 수원시 영통구</p>
+          </a>
+        </div>
+        <div id="box2" class="topbox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box2tag">
+          <a href="http://www.sktelecom.com/" target="_blank">
+            <img src="company_image/sktelecom.png" alt="SK텔레콤" class="logo">
+            <h2>[SK텔레콤]</h2>
+            <p>기업 : 대기업</p>
+            <p>산업 : 무선/위선 통신업</p>
+            <p>주소 : 서울시 중구</p>
+          </a>
+        </div>
+        <div id="box3" class="topbox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box3tag">
+          <a href="http://www.navercorp.com/" target="_blank">
+            <img src="company_image/naver.jpg" alt="네이버" class="logo">
+            <h2>[네이버]</h2>
+            <p>기업 : 대기업</p>
+            <p>산업 : 인터넷 정보매개 서비스업</p>
+            <p>주소 : 경기도 성남시 분당구</p>
+          </a>
+        </div>
+        <div id="box4" class="topbox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box4tag">
+          <a href="http://www.kakaocorp.com/" target="_blank">
+            <img src="company_image/kakao.jpg" alt="카카오" class="logo">
+            <h2>[카카오]</h2>
+            <p>기업 : 대기업</p>
+            <p>산업 : 인터넷 정보매개 서비스업</p>
+            <p>주소 : 경기도 성남시 분당구</p>
+          </a>
+        </div>
+        <div id="box5" class="topbox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box5tag">
+          <a href="http://www.hyundai.com/" target="_blank">
+            <img src="company_image/hyundai_motor.jpg" alt="현대자동차" class="logo">
+            <h2>[현대자동차]</h2>
+            <p>기업 : 대기업</p>
+            <p>산업 : 자동차 제조업</p>
+            <p>주소 : 서울시 서초구</p>
+          </a>
+        </div>
+        <div id="box6" class="topbox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box6tag">
+          <a href="http://www.lge.co.kr/" target="_blank">
+            <img src="company_image/lg_display.jpg" alt="LG전자" class="logo">
+            <h2>[LG전자]</h2>
+            <p>기업 : 대기업</p>
+            <p>산업 : 통신/방송 장비 제조업</p>
+            <p>주소 : 서울시 영등포구</p>    
+          </a>
+        </div> 
+        <div id="box7" class="topbox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box7tag">
+          <a href="http://www.doosanrobotics.com/" target="_blank">
+            <img src="company_image/doosan_robotics.jpg" alt="두산로보틱스" class="logo">
+            <h2>[두산로보틱스]</h2>
+            <p>기업 : 대기업</p>
+            <p>산업 : 컴퓨터/하드웨어/장비 제조업</p>
+            <p>주소 : 서울시 서초구</p>
+          </a>
+        </div>
+        <div id="box8" class="topbox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box8tag">
+          <a href="http://www.kt.com/" target="_blank">
+            <img src="company_image/kt.png" alt="KT" class="logo">
+            <h2>[KT]</h2>
+            <p>기업 : 대기업</p>
+            <p>산업 : 무선/위성 통신업</p>
+            <p>주소 : 경기도 성남시 분당구</p>
+          </a>
+        </div>
+        <div id="box9" class="topbox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box9tag">
+          <a href="http://www.posco.com/" target="_blank">
+            <img src="company_image/posco.jpg" alt="포스코" class="logo">
+            <h2>[포스코]</h2>
+            <p>기업 : 대기업</p>
+            <p>산업 : 제강업</p>
+            <p>주소 : 경상북도 포항시 남구</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<script>
+// 헤더 동작
+const headerMenuItems = document.querySelectorAll('#headermenu > li');
+
+headerMenuItems.forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    const allSubmenus = document.querySelectorAll('.submenu');
+    allSubmenus.forEach(submenu => {
+          submenu.style.display = 'block';
+    });
+  });
+
+  item.addEventListener('mouseleave', () => {
+    const allSubmenus = document.querySelectorAll('.submenu');
+    allSubmenus.forEach(submenu => {
+      submenu.style.display = 'none';
+    });
+  });
+});
+
+const mycompany = document.getElementById("mycompany");
+const myapply = document.getElementById("myapply");
+const mywriter = document.getElementById("mywriter");
+const myproject = document.getElementById("myproject");
+mycompany.addEventListener("click", opencompany);
+function opencompany(){
+  window.location.href = "mypage1_company.html";
+}
+myapply.addEventListener("mouseover", function(){
+  mycompany.style.backgroundColor = "#4B89DC";
+  mycompany.style.color = "black";
+})
+myapply.addEventListener("mouseout", function(){
+  mycompany.style.backgroundColor = "";
+  mycompany.style.color = "";
+})
+myapply.addEventListener("click", openapply);
+function openapply(){
+  window.location.href = "mypage2_apply.html";
+}
+mywriter.addEventListener("mouseover", function(){
+  mycompany.style.backgroundColor = "#4B89DC";
+  mycompany.style.color = "black";
+})
+mywriter.addEventListener("mouseout", function(){
+  mycompany.style.backgroundColor = "";
+  mycompany.style.color = "";
+})
+mywriter.addEventListener("click", openwriter);
+function openwriter(){
+  window.location.href = "mypage3_writer.html";
+}
+myproject.addEventListener("mouseover", function(){
+  mycompany.style.backgroundColor = "#4B89DC";
+  mycompany.style.color = "black";
+})
+myproject.addEventListener("mouseout", function(){
+  mycompany.style.backgroundColor = "";
+  mycompany.style.color = "";
+})
+myproject.addEventListener("click", openproject);
+function openproject(){
+  window.location.href = "mypage4_project.html";
+}
+
+//즐겨찾기 해제
+const box1 = document.getElementById("box1");
+const box1tag = document.getElementById("box1tag");
+box1tag.addEventListener("click", function(){
+  box1.style.display = "none";
+})
+const box2 = document.getElementById("box2");
+const box2tag = document.getElementById("box2tag");
+box2tag.addEventListener("click", function(){
+  box2.style.display = "none";
+})
+const box3 = document.getElementById("box3");
+const box3tag = document.getElementById("box3tag");
+box3tag.addEventListener("click", function(){
+  box3.style.display = "none";
+})
+const box4 = document.getElementById("box4");
+const box4tag = document.getElementById("box4tag");
+box4tag.addEventListener("click", function(){
+  box4.style.display = "none";
+})
+const box5 = document.getElementById("box5");
+const box5tag = document.getElementById("box5tag");
+box5tag.addEventListener("click", function(){
+  box5.style.display = "none";
+})
+const box6 = document.getElementById("box6");
+const box6tag = document.getElementById("box6tag");
+box6tag.addEventListener("click", function(){
+  box6.style.display = "none";
+})
+const box7 = document.getElementById("box7");
+const box7tag = document.getElementById("box7tag");
+box7tag.addEventListener("click", function(){
+  box7.style.display = "none";
+})
+const box8 = document.getElementById("box8");
+const box8tag = document.getElementById("box8tag");
+box8tag.addEventListener("click", function(){
+  box8.style.display = "none";
+})
+const box9 = document.getElementById("box9");
+const box9tag = document.getElementById("box9tag");
+box9tag.addEventListener("click", function(){
+  box9.style.display = "none";
+})
+
+// $("#queryid").load("main_login.html #queryid");
+
+
+
+
+</script>
+</body>
+</html>

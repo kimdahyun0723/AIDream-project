@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="mypage2_apply.css"> <!-- 링크 이름 바꾸기-->
+</head>
+
+<body>
+
+<!-- 고정 헤더 -->
+<header id="header">
+
+  <div id="headercat">
+
+    <div id="headerlogo">
+      <!-- 로고 누르면 메인 페이지로 이동 -->
+      <a href="../main.html">AI Dream</a>
+    </div>
+    
+    <nav id="menu">
+      <ul id="headermenu">
+        <li><p class="headerp">소개</p>
+          <ul class="submenu">
+            <li><a href="#">기본개념</a></li>
+            <li><a href="#">역사</a></li>
+            <li><a href="#">응용분야</a></li>
+            <li><a href="#">미래전망</a></li>
+            <li><a href="#">용어사전</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">기업</p>
+          <ul class="submenu">
+            <li><a href="#">TOP10</a></li>
+            <li><a href="#">상세조회</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">채용</p>
+          <ul class="submenu">
+            <li><a href="#">TOP10</a></li>
+            <li><a href="#">상세조회</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">교육</p>
+          <ul class="submenu">
+            <li><a href="#">국비지원</a></li>
+            <li><a href="#">기업지원</a></li>
+            <li><a href="#">취업박람회</a></li>
+            <li><a href="#">페스티벌</a></li>
+            <li><a href="#">도서/강의</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">뉴스</p>
+          <ul class="submenu">
+            <li><a href="#">최신연구/개발</a></li>
+            <li><a href="#">대회</a></li>
+            <li><a href="#">윤리/사회적 이슈</a></li>
+            <li><a href="#">기업동향</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">게시판</p>
+          <ul class="submenu">
+            <li><a href="#"><span>질의응답</span></a></li>
+            <li><a href="#"><span>자유토론</span></a></li>
+            <li><a href="#"><span>스터디/프로젝트</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- 본문 -->
+  <main id="contents">
+
+    <section id="leftsection">
+      <img src="icon_image/profile.png" alt="profile" id="profile">
+      <h2>마이페이지</h2> 
+      <h3>Welcome Mypage</h3>
+      <a href="../main.html" onclick="logoutAlert()">
+        <input type="button" value="로그아웃 [→" id="mainlogout">
+      </a>
+      <ul id="tag">
+        <li id="mycompany">
+          <img src="icon_image/company.png" alt="company" class="mymenu">
+          <p>나의 기업</p>
+        </li>
+        <li id="myapply">
+          <img src="icon_image/apply.png" alt="apply" class="mymenu">
+          <p>나의 채용</p>
+        </li>
+        <li id="mywriter">
+          <img src="icon_image/writer.png" alt="writer" class="mymenu">
+          <p>내가 쓴 글</p>
+        </li>
+        <li id="myproject">
+          <img src="icon_image/project.png" alt="project" class="mymenu">
+          <p>나의 프로젝트</p>
+        </li>
+
+      </ul>
+    </section>
+
+    <section id="rightsection">
+      <h1>즐겨찾기 채용 조회</h1>
+      <hr>
+      <div id="box">
+        <div id="box1" class="infobox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box1tag">
+          <a href="https://careers.upstage.ai/o/ai-model-development-strategy-manager" target="_blank">
+            <img src="company_image/upstage.png" alt="업스테이지" class="logo">
+            <h2>[업스테이지]</h2>
+            <h3>AI Model Development Strategy Manager</h3>
+            <p>직군 : PM/PO/머신러닝</p>
+            <ul>
+              <li>주니어(1~3년)</li>
+              <li>학력무관</li>
+              <li>정규직</li>
+            </ul>
+          </a>
+        </div>
+        <div id="box2" class="infobox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box2tag">
+          <a href="https://career.nexon.com/user/recruit/member/postDetail?joinCorp=NX&reNo=20240236&currentPage=0" target="_blank">
+            <img src="company_image/nexon.png" alt="넥슨" class="logo">
+            <h2>[넥슨]</h2>
+            <h3>AI 데이터 엔지니어(계약직)</h3>
+            <p>직군 : 머신러닝</p>
+            <ul>
+              <li>경력무관</li>
+              <li>학력무관</li>
+              <li>계약직</li>
+            </ul>
+          </a>
+        </div>
+        <div id="box3" class="infobox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box3tag">
+          <a href="https://ahnlabcloudmate.com/about/recruit/19" target="_blank">
+            <img src="company_image/ahnlabcloud.png" alt="안랩클라우드" class="logo">
+            <h2>[안랩클라우드메이트]</h2>
+            <h3>AI 모델/서비스 연구원</h3>
+            <p>직군 : 생성형AI/리서치</p>
+            <ul>
+              <li>주니어(1~3년)</li>
+              <li>학력 무관</li>
+              <li>정규직</li>
+            </ul>
+          </a>
+        </div>
+        <div id="box4" class="infobox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box4tag">
+          <a href="https://elice.careers/jobs/platform-engineer/junior-backend-developer" target="_blank">
+            <img src="company_image/elice.png" alt="엘리스" class="logo">
+            <h2>[엘리스]</h2>
+            <h3>백엔드 엔지니어(Python)</h3>
+            <p>직군 : 소프트웨어</p>
+            <ul>
+              <li>신입(1년이하)</li>
+              <li>학사</li>
+              <li>정규직</li>
+            </ul>
+          </a>
+        </div>
+        <div id="box5" class="infobox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box5tag">
+          <a href="https://careers.kakao.com/jobs/S-4150" target="_blank">
+            <img src="company_image/kakaopay.png" alt="카카오페이" class="logo">
+            <h2>[카카오페이]</h2>
+            <h3>서버 개발자 - 이상거래탐지개발팀</h3>
+            <p>직군 : 소프트웨어</p>
+            <ul>
+              <li>중간(4~8년)</li>
+              <li>학력무관</li>
+              <li>정규직</li>
+            </ul>
+          </a>
+        </div>
+        <div id="box6" class="infobox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box6tag">
+          <a href="https://careers.kakao.com/jobs/S-4152" target="_blank">
+            <img src="company_image/kakaogames.png" alt="카카오게임즈" class="logo">
+            <h2>[카카오게임즈]</h2>
+            <h3>Data Analyst, Data Engineer, Data Scientist</h3>
+            <p>직군 : 빅데이터</p>
+            <ul>
+              <li>주니어(1~3년)</li>
+              <li>학력무관</li>
+              <li>정규직</li>
+            </ul>
+          </a>
+        </div>
+        <div id="box7" class="infobox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box7tag">
+          <a href="https://career.nexon.com/user/recruit/member/postDetail?joinCorp=NX&reNo=20240196&currentPage=4" target="_blank">
+            <img src="company_image/nexon.png" alt="넥슨" class="logo">
+            <h2>[넥슨]</h2>
+            <h3>데이터통합서비스팀 데이터 엔지니어</h3>
+            <p>직군 : 빅데이터</p>
+            <ul>
+              <li>신입(1년이하)</li>
+              <li>학력무관</li>
+              <li>정규직</li>
+            </ul>
+          </a>
+        </div>
+        <div id="box8" class="infobox">
+          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box8tag">
+          <a href="https://careers.lg.com/app/job/RetrieveJobNoticesDetail.rpi?jobNoticeId=401754" target="_blank">
+            <img src="company_image/lgcns.png" alt="LG CNS" class="logo">
+            <h2>[LG CNS]</h2>
+            <h3>경영정보DX 분야 모집(경력)</h3>
+            <p>직군 : PM/PO/머신러닝</p>
+            <ul>
+              <li>주니어(1~3년)</li>
+              <li>학사</li>
+              <li>정규직</li>
+            </ul>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<script>
+// 헤더 동작
+const headerMenuItems = document.querySelectorAll('#headermenu > li');
+
+headerMenuItems.forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    const allSubmenus = document.querySelectorAll('.submenu');
+    allSubmenus.forEach(submenu => {
+          submenu.style.display = 'block';
+    });
+  });
+
+  item.addEventListener('mouseleave', () => {
+    const allSubmenus = document.querySelectorAll('.submenu');
+    allSubmenus.forEach(submenu => {
+      submenu.style.display = 'none';
+    });
+  });
+});
+
+const mycompany = document.getElementById("mycompany");
+const myapply = document.getElementById("myapply");
+const mywriter = document.getElementById("mywriter");
+const myproject = document.getElementById("myproject");
+mycompany.addEventListener("mouseover", function(){
+  myapply.style.backgroundColor = "#4B89DC";
+  myapply.style.color = "black";
+})
+mycompany.addEventListener("mouseout", function(){
+  myapply.style.backgroundColor = "";
+  myapply.style.color = "";
+})
+mycompany.addEventListener("click", opencompany);
+function opencompany(){
+  window.location.href = "mypage1_company.html";
+}
+myapply.addEventListener("click", openapply);
+function openapply(){
+  window.location.href = "mypage2_apply.html";
+}
+mywriter.addEventListener("mouseover", function(){
+  myapply.style.backgroundColor = "#4B89DC";
+  myapply.style.color = "black";
+})
+mywriter.addEventListener("mouseout", function(){
+  myapply.style.backgroundColor = "";
+  myapply.style.color = "";
+})
+mywriter.addEventListener("click", openwriter);
+function openwriter(){
+  window.location.href = "mypage3_writer.html";
+}
+myproject.addEventListener("mouseover", function(){
+  myapply.style.backgroundColor = "#4B89DC";
+  myapply.style.color = "black";
+})
+myproject.addEventListener("mouseout", function(){
+  mycompany.style.backgroundColor = "";
+  mycompany.style.color = "";
+})
+myproject.addEventListener("click", openproject);
+function openproject(){
+  window.location.href = "mypage4_project.html";
+}
+
+//즐겨찾기 해제
+const box1 = document.getElementById("box1");
+const box1tag = document.getElementById("box1tag");
+box1tag.addEventListener("click", function(){
+  box1.style.display = "none";
+})
+const box2 = document.getElementById("box2");
+const box2tag = document.getElementById("box2tag");
+box2tag.addEventListener("click", function(){
+  box2.style.display = "none";
+})
+const box3 = document.getElementById("box3");
+const box3tag = document.getElementById("box3tag");
+box3tag.addEventListener("click", function(){
+  box3.style.display = "none";
+})
+const box4 = document.getElementById("box4");
+const box4tag = document.getElementById("box4tag");
+box4tag.addEventListener("click", function(){
+  box4.style.display = "none";
+})
+const box5 = document.getElementById("box5");
+const box5tag = document.getElementById("box5tag");
+box5tag.addEventListener("click", function(){
+  box5.style.display = "none";
+})
+const box6 = document.getElementById("box6");
+const box6tag = document.getElementById("box6tag");
+box6tag.addEventListener("click", function(){
+  box6.style.display = "none";
+})
+const box7 = document.getElementById("box7");
+const box7tag = document.getElementById("box7tag");
+box7tag.addEventListener("click", function(){
+  box7.style.display = "none";
+})
+const box8 = document.getElementById("box8");
+const box8tag = document.getElementById("box8tag");
+box8tag.addEventListener("click", function(){
+  box8.style.display = "none";
+})
+
+// $("#queryid").load("main_login.html #queryid");
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+/* 영역 별 위치 지정 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+#header{
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+#headercat {
+  width: 1440px;
+  margin: 0 auto;
+}
+#contents{
+  margin: 0 auto;
+  width: 1440px;
+  min-height: 100%;
+  flex-grow: 1;
+  padding-top: 100px;
+  position: relative;
+  background-color: white;
+  display: flex;
+}
+a{
+  text-decoration: none;
+}
+
+/* 헤더 로고 */
+#headerlogo{
+  line-height: 100px;
+  float: left;
+  padding: 0 80px;
+  height: 100px;
+}
+#headerlogo > a{
+  color: #4B89DC;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* 전체 메뉴 */
+#menu{
+    font-weight: bold;
+    width: 100%;
+    height: 100px;
+    line-height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+}
+#menu ul{
+  list-style: none;
+}
+
+/* 메인메뉴 */
+#headermenu > li{
+  float: left;
+  width: 170px;
+  position: relative;
+}
+/* 호버했을때 보더 애니메이션 추가 */
+#headermenu > li:hover::after {
+  width: 100%; /* 호버 시 너비를 100%로 변경 */
+  left: 0; /* 좌측 정렬 */
+}
+#headermenu > li::after {
+  content: '';
+  position: absolute;
+  left: 50%; /* 중앙 정렬 */
+  bottom: 0; /* 하단에 위치 */
+  width: 0; /* 초기 너비 */
+  height: 5px; /* 보더 두께 */
+  background-color: #4B89DC; /* 보더 색상 */
+  transition: width 0.3s ease, left 0.3s ease; /* 애니메이션 추가 */
+}
+/* 호버했을때 보더 애니메이션 추가 */
+#headermenu > li:hover .submenu {
+  display: block; /* main li 에 호버했을때 모든 서브메뉴를 보이도록 설정 */
+  background-color: #F4F5F7;
+}
+.headerp{ 
+  padding: 24.5px 0;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+/* 서브 메뉴 */
+.submenu{
+  display: none;
+  background: white;
+  position: absolute; /* 부모 요소를 기준으로 절대 위치 설정 */
+  z-index: 1000; /* 다른 요소 위에 표시되도록 z-index 설정 */
+  width: 100%;
+  height: 260px;
+}
+.submenu > ul{
+  width: 130px;
+  position: absolute;
+}
+.submenu > li > a{
+  color: black;
+  font-size: 18px;
+}
+#menu li:hover{
+  color: #4B89DC;
+  cursor: pointer;
+}
+.submenu li:hover a{
+  color: #4B89DC;
+}
+
+/* footer */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 80px;
+}
+#footerlogo h2 {
+  margin: 0;
+  color: #4B89DC;
+  font-weight: bold;
+}
+#footermenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+#footermenu ul li {
+  margin-left: 20px;
+}
+#footermenu ul li:first-child {
+  margin-left: 0;
+}
+#footermenu ul li a {
+  text-decoration: none;
+  color: #666;
+  transition: color 0.3s ease;
+}
+#footermenu ul li a:hover {
+  color: #007bff;
+}
+/* 여기까지 고정 css */
+
+
+/* 여기서 부터 메인 영역 필요한 부분 더 추가하세요*/
+#leftsection{
+  width: 300px;
+  background-color: #4B89DC;
+  padding-top: 35px;
+  text-align: center;
+}
+#profile{
+  width: 150px;
+  margin-left: 7px;
+}
+#mainlogout{
+  cursor: pointer;
+  width: 150px;
+  height: 40px ;
+  border: 2px solid white;
+  border-radius: 30px;
+  background-color: #4B89DC;
+  margin: 20px 0;
+  color: white;
+}
+.mymenu{
+  width: 40px;
+  box-sizing: border-box;
+  margin: 5px 110px ;
+}
+#tag ul{
+  list-style-position: inside;
+
+}
+#tag li{
+  list-style: none;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#tag li:not(#mywriter):hover{
+  background-color: #F4F5F7;
+  color: #4B89DC;
+}
+#mywriter{
+  background-color: #F4F5F7;
+  color: #4B89DC;
+}
+#rightsection{
+  width: 1140px;
+  padding: 30px;
+}
+#rightsection > hr{
+  margin-top: 30px;
+  width: 100%;
+}
+
+#filter input[type="radio"]{
+  display: none;
+}
+#filter input[type="radio"]+label{
+  cursor: pointer;
+  padding: 10px 40px;
+  margin-left: 25px;
+  font-size: 24px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+#filter input[type="radio"]:hover+label{
+  background-color: #F4F5F7;
+}
+#filter input[type="radio"]:checked+label{
+  color: #4B89DC;
+  border-bottom: 3px solid #4B89DC;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#box1 table{
+  width: 1000px;
+  margin: 40px 40px 20px 40px;
+  text-align: center;
+  border-collapse: collapse;
+  
+}
+#box1 tr:not(#first){
+  border-top: 1px solid #eee;
+  cursor: pointer;
+}
+#box1 tr:hover{
+  background-color: #F4F5F7;
+}
+#box1 th, td{
+  padding: 20px;
+}
+#first{
+  background-color: #eee;
+  border-top: 2px solid #4B89DC;
+}
+#last{
+  border-bottom: 2px solid #4B89DC;
+}
+.title{
+  float: left;
+}
+.title span{
+  color: #4B89DC;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination p{
+  font-weight: bold;
+  color: #4B89DC;
+}
+
+#box2 div{
+  width: 1000px;
+  margin-left: 40px;
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  cursor: pointer;
+}
+#box2 div:hover{
+  background-color: #F4F5F7;
+}
+#box2 h3, p{
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+#box2 ul{
+  list-style-position: inside;
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+#box2 li{
+  list-style: none;
+  display: inline;
+  font-size: 12px;
+  padding: 0 10px;
+}
+#box2 li:not(.lastli){
+  border-right: 1px solid black;
+}
+#idscussbox1{
+  margin-top: 40px;
+}
+
+
+
+#box1{ display: block;}
+#box2{ display: none;}
+#box3{ display: none;}

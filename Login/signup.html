@@ -9,7 +9,6 @@
       padding: 0;
       margin: 0;
       border: none;
-      background-color: #F4F5F7;
     }
     body{
       width: 100vw;
@@ -17,10 +16,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: #F4F5F7;
     }
     .container{
-      width: 500px;
-      height: 600px;
+      width: 600px;
+      height: 850px;
       padding: 30px 50px;
       box-sizing: border-box;
       border: 2px solid #4B89DC;
@@ -37,12 +37,31 @@
       font-size: 40px;
       margin-bottom: 30px;
     }
-    #loginForm > input{
+    .form{
       width: 100%;
       height: 60px;
       padding: 0 10px;
       box-sizing: border-box;
       margin-bottom: 10px;
+      background-color: #F4F5F7;
+      font-size: 16px;
+    }
+    .emailform{
+      width: 31.5%;
+      height: 60px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      background-color: #F4F5F7;
+      font-size: 16px;
+    }
+    #aa{
+      font-weight: bold;
+    }
+    #emailselect option{
+      font-size: 16px;
+      background-color: #eee;
+      margin: 10px;
     }
     #loginForm > textarea{
       width: 100%;
@@ -51,17 +70,33 @@
       box-sizing: border-box;
       margin-bottom: 10px;
       font-size: 15px;
+      background-color: #F4F5F7;
+    }
+    #loginForm label{
+      float: left;
+      background-color: none;
+      font-weight: bold;
+      margin-bottom: 5px;
+      margin-right: 300px;
+    }
+    #loginForm span:not(#aa){
+      color: red;
+    }
+    #emailinput{
+      width: 200px;
     }
     textarea::placeholder{
       font-size: 15px;
     }
-    #loginForm > input[type="submit"]{
+    #loginForm > input[type="button"]{
       background-color: #4B89DC;
       color: white;
       font-size: 20px;
       border-radius: 30px;
       cursor: pointer;
+      margin-top: 10px;
     }
+
 
   </style>
 </head>
@@ -70,14 +105,29 @@
 
     <h1>SIGNUP</h1>
 
-    <form action="login.html" id="loginForm">
-
-      <input type="text" name="username" placeholder="이름">
-      <input type="text" name="userid" placeholder="아이디">
-      <input type="password" name="userpass" placeholder="비밀번호">
-      <input type="pass" name="pass" placeholder="비밀번호확인">
+    <form action="login.html" id="loginForm" name="loginForm">
+      <label for="username">이름<span>*</span></label>
+      <input type="text" name="username" placeholder="이름" class="form">
+      <label for="userid">아이디<span>*</span></label>
+      <input type="text" name="userid" placeholder="아이디" class="form">
+      <label for="userpass">비밀번호<span>*</span></label>
+      <input type="password" name="userpass" placeholder="비밀번호" class="form">
+      <label for="pass">비밀번호확인<span>*</span></label>
+      <input type="password" name="pass" placeholder="비밀번호확인" class="form">
+      <label for="email">이메일</label>
+      <input type="text" name="email" placeholder="이메일"  class="emailform"><span id="aa">@</span>
+      <input type="text" name="emaildirec" class="emailform" id="emaildirec">
+      <select name="emailselect" id="emailselect" class="emailform">
+        <option value="type">직접 입력</option>
+        <option value="naver.com">naver.com</option>
+        <option value="google.com">google.com</option>
+        <option value="hanmail.net">hanmail.net</option>
+        <option value="nate.com">nate.com</option>
+        <option value="daum.com">daum.com</option>
+      </select>
+      <label for="introduce">가입동기</label>
       <textarea name="introduce" placeholder="가입 동기를 입력해주세요"></textarea>
-      <input type="submit" value="회원가입" onclick="signinAlert();">
+      <input type="button" value="회원가입" onclick="signinAlert();" class="form">
 
     </form>
 
@@ -85,8 +135,60 @@
 
   <script>
     const signinAlert = function(){
-      alert('회원가입 되었습니다');
+      const form = document.loginForm;
+      if(form.username.value == ""){
+        alert("이름을 입력해 주세요");
+        form.username.focus();
+        return;
+      }
+      if(form.userid.value == ""){
+        alert("아이디를 입력해 주세요");
+        form.userid.focus();
+        return;
+      }
+      if(form.userid.value.length < 4 || form.userid.value.length > 10){
+        alert("아이디는 4~10자로 입력해 주세요");
+        form.userid.select();
+        return;
+      }
+      if(form.userpass.value == ""){
+        alert("비밀번호를 입력해 주세요");
+        form.userpass.focus();
+        return;
+      }
+      if(form.userpass.value.length < 6 || form.userpass.value.length > 12){
+        alert("비밀번호는 6~12자로 입력해 주세요");
+        form.userpass.select();
+        return;
+      }
+      const num = form.userpass.value.search(/[0-9]/g);
+      const eng = form.userpass.value.search(/[a-z]/ig);
+      if(num < 0 || eng < 0){
+        alert("비밀번호는 영문과 숫자를 포함해 주세요");
+        form.userpass.select();
+        return;
+      }
+      if(form.userpass.value !== form.pass.value){
+        alert("비밀번호가 일치하지 않습니다");
+        form.pass.select();
+        return;
+      }
+      alert("회원가입 되었습니다");
+      form.submit();
     }
+
+    const emaildirec = document.getElementById("emaildirec");
+    const emailselect = document.getElementById("emailselect");
+    emailselect.addEventListener("change", (event) =>{
+      if(event.target.value !== "type"){
+        emaildirec.value = event.target.value;
+        emaildirec.disabled = true;
+      }
+      else{
+        emaildirec.value = "";
+        emaildirec.disabled = false;
+      }
+    })
   </script>
   
 </body>

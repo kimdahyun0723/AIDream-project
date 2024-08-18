@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="company_top.css"> <!-- 링크 이름 바꾸기-->
+</head>
+
+<body>
+
+<!-- 고정 헤더 -->
+<header id="header">
+
+  <div id="headercat">
+
+    <div id="headerlogo">
+      <!-- 로고 누르면 메인 페이지로 이동 -->
+      <a href="../Main/main.html">AI Dream</a>
+    </div>
+    
+    <nav id="menu">
+      <ul id="headermenu">
+        <li><p class="headerp">소개</p>
+          <ul class="submenu">
+            <li><a href="#">기본개념</a></li>
+            <li><a href="#">역사</a></li>
+            <li><a href="#">응용분야</a></li>
+            <li><a href="#">미래전망</a></li>
+            <li><a href="#">용어사전</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">기업</p>
+          <ul class="submenu">
+            <li><a href="#">TOP10</a></li>
+            <li><a href="#">상세조회</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">채용</p>
+          <ul class="submenu">
+            <li><a href="#">TOP10</a></li>
+            <li><a href="#">상세조회</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">교육</p>
+          <ul class="submenu">
+            <li><a href="#">국비지원</a></li>
+            <li><a href="#">기업지원</a></li>
+            <li><a href="#">취업박람회</a></li>
+            <li><a href="#">페스티벌</a></li>
+            <li><a href="#">도서/강의</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">뉴스</p>
+          <ul class="submenu">
+            <li><a href="#">최신연구/개발</a></li>
+            <li><a href="#">대회</a></li>
+            <li><a href="#">윤리/사회적 이슈</a></li>
+            <li><a href="#">기업동향</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">게시판</p>
+          <ul class="submenu">
+            <li><a href="#"><span>질의응답</span></a></li>
+            <li><a href="#"><span>자유토론</span></a></li>
+            <li><a href="#"><span>스터디/프로젝트</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- 본문 -->
+  <main id="contents">
+
+    <section id="upsection">
+      <h1>TOP10 기업정보</h1>
+
+      <div id="filter">
+        <input type="radio" name="top" id="total" onclick="opentotal()" checked>
+        <label for="total">전체</label>
+        <input type="radio" name="top" id="popular" onclick="openpopular()">
+        <label for="popular">인기순</label>
+        <input type="radio" name="top" id="salary" onclick="opensalary()">
+        <label for="salary">연봉순</label>
+        <input type="radio" name="top" id="hot" onclick="openhot()">
+        <label for="hot">성장순</label>
+      </div>
+    </section>
+    <hr>
+    
+     <section id="downsection">
+      <div id="box1" class="topbox popularbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="http://www.samsung.com/sec" target="_blank">
+          <img src="company_image/samsung_electronics.jpg" alt="삼성전자" class="logo">
+          <h2>[삼성전자]</h2>
+          <p>기업 : 대기업</p>
+          <p>산업 : 이동전화기 제조업</p>
+          <p>주소 : 경기도 수원시 영통구</p>
+        </a>
+      </div>
+      <div id="box11" class="topbox salarybox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="http://www.sk.co.kr/" target="_blank">
+          <img src="company_image/sk_c&c.png" alt="SKC&C" class="logo">
+          <h2>[SK C&C]</h2>
+          <p>기업 : 대기업</p>
+          <p>산업 : 지주회사</p>
+          <p>주소 : 경기도 성남시 분당구</p>
+        </a>
+      </div>
+      <div id="box21" class="topbox hotbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="https://stradvision.com/" target="_blank">
+          <img src="company_image/stradvision.jpg" alt="스트라드비전" class="logo">
+          <h2>[스트라드비젼]</h2>
+          <p>기업 : 스타트업</p>
+          <p>산업 : 인공지능 소프트웨어 개발</p>
+          <p>주소 : 서울시 서초구</p>
+        </a>
+      </div>
+      <div id="box2" class="topbox popularbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="http://www.sktelecom.com/" target="_blank">
+          <img src="company_image/sktelecom.png" alt="SK텔레콤" class="logo">
+          <h2>[SK텔레콤]</h2>
+          <p>기업 : 대기업</p>
+          <p>산업 : 무선/위선 통신업</p>
+          <p>주소 : 서울시 중구</p>
+        </a>
+      </div>
+      <div id="box12" class="topbox salarybox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="https://www.corelinesoft.com/" target="_blank">
+          <img src="company_image/corelinesoft.png" alt="코어라인소프트" class="logo">
+          <h2>[코어라인소프트]</h2>
+          <p>기업 : 중소기업</p>
+          <p>산업 : 의료 소프트웨어 개발</p>
+          <p>주소 : 서울시 마포구</p>
+        </a>
+      </div>
+      <div id="box22" class="topbox hotbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="https://riiid.com/" target="_blank">
+          <img src="company_image/riiid.jpeg" alt="뤼이드" class="logo">
+          <h2>[뤼이드]</h2>
+          <p>기업 : 스타트업</p>
+          <p>산업 : 교육 소프트웨어 개발</p>
+          <p>주소 : 서울시 강남구</p>
+        </a>
+      </div>
+      <div id="box3" class="topbox popularbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="http://www.navercorp.com/" target="_blank">
+          <img src="company_image/naver.jpg" alt="네이버" class="logo">
+          <h2>[네이버]</h2>
+          <p>기업 : 대기업</p>
+          <p>산업 : 인터넷 정보매개 서비스업</p>
+          <p>주소 : 경기도 성남시 분당구</p>
+        </a>
+      </div>
+      <div id="box13" class="topbox salarybox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="http://www.poscodx.com/" target="_blank">
+          <img src="company_image/posco_dx.jpg" alt="포스코DX" class="logo">
+          <h2>[포스코DX]</h2>
+          <p>기업 : 대기업</p>
+          <p>산업 : 엔지니어링 서비스업</p>
+          <p>주소 : 경상북도 포항시 남구</p>
+        </a>
+      </div>
+      <div id="box23" class="topbox hotbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="https://www.infiniq.co.kr/" target="_blank">
+          <img src="company_image/infiniq.png" alt="인피닉" class="logo">
+          <h2>[인피닉]</h2>
+          <p>기업 : 중소기업</p>
+          <p>산업 : 정보통신 소프트웨어 개발</p>
+          <p>주소 : 성루시 금천구</p>
+        </a>
+      </div>
+      <div id="box4" class="topbox popularbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="http://www.kakaocorp.com/" target="_blank">
+          <img src="company_image/kakao.jpg" alt="카카오" class="logo">
+          <h2>[카카오]</h2>
+          <p>기업 : 대기업</p>
+          <p>산업 : 인터넷 정보매개 서비스업</p>
+          <p>주소 : 경기도 성남시 분당구</p>
+        </a>
+      </div>
+      <div id="box14" class="topbox salarybox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="http://www.jlkgroup.com/" target="_blank">
+          <img src="company_image/jlk.jpg" alt="JLK" class="logo">
+          <h2>[JLK]</h2>
+          <p>기업 : 중소기업</p>
+          <p>산업 : 의료 소프트웨어 개발</p>
+          <p>주소 : 서울시 강남구</p>
+        </a>
+      </div>
+      <div id="box24" class="topbox hotbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="https://www.moloco.com/" target="_blank">
+          <img src="company_image/moloco.jpg" alt="몰로코" class="logo">
+          <h2>[몰로코]</h2>
+          <p>기업 : 중소기업</p>
+          <p>산업 : 광고/시스템 소프트웨어 개발</p>
+          <p>주소 : 서울시 강남구</p>
+        </a>
+      </div>
+      <div id="box5" class="topbox popularbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="http://www.hyundai.com/" target="_blank">
+          <img src="company_image/hyundai_motor.jpg" alt="현대자동차" class="logo">
+          <h2>[현대자동차]</h2>
+          <p>기업 : 대기업</p>
+          <p>산업 : 자동차 제조업</p>
+          <p>주소 : 서울시 서초구</p>
+        </a>
+      </div>
+      <div id="box15" class="topbox salarybox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="https://www.dell.com/" target="_blank">
+          <img src="company_image/dell_technologies.jpg" alt="델테크놀로지" class="logo">
+          <h2>[델 테크놀로지스]</h2>
+          <p>기업 : 중소기업</p>
+          <p>산업 : 컴퓨터시스템 서비스업</p>
+          <p>주소 : 서울시 강남구</p>
+        </a>
+      </div>
+      <div id="box25" class="topbox hotbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="https://careers.mildang.kr/" target="_blank">
+          <img src="company_image/bugs.png" alt="아이헤이트플라잉버그스" class="logo">
+          <h2>[아이헤잍플라잉버그스]</h2>
+          <p>기업 : 중소기업</p>
+          <p>산업 : 교육 소프트웨어 개발</p>
+          <p>주소 : 서울시 영등포구</p>
+        </a>
+      </div>
+      <div id="box6" class="topbox popularbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="http://www.lge.co.kr/" target="_blank">
+          <img src="company_image/lg_display.jpg" alt="LG전자" class="logo">
+          <h2>[LG전자]</h2>
+          <p>기업 : 대기업</p>
+          <p>산업 : 통신/방송 장비 제조업</p>
+          <p>주소 : 서울시 영등포구</p>    
+        </a>
+      </div> 
+      <div id="box16" class="topbox salarybox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="https://recruit.hyundai-autoever.com/" target="_blank">
+          <img src="company_image/hyundai_autoever.jpg" alt="현대오토에버" class="logo">
+          <h2>[현대오토에버]</h2>
+          <p>기업 : 대기업</p>
+          <p>산업 : 솔루션/SL/CRM/ERP</p>
+          <p>주소 : 서울시 강남구</p>
+        </a>
+      </div>  
+      <div id="box26" class="topbox hotbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="http://www.qraftec.com/" target="_blank">
+          <img src="company_image/qraft.jpg" alt="크래프트테크놀로지스" class="logo">
+          <h2>[크래프트테크놀로지스]</h2>
+          <p>기업 : 스타트업</p>
+          <p>산업 : 응용 소프트웨어 개발</p>
+          <p>주소 : 서울시 영등포구</p> 
+        </a>
+      </div>
+      <div id="box7" class="topbox popularbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="http://www.doosanrobotics.com/" target="_blank">
+          <img src="company_image/doosan_robotics.jpg" alt="두산로보틱스" class="logo">
+          <h2>[두산로보틱스]</h2>
+          <p>기업 : 대기업</p>
+          <p>산업 : 컴퓨터/하드웨어/장비 제조업</p>
+          <p>주소 : 서울시 서초구</p>
+        </a>
+      </div>
+      <div id="box17" class="topbox salarybox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="https://www.lunit.io/ko" target="_blank">
+          <img src="company_image/lunit.jpg" alt="루닛" class="logo">
+          <h2>[루닛]</h2>
+          <p>기업 : 중소기업</p>
+          <p>산업 : 의료 소프트웨어 개발</p>
+          <p>주소 : 서울시 강남구</p>
+        </a>
+      </div>
+      <div id="box27" class="topbox hotbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="https://dable.io/ko/" target="_blank">
+          <img src="company_image/dable.jpeg" alt="데이블" class="logo">
+          <h2>[데이블]</h2>
+          <p>기업 : 중소기업</p>
+          <p>산업 : 데이터베이스 제공업</p>
+          <p>주소 : 서울시 강남구</p>
+        </a>
+      </div>
+      <div id="box8" class="topbox popularbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="http://www.kt.com/" target="_blank">
+          <img src="company_image/kt.png" alt="KT" class="logo">
+          <h2>[KT]</h2>
+          <p>기업 : 대기업</p>
+          <p>산업 : 무선/위성 통신업</p>
+          <p>주소 : 경기도 성남시 분당구</p>
+        </a>
+      </div>
+      <div id="box18" class="topbox salarybox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="http://www.ecstel.co.kr/" target="_blank">
+          <img src="company_image/ecstelecom.jpg" alt="ECS텔레콤" class="logo">
+          <h2>[ECS텔레콤]</h2>
+          <p>기업 : 중소기업</p>
+          <p>산업 : 솔루션/SI/CRM/ERP</p>
+          <p>주소 : 서울시 서초구</p>
+        </a>
+      </div>
+      <div id="box28" class="topbox hotbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="https://www.deepbrain.io/" target="_blank">
+          <img src="company_image/deepbrain.png" alt="딥브레인에이아이" class="logo">
+          <h2>[딥브레인AI]</h2>
+          <p>기업 : 스타트업</p>
+          <p>산업 : 포털/컨텐츠/커뮤니티 인공지능</p>
+          <p>주소 : 서울시 강남구</p>
+        </a>
+      </div>
+      <div id="box9" class="topbox popularbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="http://www.posco.com/" target="_blank">
+          <img src="company_image/posco.jpg" alt="포스코" class="logo">
+          <h2>[포스코]</h2>
+          <p>기업 : 대기업</p>
+          <p>산업 : 제강업</p>
+          <p>주소 : 경상북도 포항시 남구</p>
+        </a>
+      </div>
+      <div id="box19" class="topbox salarybox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="http://www.cyberlogitec.com/" target="_blank">
+          <img src="company_image/syberlogitec.jpeg" alt="싸이버로지텍" class="logo">
+          <h2>[싸이버로지텍]</h2>
+          <p>기업 : 중소기업</p>
+          <p>산업 : 해운물류 시스템 개발</p>
+          <p>주소 : 서울시 마포구</p>
+        </a>
+      </div>
+      <div id="box29" class="topbox hotbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="https://mathpresso.com/" target="_blank">
+          <img src="company_image/mathpresso.jpg" alt="매스프레소" class="logo">
+          <h2>[메스프레소]</h2>
+          <p>기업 : 스타트업</p>
+          <p>산업 : 교육 소프트웨어 개발</p>
+          <p>주소 : 서울기 강남구</p>
+        </a>
+      </div>
+      <div id="box10" class="topbox popularbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="https://www.hanwhasystems.com/kr/index.do" target="_blank">
+          <img src="company_image/hanwha_system.jpg" alt="한화시스템" class="logo">
+          <h2>[한화시스템]</h2>
+          <p>기업 : 대기업</p>
+          <p>산업 : 전자부품 제조업</p>
+          <p>주소 : 서울시 중구</p>
+        </a>
+      </div>
+      <div id="box20" class="topbox salarybox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+        <a href="https://www.innorules.com/kr/index.php" target="_blank">
+          <img src="company_image/innorules.png" alt="이노룰스" class="logo">
+          <h2>[이노룰스]</h2>
+          <p>기업 : 중소기업</p>
+          <p>산업 : 정보통신 소프트웨어 개발</p>
+          <p>주소 : 서울시 송파구</p>
+        </a>
+      </div>
+      <div id="box30" class="topbox hotbox">
+        <img src="company_image/star.png" alt="즐겨찾기" class="tag">
+      <a href="https://bluepharmkorea.co.kr/" target="_blank">
+          <img src="company_image/bluemtec.jpg" alt="블루엠텍" class="logo">
+          <h2>[블루엠텍]</h2>
+          <p>기업 : 중소기업</p>
+          <p>산업 : 의약품 전문 도매업</p>
+          <p>주소 : 용인시 기흥구</p>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+<!-- 고정 푸터 -->
+  <footer id="footer">
+
+    <div class="footer-content">
+      <div id="footerlogo">
+        <h2>AI Dream</h2>
+      </div>
+      <nav id="footermenu">
+        <ul>
+          <li><a href="#" onclick="openmodal('#');">사이트 소개</a></li>
+          <li><a href="#" onclick="openmodal('#');">개인정보처리방침</a></li>
+          <li><a href="#" onclick="openmodal('#');">이용약관</a></li>
+          <li><a href="#" onclick="openmodal('#');">고객센터</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+<script src="company_top.js"></script>
+</body>
+</html>

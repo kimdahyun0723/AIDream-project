@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="mypage3_writer.css"> <!-- 링크 이름 바꾸기-->
+</head>
+
+<body>
+
+<!-- 고정 헤더 -->
+<header id="header">
+
+  <div id="headercat">
+
+    <div id="headerlogo">
+      <!-- 로고 누르면 메인 페이지로 이동 -->
+      <a href="../main.html">AI Dream</a>
+    </div>
+    
+    <nav id="menu">
+      <ul id="headermenu">
+        <li><p class="headerp">소개</p>
+          <ul class="submenu">
+            <li><a href="#">기본개념</a></li>
+            <li><a href="#">역사</a></li>
+            <li><a href="#">응용분야</a></li>
+            <li><a href="#">미래전망</a></li>
+            <li><a href="#">용어사전</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">기업</p>
+          <ul class="submenu">
+            <li><a href="#">TOP10</a></li>
+            <li><a href="#">상세조회</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">채용</p>
+          <ul class="submenu">
+            <li><a href="#">TOP10</a></li>
+            <li><a href="#">상세조회</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">교육</p>
+          <ul class="submenu">
+            <li><a href="#">국비지원</a></li>
+            <li><a href="#">기업지원</a></li>
+            <li><a href="#">취업박람회</a></li>
+            <li><a href="#">페스티벌</a></li>
+            <li><a href="#">도서/강의</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">뉴스</p>
+          <ul class="submenu">
+            <li><a href="#">최신연구/개발</a></li>
+            <li><a href="#">대회</a></li>
+            <li><a href="#">윤리/사회적 이슈</a></li>
+            <li><a href="#">기업동향</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">게시판</p>
+          <ul class="submenu">
+            <li><a href="#"><span>질의응답</span></a></li>
+            <li><a href="#"><span>자유토론</span></a></li>
+            <li><a href="#"><span>스터디/프로젝트</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- 본문 -->
+  <main id="contents">
+
+    <section id="leftsection">
+      <img src="icon_image/profile.png" alt="profile" id="profile">
+      <h2>마이페이지</h2> 
+      <h3>Welcome Mypage</h3>
+      <a href="../main.html" onclick="logoutAlert()">
+        <input type="button" value="로그아웃 [→" id="mainlogout">
+      </a>
+      <ul id="tag">
+        <li id="mycompany">
+          <img src="icon_image/company.png" alt="company" class="mymenu">
+          <p>나의 기업</p>
+        </li>
+        <li id="myapply">
+          <img src="icon_image/apply.png" alt="apply" class="mymenu">
+          <p>나의 채용</p>
+        </li>
+        <li id="mywriter">
+          <img src="icon_image/writer.png" alt="writer" class="mymenu">
+          <p>내가 쓴 글</p>
+        </li>
+        <li id="myproject">
+          <img src="icon_image/project.png" alt="project" class="mymenu">
+          <p>나의 프로젝트</p>
+        </li>
+
+      </ul>
+    </section>
+
+    <section id="rightsection">
+      <div id="filter">
+        <input type="radio" name="writermenu" id="question" onclick="openquestion()" checked>
+        <label for="question">Q&A</label>
+        <input type="radio" name="writermenu" id="discuss" onclick="opendiscuss()">
+        <label for="discuss">자유토론</label>
+        <input type="radio" name="writermenu" id="study" onclick="openstudy()">
+        <label for="study">스터디</label>
+      </div>
+      <hr>
+
+      <div id="box1">
+        <table>
+          <thead>
+            <tr id="first">
+              <th>번호</th>
+              <th>제목</th>
+              <th>작성일</th>
+              <th>답글수</th>
+              <th>조회수</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td class="title">다섯번째 질문입니다<span> new</span></td>
+              <td>2024.08.18</td>
+              <td>0</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td class="title">네번째 질문입니다</td>
+              <td>2024.08.17</td>
+              <td>1</td>
+              <td>12</td>
+            </tr>
+              <td>3</td>
+              <td class="title">세번째 질문입니다</td>
+              <td>2024.08.16</td>
+              <td>3</td>
+              <td>36</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td class="title">두번째 질문입니다</td>
+              <td>2024.08.12</td>
+              <td>5</td>
+              <td>47</td>
+            </tr>
+            <tr id="last">
+              <td>5</td>
+              <td class="title">첫번째 질문입니다</td>
+              <td>2024.08.10</td>
+              <td>3</td>
+              <td>20</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination">
+          <p>1</p>
+        </div>
+      </div>
+
+      <div id="box2">
+        <div id="idscussbox1">
+          <h3>AI의 윤리적인 문제</h3>
+          <p>ai의 윤리적 문제에 대한 토론 인원을 모집합니다 자유롭게 신청해주세요~~~ (14/20)</p>
+          <ul>
+            <li>날짜:2024.08.03</li>
+            <li>조회수:87</li>
+            <li class="lastli">추천수:16</li>
+          </ul>
+        </div>
+        <div id="idscussbox2">
+          <h3>AI 기술 발전과 사화적 영향</h3>
+          <p>같이 토론하실 인원 모집합니다 :> (11/20)</p>
+          <ul>
+            <li>날짜:2024.08.10</li>
+            <li>조회수:54</li>
+            <li class="lastli">추천수:14</li>
+          </ul>
+        </div>
+        <div id="idscussbox3">
+          <h3>AI의 잘못, 누가 책임을 져야하나</h3>
+          <p>토론 인원 모집합니다 많관부!! (3/20)</p>
+          <ul>
+            <li>날짜:2024.08.15</li>
+            <li>조회수:19</li>
+            <li class="lastli">추천수:5</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="box3">
+
+      </div>
+
+    </section>
+  </main>
+
+<script>
+// 헤더 동작
+const headerMenuItems = document.querySelectorAll('#headermenu > li');
+
+headerMenuItems.forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    const allSubmenus = document.querySelectorAll('.submenu');
+    allSubmenus.forEach(submenu => {
+          submenu.style.display = 'block';
+    });
+  });
+
+  item.addEventListener('mouseleave', () => {
+    const allSubmenus = document.querySelectorAll('.submenu');
+    allSubmenus.forEach(submenu => {
+      submenu.style.display = 'none';
+    });
+  });
+});
+
+const mycompany = document.getElementById("mycompany");
+const myapply = document.getElementById("myapply");
+const mywriter = document.getElementById("mywriter");
+const myproject = document.getElementById("myproject");
+mycompany.addEventListener("mouseover", function(){
+  mywriter.style.backgroundColor = "#4B89DC";
+  mywriter.style.color = "black";
+})
+mycompany.addEventListener("mouseout", function(){
+  mywriter.style.backgroundColor = "";
+  mywriter.style.color = "";
+})
+mycompany.addEventListener("click", opencompany);
+function opencompany(){
+  window.location.href = "mypage1_company.html";
+}
+myapply.addEventListener("mouseover", function(){
+  mywriter.style.backgroundColor = "#4B89DC";
+  mywriter.style.color = "black";
+})
+myapply.addEventListener("mouseout", function(){
+  mywriter.style.backgroundColor = "";
+  mywriter.style.color = "";
+})
+myapply.addEventListener("click", openapply);
+function openapply(){
+  window.location.href = "mypage2_apply.html";
+}
+mywriter.addEventListener("click", openwriter);
+function openwriter(){
+  window.location.href = "mypage3_writer.html";
+}
+myproject.addEventListener("mouseover", function(){
+  mywriter.style.backgroundColor = "#4B89DC";
+  mywriter.style.color = "black";
+})
+myproject.addEventListener("mouseout", function(){
+  mywriter.style.backgroundColor = "";
+  mywriter.style.color = "";
+})
+myproject.addEventListener("click", openproject);
+function openproject(){
+  window.location.href = "mypage4_project.html";
+}
+
+const box1 = document.getElementById("box1");
+const box2 = document.getElementById("box2");
+const box3 = document.getElementById("box3");
+function openquestion(){
+  box1.style.display = "block";
+  box2.style.display = "none";
+  box3.style.display = "none";
+}
+function opendiscuss(){
+  box1.style.display = "none";
+  box2.style.display = "block";
+  box3.style.display = "none";
+}
+function openstudy(){
+  box1.style.display = "none";
+  box2.style.display = "none";
+  box3.style.display = "block";
+}
+
+// $("#queryid").load("main_login.html #queryid");
+
+
+
+
+</script>
+</body>
+</html>

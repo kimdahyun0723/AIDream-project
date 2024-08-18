@@ -9,7 +9,6 @@
       padding: 0;
       margin: 0;
       border: none;
-      background-color: #F4F5F7;
     }
     body{
       width: 100vw;
@@ -17,11 +16,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: #F4F5F7;
     }
     .container{
       width: 400px;
       height: 500px;
-      padding: 50px;
+      padding: 30px 50px;
       box-sizing: border-box;
       border: 2px solid #4B89DC;
       border-radius: 20px;
@@ -35,21 +35,28 @@
     h1{
       color: #4B89DC;
       font-size: 40px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     #loginForm > input{
       width: 100%;
       height: 60px;
       padding: 0 10px;
       box-sizing: border-box;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+      background-color: #F4F5F7;
     }
-    #loginForm > input[type="submit"]{
+    #loginForm > input[type="button"]{
       background-color: #4B89DC;
       color: white;
       font-size: 20px;
       border-radius: 30px;
       cursor: pointer;
+    }
+    #loginForm label{
+      float: left;
+      background-color: none;
+      font-weight: bold;
+      margin-bottom: 5px;
     }
     .links{
       text-align: center;
@@ -75,12 +82,13 @@
 
     <h1>LOGIN</h1>
 
-    <form action="../Main/main.html" id="loginForm">
+    <form action="../Main/main_login.html" id="loginForm" name="loginForm">
+      <label for="userid">아이디</label>
+      <input type="text" name="userid" placeholder="영문(+숫자) 4~10자" id="userid">
+      <label for="userpass">비밀번호</label>
+      <input type="password" name="userpass" placeholder="영문+숫자 6~12자">
 
-      <input type="text" name="userid" placeholder="아이디">
-      <input type="password" name="userpass" placeholder="비밀번호">
-
-      <input type="submit" value="로그인" onclick="loginAlert();">
+      <input type="button" value="로그인" onclick="loginAlert();">
 
     </form>
 
@@ -94,7 +102,36 @@
 
   <script>
     const loginAlert = function(){
-      alert('로그인 되었습니다');
+      const form = document.loginForm;
+      if(form.userid.value == ""){
+        alert("아이디를 입력해 주세요");
+        form.userid.focus();
+        return;
+      }
+      if(form.userid.value.length < 4 || form.userid.value.length > 10){
+        alert("아이디는 4~10자로 입력해 주세요");
+        form.userid.select();
+        return;
+      }
+      if(form.userpass.value == ""){
+        alert("비밀번호를 입력해 주세요");
+        form.userpass.focus();
+        return;
+      }
+      if(form.userpass.value.length < 6 || form.userpass.value.length > 12){
+        alert("비밀번호는 6~12자로 입력해 주세요");
+        form.userpass.select();
+        return;
+      }
+      const num = form.userpass.value.search(/[0-9]/g);
+      const eng = form.userpass.value.search(/[a-z]/ig);
+      if(num < 0 || eng < 0){
+        alert("비밀번호는 영문과 숫자를 포함해 주세요");
+        form.userpass.select();
+        return;
+      }
+      alert("로그인 되었습니다");
+      form.submit();
     }
   </script>
 </body>

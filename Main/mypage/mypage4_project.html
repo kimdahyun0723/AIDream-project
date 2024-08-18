@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="mypage4_project.css"> <!-- 링크 이름 바꾸기-->
+</head>
+
+<body>
+
+<!-- 고정 헤더 -->
+<header id="header">
+
+  <div id="headercat">
+
+    <div id="headerlogo">
+      <!-- 로고 누르면 메인 페이지로 이동 -->
+      <a href="../main.html">AI Dream</a>
+    </div>
+    
+    <nav id="menu">
+      <ul id="headermenu">
+        <li><p class="headerp">소개</p>
+          <ul class="submenu">
+            <li><a href="#">기본개념</a></li>
+            <li><a href="#">역사</a></li>
+            <li><a href="#">응용분야</a></li>
+            <li><a href="#">미래전망</a></li>
+            <li><a href="#">용어사전</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">기업</p>
+          <ul class="submenu">
+            <li><a href="#">TOP10</a></li>
+            <li><a href="#">상세조회</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">채용</p>
+          <ul class="submenu">
+            <li><a href="#">TOP10</a></li>
+            <li><a href="#">상세조회</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">교육</p>
+          <ul class="submenu">
+            <li><a href="#">국비지원</a></li>
+            <li><a href="#">기업지원</a></li>
+            <li><a href="#">취업박람회</a></li>
+            <li><a href="#">페스티벌</a></li>
+            <li><a href="#">도서/강의</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">뉴스</p>
+          <ul class="submenu">
+            <li><a href="#">최신연구/개발</a></li>
+            <li><a href="#">대회</a></li>
+            <li><a href="#">윤리/사회적 이슈</a></li>
+            <li><a href="#">기업동향</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">게시판</p>
+          <ul class="submenu">
+            <li><a href="#"><span>질의응답</span></a></li>
+            <li><a href="#"><span>자유토론</span></a></li>
+            <li><a href="#"><span>스터디/프로젝트</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- 본문 -->
+  <main id="contents">
+
+    <section id="leftsection">
+      <img src="icon_image/profile.png" alt="profile" id="profile">
+      <h2>마이페이지</h2> 
+      <h3>Welcome Mypage</h3>
+      <a href="../main.html" onclick="logoutAlert()">
+        <input type="button" value="로그아웃 [→" id="mainlogout">
+      </a>
+      <ul id="tag">
+        <li id="mycompany">
+          <img src="icon_image/company.png" alt="company" class="mymenu">
+          <p>나의 기업</p>
+        </li>
+        <li id="myapply">
+          <img src="icon_image/apply.png" alt="apply" class="mymenu">
+          <p>나의 채용</p>
+        </li>
+        <li id="mywriter">
+          <img src="icon_image/writer.png" alt="writer" class="mymenu">
+          <p>내가 쓴 글</p>
+        </li>
+        <li id="myproject">
+          <img src="icon_image/project.png" alt="project" class="mymenu">
+          <p>나의 프로젝트</p>
+        </li>
+
+      </ul>
+    </section>
+
+    <section id="rightsection">
+      <h1>나의 프로젝트</h1>
+      <hr>
+    </section>
+  </main>
+
+<script>
+// 헤더 동작
+const headerMenuItems = document.querySelectorAll('#headermenu > li');
+
+headerMenuItems.forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    const allSubmenus = document.querySelectorAll('.submenu');
+    allSubmenus.forEach(submenu => {
+          submenu.style.display = 'block';
+    });
+  });
+
+  item.addEventListener('mouseleave', () => {
+    const allSubmenus = document.querySelectorAll('.submenu');
+    allSubmenus.forEach(submenu => {
+      submenu.style.display = 'none';
+    });
+  });
+});
+
+const mycompany = document.getElementById("mycompany");
+const myapply = document.getElementById("myapply");
+const mywriter = document.getElementById("mywriter");
+const myproject = document.getElementById("myproject");
+mycompany.addEventListener("mouseover", function(){
+  myproject.style.backgroundColor = "#4B89DC";
+  myproject.style.color = "black";
+})
+mycompany.addEventListener("mouseout", function(){
+  myproject.style.backgroundColor = "";
+  myproject.style.color = "";
+})
+mycompany.addEventListener("click", opencompany);
+function opencompany(){
+  window.location.href = "mypage1_company.html";
+}
+myapply.addEventListener("mouseover", function(){
+  myproject.style.backgroundColor = "#4B89DC";
+  myproject.style.color = "black";
+})
+myapply.addEventListener("mouseout", function(){
+  myproject.style.backgroundColor = "";
+  myproject.style.color = "";
+})
+myapply.addEventListener("click", openapply);
+function openapply(){
+  window.location.href = "mypage2_apply.html";
+}
+mywriter.addEventListener("mouseover", function(){
+  myproject.style.backgroundColor = "#4B89DC";
+  myproject.style.color = "black";
+})
+mywriter.addEventListener("mouseout", function(){
+  myproject.style.backgroundColor = "";
+  myproject.style.color = "";
+})
+mywriter.addEventListener("click", openwriter);
+function openwriter(){
+  window.location.href = "mypage3_writer.html";
+}
+myproject.addEventListener("click", openproject);
+function openproject(){
+  window.location.href = "mypage4_project.html";
+}
+
+// $("#queryid").load("main_login.html #queryid");
+
+
+
+
+</script>
+</body>
+</html>
