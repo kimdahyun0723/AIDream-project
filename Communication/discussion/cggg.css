@@ -234,11 +234,13 @@ a{
 .search-filter button:hover {
   background-color: #3a7bbd;
 }
+
 .filter-options {
     display: flex;
     gap: 10px; /* 버튼 간격 추가 */
     margin-bottom: 20px; /* 버튼과 게시글 간격 추가 */
 }
+.button-container button,
 .filter-options button {
     padding: 10px;
     background-color: #4B89DC;
@@ -247,6 +249,7 @@ a{
     border-radius: 5px;
     cursor: pointer;
 }
+.button-container button:hover,
 .filter-options button:hover {
     background-color: #3a7bbd;
 }
@@ -296,4 +299,8 @@ a{
 /* 목록 스타일 */
 .l1 ul, .l2 ul {
   margin-bottom: 20px; /* 목록 아래쪽 마진 추가 */
+}
+.button-container {
+  display: flex;
+  gap: 10px; /* 버튼 간격 */
 }
