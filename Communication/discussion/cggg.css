@@ -303,4 +303,5 @@ a{
 .button-container {
   display: flex;
   gap: 10px; /* 버튼 간격 */
+  margin-bottom: 20px;
 }
