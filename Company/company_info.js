@@ -44,300 +44,88 @@ submenuItems.forEach((item) => {
   }
   
   //라디오버튼 필터
-  const health = document.getElementsByClassName("healthbox");
-  const financ = document.getElementsByClassName("financbox");
-  const edu = document.getElementsByClassName("edubox");
-  const menufac = document.getElementsByClassName("menufacbox");
-  const bot = document.getElementsByClassName("botbox");
-  const solution = document.getElementsByClassName("solutionbox");
-  const plat = document.getElementsByClassName("platbox");
-  const develop = document.getElementsByClassName("developbox");
-  const secur = document.getElementsByClassName("securbox");
+  const infobox = document.querySelectorAll(".infobox");
+  const health = document.querySelectorAll(".healthbox");
+  const financ = document.querySelectorAll(".financbox");
+  const edu = document.querySelectorAll(".edubox");
+  const menufac = document.querySelectorAll(".menufacbox");
+  const bot = document.querySelectorAll(".botbox");
+  const solution = document.querySelectorAll(".solutionbox");
+  const plat = document.querySelectorAll(".platbox");
+  const develop = document.querySelectorAll(".developbox");
+  const secur = document.querySelectorAll(".securbox");
   function opentotal(){
-    for(let i = 0; i < health.length; i++){
-      health[i].style.display = "block";
-    }
-    for(let i = 0; i < financ.length; i++){
-      financ[i].style.display = "block";
-    }
-    for(let i = 0; i < edu.length; i++){
-      edu[i].style.display = "block";
-    }
-    for(let i = 0; i < menufac.length; i++){
-      menufac[i].style.display = "block";
-    }
-    for(let i = 0; i < bot.length; i++){
-      bot[i].style.display = "block";
-    }
-    for(let i = 0; i < solution.length; i++){
-      solution[i].style.display = "block";
-    }
-    for(let i = 0; i < plat.length; i++){
-      plat[i].style.display = "block";
-    }
-    for(let i = 0; i < develop.length; i++){
-      develop[i].style.display = "block";
-    }
-    for(let i = 0; i < secur.length; i++){
-      secur[i].style.display = "block";
+    for(let i = 0; i < infobox.length; i++){
+      infobox[i].style.display = "block";
     }
   }
   function openhealth(){
+    for(let i = 0; i < infobox.length; i++){
+      infobox[i].style.display = "none";
+    }
     for(let i = 0; i < health.length; i++){
       health[i].style.display = "block";
     }
-    for(let i = 0; i < financ.length; i++){
-      financ[i].style.display = "none";
-    }
-    for(let i = 0; i < edu.length; i++){
-      edu[i].style.display = "none";
-    }
-    for(let i = 0; i < menufac.length; i++){
-      menufac[i].style.display = "none";
-    }
-    for(let i = 0; i < bot.length; i++){
-      bot[i].style.display = "none";
-    }
-    for(let i = 0; i < solution.length; i++){
-      solution[i].style.display = "none";
-    }
-    for(let i = 0; i < plat.length; i++){
-      plat[i].style.display = "none";
-    }
-    for(let i = 0; i < develop.length; i++){
-      develop[i].style.display = "none";
-    }
-    for(let i = 0; i < secur.length; i++){
-      secur[i].style.display = "none";
-    }
   }
   function openfinanc(){
-    for(let i = 0; i < health.length; i++){
-      health[i].style.display = "none";
+    for(let i = 0; i < infobox.length; i++){
+      infobox[i].style.display = "none";
     }
     for(let i = 0; i < financ.length; i++){
       financ[i].style.display = "block";
     }
-    for(let i = 0; i < edu.length; i++){
-      edu[i].style.display = "none";
-    }
-    for(let i = 0; i < menufac.length; i++){
-      menufac[i].style.display = "none";
-    }
-    for(let i = 0; i < bot.length; i++){
-      bot[i].style.display = "none";
-    }
-    for(let i = 0; i < solution.length; i++){
-      solution[i].style.display = "none";
-    }
-    for(let i = 0; i < plat.length; i++){
-      plat[i].style.display = "none";
-    }
-    for(let i = 0; i < develop.length; i++){
-      develop[i].style.display = "none";
-    }
-    for(let i = 0; i < secur.length; i++){
-      secur[i].style.display = "none";
-    }
   }
   function openedu(){
-    for(let i = 0; i < health.length; i++){
-      health[i].style.display = "none";
-    }
-    for(let i = 0; i < financ.length; i++){
-      financ[i].style.display = "none";
+    for(let i = 0; i < infobox.length; i++){
+      infobox[i].style.display = "none";
     }
     for(let i = 0; i < edu.length; i++){
       edu[i].style.display = "block";
     }
-    for(let i = 0; i < menufac.length; i++){
-      menufac[i].style.display = "none";
-    }
-    for(let i = 0; i < bot.length; i++){
-      bot[i].style.display = "none";
-    }
-    for(let i = 0; i < solution.length; i++){
-      solution[i].style.display = "none";
-    }
-    for(let i = 0; i < plat.length; i++){
-      plat[i].style.display = "none";
-    }
-    for(let i = 0; i < develop.length; i++){
-      develop[i].style.display = "none";
-    }
-    for(let i = 0; i < secur.length; i++){
-      secur[i].style.display = "none";
-    }
   }
   function openmenufac(){
-    for(let i = 0; i < health.length; i++){
-      health[i].style.display = "none";
-    }
-    for(let i = 0; i < financ.length; i++){
-      financ[i].style.display = "none";
-    }
-    for(let i = 0; i < edu.length; i++){
-      edu[i].style.display = "none";
+    for(let i = 0; i < infobox.length; i++){
+      infobox[i].style.display = "none";
     }
     for(let i = 0; i < menufac.length; i++){
       menufac[i].style.display = "block";
     }
-    for(let i = 0; i < bot.length; i++){
-      bot[i].style.display = "none";
-    }
-    for(let i = 0; i < solution.length; i++){
-      solution[i].style.display = "none";
-    }
-    for(let i = 0; i < plat.length; i++){
-      plat[i].style.display = "none";
-    }
-    for(let i = 0; i < develop.length; i++){
-      develop[i].style.display = "none";
-    }
-    for(let i = 0; i < secur.length; i++){
-      secur[i].style.display = "none";
-    }
   }
   function openbot(){
-    for(let i = 0; i < health.length; i++){
-      health[i].style.display = "none";
-    }
-    for(let i = 0; i < financ.length; i++){
-      financ[i].style.display = "none";
-    }
-    for(let i = 0; i < edu.length; i++){
-      edu[i].style.display = "none";
-    }
-    for(let i = 0; i < menufac.length; i++){
-      menufac[i].style.display = "none";
+    for(let i = 0; i < infobox.length; i++){
+      infobox[i].style.display = "none";
     }
     for(let i = 0; i < bot.length; i++){
       bot[i].style.display = "block";
     }
-    for(let i = 0; i < solution.length; i++){
-      solution[i].style.display = "none";
-    }
-    for(let i = 0; i < plat.length; i++){
-      plat[i].style.display = "none";
-    }
-    for(let i = 0; i < develop.length; i++){
-      develop[i].style.display = "none";
-    }
-    for(let i = 0; i < secur.length; i++){
-      secur[i].style.display = "none";
-    }
   }
   function opensolution(){
-    for(let i = 0; i < health.length; i++){
-      health[i].style.display = "none";
-    }
-    for(let i = 0; i < financ.length; i++){
-      financ[i].style.display = "none";
-    }
-    for(let i = 0; i < edu.length; i++){
-      edu[i].style.display = "none";
-    }
-    for(let i = 0; i < menufac.length; i++){
-      menufac[i].style.display = "none";
-    }
-    for(let i = 0; i < bot.length; i++){
-      bot[i].style.display = "none";
+    for(let i = 0; i < infobox.length; i++){
+      infobox[i].style.display = "none";
     }
     for(let i = 0; i < solution.length; i++){
       solution[i].style.display = "block";
     }
-    for(let i = 0; i < plat.length; i++){
-      plat[i].style.display = "none";
-    }
-    for(let i = 0; i < develop.length; i++){
-      develop[i].style.display = "none";
-    }
-    for(let i = 0; i < secur.length; i++){
-      secur[i].style.display = "none";
-    }
   }
   function openplat(){
-    for(let i = 0; i < health.length; i++){
-      health[i].style.display = "none";
-    }
-    for(let i = 0; i < financ.length; i++){
-      financ[i].style.display = "none";
-    }
-    for(let i = 0; i < edu.length; i++){
-      edu[i].style.display = "none";
-    }
-    for(let i = 0; i < menufac.length; i++){
-      menufac[i].style.display = "none";
-    }
-    for(let i = 0; i < bot.length; i++){
-      bot[i].style.display = "none";
-    }
-    for(let i = 0; i < solution.length; i++){
-      solution[i].style.display = "none";
+    for(let i = 0; i < infobox.length; i++){
+      infobox[i].style.display = "none";
     }
     for(let i = 0; i < plat.length; i++){
       plat[i].style.display = "block";
     }
-    for(let i = 0; i < develop.length; i++){
-      develop[i].style.display = "none";
-    }
-    for(let i = 0; i < secur.length; i++){
-      secur[i].style.display = "none";
-    }
   }
   function opendevelop(){
-    for(let i = 0; i < health.length; i++){
-      health[i].style.display = "none";
-    }
-    for(let i = 0; i < financ.length; i++){
-      financ[i].style.display = "none";
-    }
-    for(let i = 0; i < edu.length; i++){
-      edu[i].style.display = "none";
-    }
-    for(let i = 0; i < menufac.length; i++){
-      menufac[i].style.display = "none";
-    }
-    for(let i = 0; i < bot.length; i++){
-      bot[i].style.display = "none";
-    }
-    for(let i = 0; i < solution.length; i++){
-      solution[i].style.display = "none";
-    }
-    for(let i = 0; i < plat.length; i++){
-      plat[i].style.display = "none";
+    for(let i = 0; i < infobox.length; i++){
+      infobox[i].style.display = "none";
     }
     for(let i = 0; i < develop.length; i++){
       develop[i].style.display = "block";
     }
-    for(let i = 0; i < secur.length; i++){
-      secur[i].style.display = "none";
-    }
   }
   function opensecur(){
-    for(let i = 0; i < health.length; i++){
-      health[i].style.display = "none";
-    }
-    for(let i = 0; i < financ.length; i++){
-      financ[i].style.display = "none";
-    }
-    for(let i = 0; i < edu.length; i++){
-      edu[i].style.display = "none";
-    }
-    for(let i = 0; i < menufac.length; i++){
-      menufac[i].style.display = "none";
-    }
-    for(let i = 0; i < bot.length; i++){
-      bot[i].style.display = "none";
-    }
-    for(let i = 0; i < solution.length; i++){
-      solution[i].style.display = "none";
-    }
-    for(let i = 0; i < plat.length; i++){
-      plat[i].style.display = "none";
-    }
-    for(let i = 0; i < develop.length; i++){
-      develop[i].style.display = "none";
+    for(let i = 0; i < infobox.length; i++){
+      infobox[i].style.display = "none";
     }
     for(let i = 0; i < secur.length; i++){
       secur[i].style.display = "block";

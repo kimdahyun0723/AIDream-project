@@ -1,4 +1,5 @@
 /* 영역 별 위치 지정 */
+@import url("https://webfontworld.github.io/gmarket/GmarketSans.css");
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  font-family: "GmarketSans";
 }
 #header {
   width: 100%;
@@ -187,8 +189,24 @@ th,
 td {
   border-bottom: 1px solid #eee;
 }
+td:nth-child(1) {
+  width: 94.96px;
+}
 td:nth-child(2) {
   text-align: left;
+  width: 360px;
+}
+td:nth-child(3) {
+  width: 167.15px;
+}
+td:nth-child(4) {
+  width: 150.94px;
+}
+td:nth-child(5) {
+  width: 101.75px;
+}
+td:nth-child(6) {
+  width: 125.22px;
 }
 h1 {
   margin: 20px;
@@ -238,7 +256,7 @@ h1 {
   height: 40px;
   position: absolute;
   right: 250px;
-  top: 130px;
+  top: 120px;
   color: black;
   background-color: #ddd;
   border-radius: 5px;
@@ -250,9 +268,9 @@ h1 {
 }
 
 .notice::before {
-  content: ''; /* 가상 요소에 내용을 추가하지 않음 */
+  content: ""; /* 가상 요소에 내용을 추가하지 않음 */
   position: absolute; /* 절대 위치 설정 */
-  top: -4px; /* 세로 중앙 정렬 */
+  top: -7px; /* 세로 중앙 정렬 */
   left: -10px; /* 왼쪽으로 10px 이동 */
   right: -10px; /* 오른쪽으로 10px 이동 */
   height: 30px; /* 높이를 부모 요소와 같게 설정 */

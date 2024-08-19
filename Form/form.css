@@ -1,18 +1,20 @@
 /* 영역 별 위치 지정 */
-*{
+@import url("https://webfontworld.github.io/gmarket/GmarketSans.css");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   width: 100%;
   min-height: 100vh;
   height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  font-family: "GmarketSans";
 }
-#header{
+#header {
   width: 100%;
   height: 100px;
   position: fixed;
@@ -25,7 +27,7 @@ body{
   width: 1440px;
   margin: 0 auto;
 }
-#contents{
+#contents {
   margin: 0 auto;
   width: 1440px;
   min-height: 100%;
@@ -35,45 +37,45 @@ body{
   position: relative;
   background-color: white;
 }
-#footer{
+#footer {
   width: 100%;
   height: 80px;
   background-color: #f8f9fa;
   font-size: 14px;
 }
-a{
+a {
   text-decoration: none;
 }
 
 /* 헤더 로고 */
-#headerlogo{
+#headerlogo {
   line-height: 100px;
   float: left;
   padding: 0 80px;
   height: 100px;
 }
-#headerlogo > a{
-  color: #4B89DC;
+#headerlogo > a {
+  color: #4b89dc;
   font-size: 40px;
   font-weight: bold;
 }
 
 /* 전체 메뉴 */
-#menu{
-    font-weight: bold;
-    width: 100%;
-    height: 100px;
-    line-height: 50px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 22px;
+#menu {
+  font-weight: bold;
+  width: 100%;
+  height: 100px;
+  line-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
 }
-#menu ul{
+#menu ul {
   list-style: none;
 }
 
 /* 메인메뉴 */
-#headermenu > li{
+#headermenu > li {
   float: left;
   width: 170px;
   position: relative;
@@ -84,28 +86,28 @@ a{
   left: 0; /* 좌측 정렬 */
 }
 #headermenu > li::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%; /* 중앙 정렬 */
   bottom: 0; /* 하단에 위치 */
   width: 0; /* 초기 너비 */
   height: 5px; /* 보더 두께 */
-  background-color: #4B89DC; /* 보더 색상 */
+  background-color: #4b89dc; /* 보더 색상 */
   transition: width 0.3s ease, left 0.3s ease; /* 애니메이션 추가 */
 }
 /* 호버했을때 보더 애니메이션 추가 */
 #headermenu > li:hover .submenu {
   display: block; /* main li 에 호버했을때 모든 서브메뉴를 보이도록 설정 */
-  background-color: #F4F5F7;
+  background-color: #f4f5f7;
 }
-.headerp{ 
+.headerp {
   padding: 24.5px 0;
   background-color: white;
   border-bottom: 1px solid #eee;
 }
 
 /* 서브 메뉴 */
-.submenu{
+.submenu {
   display: none;
   background: white;
   position: absolute; /* 부모 요소를 기준으로 절대 위치 설정 */
@@ -113,20 +115,20 @@ a{
   width: 100%;
   height: 260px;
 }
-.submenu > ul{
+.submenu > ul {
   width: 130px;
   position: absolute;
 }
-.submenu > li > a{
+.submenu > li > a {
   color: black;
   font-size: 18px;
 }
-#menu li:hover{
-  color: #4B89DC;
+#menu li:hover {
+  color: #4b89dc;
   cursor: pointer;
 }
-.submenu li:hover a{
-  color: #4B89DC;
+.submenu li:hover a {
+  color: #4b89dc;
 }
 
 /* footer */
@@ -140,7 +142,7 @@ a{
 }
 #footerlogo h2 {
   margin: 0;
-  color: #4B89DC;
+  color: #4b89dc;
   font-weight: bold;
 }
 #footermenu ul {
@@ -164,6 +166,5 @@ a{
   color: #007bff;
 }
 /* 여기까지 고정 css */
-
 
 /* 여기서 부터 메인 영역 필요한 부분 더 추가하세요*/
