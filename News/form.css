@@ -176,7 +176,7 @@ a{
   cursor: pointer;
   display: flex; /* Flexbox 사용 */
   align-items: flex-start; /* 수직 정렬 */
-  width: 75%; /* 한 줄에 두 개가 들어가도록 너비 설정 */
+  width: 60%; /* 한 줄에 두 개가 들어가도록 너비 설정 */
   height: 120px; /* 고정 높이 설정 */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
   transition: transform 0.2s; /* 호버 효과 */
@@ -217,4 +217,22 @@ main h1 {
   color: #4b89dc; /* h1 색상 */
   padding: 0px 0px 50px;
   font-size: 70px;
+}
+.popular-articles {
+  width: 200px; /* 원하는 너비 설정 */
+  background-color: rgba(255, 255, 255, 0.9); /* 배경색 */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.popular-articles h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.popular-articles ul {
+  list-style-type: none;
+  padding: 0;
+}
+.popular-articles li {
+  margin: 5px 0;
 }
