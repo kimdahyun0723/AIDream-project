@@ -1,362 +1,637 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>스터디 모집 게시판</title>
-  <link rel="stylesheet" href="cggg.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스터디 모집 게시판</title>
+    <link rel="stylesheet" href="cggg.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- 고정 헤더 -->
+    <header id="header">
+      <div id="headercat">
+        <div id="headerlogo">
+          <a href="main.html">AI Dream</a>
+        </div>
+        <nav id="menu">
+          <ul id="headermenu">
+            <li>
+              <p class="headerp">소개</p>
+              <ul class="submenu">
+                <li><a href="#">기본개념</a></li>
+                <li><a href="#">역사</a></li>
+                <li><a href="#">응용분야</a></li>
+                <li><a href="#">미래전망</a></li>
+                <li><a href="#">용어사전</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">기업</p>
+              <ul class="submenu">
+                <li><a href="#">TOP10</a></li>
+                <li><a href="#">상세조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">채용</p>
+              <ul class="submenu">
+                <li><a href="#">TOP10</a></li>
+                <li><a href="#">상세조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">교육</p>
+              <ul class="submenu">
+                <li><a href="#">국비지원</a></li>
+                <li><a href="#">기업지원</a></li>
+                <li><a href="#">취업박람회</a></li>
+                <li><a href="#">페스티벌</a></li>
+                <li><a href="#">도서/강의</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">뉴스</p>
+              <ul class="submenu">
+                <li><a href="#">최신연구/개발</a></li>
+                <li><a href="#">대회</a></li>
+                <li><a href="#">윤리/사회적 이슈</a></li>
+                <li><a href="#">기업동향</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">게시판</p>
+              <ul class="submenu">
+                <li>
+                  <a href="#"><span>질의응답</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>자유토론</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>스터디/프로젝트</span></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<!-- 고정 헤더 -->
-<header id="header">
-  <div id="headercat">
-    <div id="headerlogo">
-      <a href="main.html">AI Dream</a>
-    </div>
-    <nav id="menu">
-      <ul id="headermenu">
-        <li><p class="headerp">소개</p>
-          <ul class="submenu">
-            <li><a href="#">기본개념</a></li>
-            <li><a href="#">역사</a></li>
-            <li><a href="#">응용분야</a></li>
-            <li><a href="#">미래전망</a></li>
-            <li><a href="#">용어사전</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">기업</p>
-          <ul class="submenu">
-            <li><a href="#">TOP10</a></li>
-            <li><a href="#">상세조회</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">채용</p>
-          <ul class="submenu">
-            <li><a href="#">TOP10</a></li>
-            <li><a href="#">상세조회</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">교육</p>
-          <ul class="submenu">
-            <li><a href="#">국비지원</a></li>
-            <li><a href="#">기업지원</a></li>
-            <li><a href="#">취업박람회</a></li>
-            <li><a href="#">페스티벌</a></li>
-            <li><a href="#">도서/강의</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">뉴스</p>
-          <ul class="submenu">
-            <li><a href="#">최신연구/개발</a></li>
-            <li><a href="#">대회</a></li>
-            <li><a href="#">윤리/사회적 이슈</a></li>
-            <li><a href="#">기업동향</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">게시판</p>
-          <ul class="submenu">
-            <li><a href="#"><span>질의응답</span></a></li>
-            <li><a href="#"><span>자유토론</span></a></li>
-            <li><a href="#"><span>스터디/프로젝트</span></a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <!-- 본문 -->
+    <main id="contents">
+      <div class="container">
+        <div class="left">
+          <div class="l1">
+            <h2>커뮤니티</h2>
+            <ul>
+              <li><a href="ststudy.html">스터디 모집</a></li>
+              <li><a href="/Communication/Q&A/Q&A.html">Q&A</a></li>
+              <li><a href="#">자유토론</a></li>
+            </ul>
+          </div>
+          <div class="l2">
+            <h2>이번주 열일 모집자</h2>
+            <ul>
+              <li>김준선</li>
+              <li>감민서</li>
+              <li>김다현</li>
+              <li>문성준</li>
+            </ul>
+          </div>
+        </div>
+        <div class="middle">
+          <div class="button-container">
+            <button class="active" onclick="filterByStatus('ongoing')">
+              모집중
+            </button>
+            <button onclick="filterByStatus('completed')">모집완료</button>
+          </div>
+          <div class="search-filter">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="검색어를 입력하세요..."
+              onkeyup="filterPosts()"
+            />
+            <button onclick="searchPosts()">검색</button>
+            <button onclick="writePost()">글쓰기</button>
+            <!-- 글쓰기 버튼 추가 -->
+          </div>
+          <div class="filter-options">
+            <button onclick="sortPosts('latest')">최신순</button>
+            <button onclick="sortPosts('popular')">추천순</button>
+            <button onclick="sortPosts('views')">조회순</button>
+          </div>
+          <div id="postList">
+            <div class="post">
+              <h3><a href="#">AI 프로젝트 모집합니다.</a></h3>
+              <p>
+                내용: 저희는 AI 기반 프로젝트를 진행하려고 합니다. (현재인원:
+                3/4)
+              </p>
+              <div class="post-info">
+                작성자: 홍길동 | 날짜: 2023-10-01 | 조회수: 150 | 추천수: 20 |
+                상태: 모집중
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">데이터 분석 스터디 모집합니다.</a></h3>
+              <p>
+                내용: 데이터 분석 기법을 같이 공부 하고 싶습니다. (현재인원:
+                4/4)
+              </p>
+              <div class="post-info">
+                작성자: 이영희 | 날짜: 2023-10-02 | 조회수: 200 | 추천수: 35 |
+                상태: 모집완료
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">웹 개발 스터디 모집합니다.</a></h3>
+              <p>
+                내용: OO회사 취업을 위해 웹 개발 기초를 배우고 싶습니다
+                (현재인원: 1/3)
+              </p>
+              <div class="post-info">
+                작성자: 박지민 | 날짜: 2023-10-03 | 조회수: 100 | 추천수: 15 |
+                상태: 모집중
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">모바일 앱 개발 스터디 모집합니다.</a></h3>
+              <p>
+                내용: 모바일 교통 관리 앱 개발을 배우고 싶습니다 (현재인원: 0/5)
+              </p>
+              <div class="post-info">
+                작성자: 최민수 | 날짜: 2023-10-04 | 조회수: 250 | 추천수: 40 |
+                상태: 모집중
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">게임 개발 스터디 모집합니다.</a></h3>
+              <p>
+                내용: OO회사에 필요한 게임 개발을 배우고 싶습니다 (현재인원:
+                4/4)
+              </p>
+              <div class="post-info">
+                작성자: 정수빈 | 날짜: 2023-10-05 | 조회수: 300 | 추천수: 50 |
+                상태: 모집완료
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">프론트엔드 개발 스터디 모집합니다.</a></h3>
+              <p>내용: 프론트엔드 기술을 배우고 싶습니다 (현재인원: 1/4)</p>
+              <div class="post-info">
+                작성자: 김철수 | 날짜: 2023-10-06 | 조회수: 180 | 추천수: 25 |
+                상태: 모집중
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">백엔드 개발 스터디 모집합니다.</a></h3>
+              <p>내용: 백엔드 기술을 배우고 싶습니다 (현재인원: 3/3)</p>
+              <div class="post-info">
+                작성자: 이민호 | 날짜: 2023-10-07 | 조회수: 220 | 추천수: 30 |
+                상태: 모집완료
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">데이터베이스 스터디 모집합니다.</a></h3>
+              <p>내용:데이터베이스 기초를 배우고 싶습니다 (현재인원: 0/5)</p>
+              <div class="post-info">
+                작성자: 박지영 | 날짜: 2023-10-08 | 조회수: 160 | 추천수: 20 |
+                상태: 모집중
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">클라우드 컴퓨팅 스터디 모집합니다.</a></h3>
+              <p>내용: 클라우드 기술을 배우고 싶습니다 (현재인원: 2/4)</p>
+              <div class="post-info">
+                작성자: 최지훈 | 날짜: 2023-10-09 | 조회수: 190 | 추천수: 28 |
+                상태: 모집중
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">인공지능 스터디 모집합니다.</a></h3>
+              <p>내용: 인공지능 기초를 배우고 싶습니다 (현재인원: 1/3)</p>
+              <div class="post-info">
+                작성자: 김하늘 | 날짜: 2023-10-10 | 조회수: 210 | 추천수: 32 |
+                상태: 모집중
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">모바일 게임 개발 스터디 모집합니다.</a></h3>
+              <p>내용: 모바일 게임 개발을 배우고 싶습니다 (현재인원: 5/5)</p>
+              <div class="post-info">
+                작성자: 이수민 | 날짜: 2023-10-11 | 조회수: 240 | 추천수: 45 |
+                상태: 모집완료
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">사물인터넷 스터디 모집합니다.</a></h3>
+              <p>내용: IoT 기술을 배우고 싶습니다 (현재인원: 2/4)</p>
+              <div class="post-info">
+                작성자: 정민 | 날짜: 2023-10-12 | 조회수: 170 | 추천수: 22 |
+                상태: 모집중
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">UX/UI 디자인 스터디 모집합니다.</a></h3>
+              <p>내용: UX/UI 디자인 기초를 배우고 싶습니다 (현재인원: 1/3)</p>
+              <div class="post-info">
+                작성자: 박상현 | 날짜: 2023-10-13 | 조회수: 130 | 추천수: 18 |
+                상태: 모집중
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">네트워크 보안 스터디 모집합니다.</a></h3>
+              <p>내용: 네트워크 보안을 배우고 싶습니다 (현재인원: 5/5)</p>
+              <div class="post-info">
+                작성자: 김지민 | 날짜: 2023-10-14 | 조회수: 200 | 추천수: 35 |
+                상태: 모집완료
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">블록체인 스터디 모집합니다.</a></h3>
+              <p>내용: 블록체인 기술을 배우고 싶습니다 (현재인원: 2/4)</p>
+              <div class="post-info">
+                작성자: 이지은 | 날짜: 2023-10-15 | 조회수: 250 | 추천수: 40 |
+                상태: 모집중
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">디지털 마케팅 스터디 모집합니다.</a></h3>
+              <p>내용: 디지털 마케팅 기초를 배우고 싶습니다 (현재인원: 1/3)</p>
+              <div class="post-info">
+                작성자: 최유리 | 날짜: 2023-10-16 | 조회수: 180 | 추천수: 25 |
+                상태: 모집중
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">게임 디자인 스터디 모집합니다.</a></h3>
+              <p>내용: 게임 디자인 기초를 배우고 싶습니다 (현재인원: 0/5)</p>
+              <div class="post-info">
+                작성자: 정하늘 | 날짜: 2023-10-17 | 조회수: 220 | 추천수: 30 |
+                상태: 모집중
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">데이터 시각화 스터디 모집합니다.</a></h3>
+              <p>내용: 데이터 시각화 기법을 배우고 싶습니다 (현재인원: 4/4)</p>
+              <div class="post-info">
+                작성자: 박지민 | 날짜: 2023-10-18 | 조회수: 160 | 추천수: 20 |
+                상태: 모집완료
+              </div>
+            </div>
+            <div class="post">
+              <h3><a href="#">기계 학습 스터디 모집합니다.</a></h3>
+              <p>내용: 기계 학습 기초를 배우고 싶습니다 (현재인원: 1/3)</p>
+              <div class="post-info">
+                작성자: 김도현 | 날짜: 2023-10-19 | 조회수: 190 | 추천수: 28 |
+                상태: 모집중
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="r1">
+            <!-- 인기 스터디 모집글 섹션 -->
+            <h2>인기 스터디 모집글</h2>
+            <ul>
+              <li><a href="#">AI 스터디</a> - 추천수: 50</li>
+              <li><a href="#">프론트엔드 개발 스터디</a> - 추천수: 40</li>
+              <li><a href="#">백엔드 개발 스터디</a> - 추천수: 30</li>
+            </ul>
+          </div>
+          <div class="r2">
+            <!-- 기업에서 추천하는 필수 스터디 분야 섹션 -->
+            <h2>기업이 원하는 필수 스터디 주제</h2>
+            <ul>
+              <li><a href="#">인공지능</a></li>
+              <li><a href="#">데이터 분석</a></li>
+              <li><a href="#">웹 개발</a></li>
+              <li><a href="#">모바일 앱 개발</a></li>
+              <li><a href="#">게임 개발</a></li>
+              <li><a href="#">클라우드 컴퓨팅</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
 
-<!-- 본문 -->
-<main id="contents">
-  <div class="container">
-    <div class="left">
-      <div class = "l1">
-      <h2>커뮤니티</h2>
-      <ul>
-        <li><a href="ststudy.html">스터디 모집</a></li>
-        <li><a href="/Communication/Q&A/Q&A.html">Q&A</a></li>
-        <li><a href="#">자유토론</a></li>
-      </ul>
-    </div>
-    <div class = "l2">
-      <h2>이번주 열일 모집자</h2>
-     <ul>
-      <li>김준선</li>
-      <li>감민서</li>
-      <li>김다현</li>
-      <li>문성준</li>
-    </ul>
-  </div>
-  </div>
-  <div class="middle">
-    <div class="button-container">
-        <button class="active" onclick="filterByStatus('ongoing')">모집중</button>
-        <button onclick="filterByStatus('completed')">모집완료</button>
-       
-    </div>
-    <div class="search-filter">
-      <input type="text" id="searchInput" placeholder="검색어를 입력하세요..." onkeyup="filterPosts()">
-      <button onclick="searchPosts()">검색</button>
-      <button onclick="writePost()">글쓰기</button> <!-- 글쓰기 버튼 추가 -->
-    </div>
-    <div class="filter-options">
-      <button onclick="sortPosts('latest')">최신순</button>
-      <button onclick="sortPosts('popular')">추천순</button>
-      <button onclick="sortPosts('views')">조회순</button>
-    </div>
-    <div id="postList">
-      <div class="post">
-        <h3><a href="#">AI 프로젝트 모집합니다.</a></h3>
-        <p>내용: 저희는 AI 기반 프로젝트를 진행하려고 합니다. (현재인원: 3/4)</p>
-        <div class="post-info">작성자: 홍길동 | 날짜: 2023-10-01 | 조회수: 150 | 추천수: 20 | 상태: 모집중</div>
+    <!-- 고정 푸터 -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div id="footerlogo">
+          <h2>AI Dream</h2>
+        </div>
+        <nav id="footermenu">
+          <ul>
+            <li><a href="#" onclick="openmodal('#');">사이트 소개</a></li>
+            <li><a href="#" onclick="openmodal('#');">개인정보처리방침</a></li>
+            <li><a href="#" onclick="openmodal('#');">이용약관</a></li>
+            <li><a href="#" onclick="openmodal('#');">고객센터</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="post">
-        <h3><a href="#">데이터 분석 스터디 모집합니다.</a></h3>
-        <p>내용: 데이터 분석 기법을 같이 공부 하고 싶습니다. (현재인원: 4/4)</p>
-        <div class="post-info">작성자: 이영희 | 날짜: 2023-10-02 | 조회수: 200 | 추천수: 35 | 상태: 모집완료</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">웹 개발 스터디 모집합니다.</a></h3>
-        <p>내용: OO회사 취업을 위해 웹 개발 기초를 배우고 싶습니다 (현재인원: 1/3)</p>
-        <div class="post-info">작성자: 박지민 | 날짜: 2023-10-03 | 조회수: 100 | 추천수: 15 | 상태: 모집중</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">모바일 앱 개발 스터디 모집합니다.</a></h3>
-        <p>내용: 모바일 교통 관리 앱 개발을 배우고 싶습니다 (현재인원: 0/5)</p>
-        <div class="post-info">작성자: 최민수 | 날짜: 2023-10-04 | 조회수: 250 | 추천수: 40 | 상태: 모집중</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">게임 개발 스터디 모집합니다.</a></h3>
-        <p>내용: OO회사에 필요한 게임 개발을 배우고 싶습니다 (현재인원: 4/4)</p>
-        <div class="post-info">작성자: 정수빈 | 날짜: 2023-10-05 | 조회수: 300 | 추천수: 50 | 상태: 모집완료</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">프론트엔드 개발 스터디 모집합니다.</a></h3>
-        <p>내용: 프론트엔드 기술을 배우고 싶습니다 (현재인원: 1/4)</p>
-        <div class="post-info">작성자: 김철수 | 날짜: 2023-10-06 | 조회수: 180 | 추천수: 25 | 상태: 모집중</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">백엔드 개발 스터디 모집합니다.</a></h3>
-        <p>내용: 백엔드 기술을 배우고 싶습니다 (현재인원: 3/3)</p>
-        <div class="post-info">작성자: 이민호 | 날짜: 2023-10-07 | 조회수: 220 | 추천수: 30 | 상태: 모집완료</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">데이터베이스 스터디 모집합니다.</a></h3>
-        <p>내용:데이터베이스 기초를 배우고 싶습니다 (현재인원: 0/5)</p>
-        <div class="post-info">작성자: 박지영 | 날짜: 2023-10-08 | 조회수: 160 | 추천수: 20 | 상태: 모집중</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">클라우드 컴퓨팅 스터디 모집합니다.</a></h3>
-        <p>내용: 클라우드 기술을 배우고 싶습니다 (현재인원: 2/4)</p>
-        <div class="post-info">작성자: 최지훈 | 날짜: 2023-10-09 | 조회수: 190 | 추천수: 28 | 상태: 모집중</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">인공지능 스터디 모집합니다.</a></h3>
-        <p>내용: 인공지능 기초를 배우고 싶습니다 (현재인원: 1/3)</p>
-        <div class="post-info">작성자: 김하늘 | 날짜: 2023-10-10 | 조회수: 210 | 추천수: 32 | 상태: 모집중</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">모바일 게임 개발 스터디 모집합니다.</a></h3>
-        <p>내용: 모바일 게임 개발을 배우고 싶습니다 (현재인원: 5/5)</p>
-        <div class="post-info">작성자: 이수민 | 날짜: 2023-10-11 | 조회수: 240 | 추천수: 45 | 상태: 모집완료</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">사물인터넷 스터디 모집합니다.</a></h3>
-        <p>내용: IoT 기술을 배우고 싶습니다 (현재인원: 2/4)</p>
-        <div class="post-info">작성자: 정민 | 날짜: 2023-10-12 | 조회수: 170 | 추천수: 22 | 상태: 모집중</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">UX/UI 디자인 스터디 모집합니다.</a></h3>
-        <p>내용: UX/UI 디자인 기초를 배우고 싶습니다 (현재인원: 1/3)</p>
-        <div class="post-info">작성자: 박상현 | 날짜: 2023-10-13 | 조회수: 130 | 추천수: 18 | 상태: 모집중</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">네트워크 보안 스터디 모집합니다.</a></h3>
-        <p>내용: 네트워크 보안을 배우고 싶습니다 (현재인원: 5/5)</p>
-        <div class="post-info">작성자: 김지민 | 날짜: 2023-10-14 | 조회수: 200 | 추천수: 35 | 상태: 모집완료</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">블록체인 스터디 모집합니다.</a></h3>
-        <p>내용: 블록체인 기술을 배우고 싶습니다 (현재인원: 2/4)</p>
-        <div class="post-info">작성자: 이지은 | 날짜: 2023-10-15 | 조회수: 250 | 추천수: 40 | 상태: 모집중</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">디지털 마케팅 스터디 모집합니다.</a></h3>
-        <p>내용: 디지털 마케팅 기초를 배우고 싶습니다 (현재인원: 1/3)</p>
-        <div class="post-info">작성자: 최유리 | 날짜: 2023-10-16 | 조회수: 180 | 추천수: 25 | 상태: 모집중</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">게임 디자인 스터디 모집합니다.</a></h3>
-        <p>내용: 게임 디자인 기초를 배우고 싶습니다 (현재인원: 0/5)</p>
-        <div class="post-info">작성자: 정하늘 | 날짜: 2023-10-17 | 조회수: 220 | 추천수: 30 | 상태: 모집중</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">데이터 시각화 스터디 모집합니다.</a></h3>
-        <p>내용: 데이터 시각화 기법을 배우고 싶습니다 (현재인원: 4/4)</p>
-        <div class="post-info">작성자: 박지민 | 날짜: 2023-10-18 | 조회수: 160 | 추천수: 20 | 상태: 모집완료</div>
-      </div>
-      <div class="post">
-        <h3><a href="#">기계 학습 스터디 모집합니다.</a></h3>
-        <p>내용: 기계 학습 기초를 배우고 싶습니다 (현재인원: 1/3)</p>
-        <div class="post-info">작성자: 김도현 | 날짜: 2023-10-19 | 조회수: 190 | 추천수: 28 | 상태: 모집중</div>
-      </div>
-    </div>
-  </div>
-  <div class="right">
-      <div class="r1"> <!-- 인기 스터디 모집글 섹션 -->
-        <h2>인기 스터디 모집글</h2>
-        <ul>
-          <li><a href="#">AI 스터디</a> - 추천수: 50</li>
-          <li><a href="#">프론트엔드 개발 스터디</a> - 추천수: 40</li>
-          <li><a href="#">백엔드 개발 스터디</a> - 추천수: 30</li>
-        </ul>
-      </div>
-      <div class="r2"> <!-- 기업에서 추천하는 필수 스터디 분야 섹션 -->
-        <h2>기업이 원하는 필수 스터디 주제</h2>
-        <ul>
-          <li><a href="#">인공지능</a></li>
-          <li><a href="#">데이터 분석</a></li>
-          <li><a href="#">웹 개발</a></li>
-          <li><a href="#">모바일 앱 개발</a></li>
-          <li><a href="#">게임 개발</a></li>
-          <li><a href="#">클라우드 컴퓨팅</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</main>
+    </footer>
 
-<!-- 고정 푸터 -->
-<footer id="footer">
-  <div class="footer-content">
-    <div id="footerlogo">
-      <h2>AI Dream</h2>
-    </div>
-    <nav id="footermenu">
-      <ul>
-        <li><a href="#" onclick="openmodal('#');">사이트 소개</a></li>
-        <li><a href="#" onclick="openmodal('#');">개인정보처리방침</a></li>
-        <li><a href="#" onclick="openmodal('#');">이용약관</a></li>
-        <li><a href="#" onclick="openmodal('#');">고객센터</a></li>
-      </ul>
-    </nav>
-  </div>
-</footer>
+    <script>
+      // 헤더 동작
+      const headerMenuItems = document.querySelectorAll("#headermenu > li");
 
-<script>
-  // 헤더 동작
-  const headerMenuItems = document.querySelectorAll('#headermenu > li');
+      headerMenuItems.forEach((item) => {
+        item.addEventListener("mouseenter", () => {
+          const allSubmenus = document.querySelectorAll(".submenu");
+          allSubmenus.forEach((submenu) => {
+            submenu.style.display = "block";
+          });
+        });
 
-  headerMenuItems.forEach(item => {
-    item.addEventListener('mouseenter', () => {
-      const allSubmenus = document.querySelectorAll('.submenu');
-      allSubmenus.forEach(submenu => {
-        submenu.style.display = 'block';
+        item.addEventListener("mouseleave", () => {
+          const allSubmenus = document.querySelectorAll(".submenu");
+          allSubmenus.forEach((submenu) => {
+            submenu.style.display = "none";
+          });
+        });
       });
-    });
 
-    item.addEventListener('mouseleave', () => {
-      const allSubmenus = document.querySelectorAll('.submenu');
-      allSubmenus.forEach(submenu => {
-        submenu.style.display = 'none';
+      // submenu의 li를 클릭했을 때 li 안에 a 태그가 작동
+      const submenuItems = document.querySelectorAll(".submenu li");
+      submenuItems.forEach((item) => {
+        item.addEventListener("click", function (event) {
+          const link = item.querySelector("a");
+          if (link) {
+            window.location.href = link.href; // 링크로 이동
+          }
+          event.stopPropagation(); // 상위 li의 클릭 이벤트 방지
+        });
       });
-    });
-  });
+      // 모집 중, 모집완료 버튼 동작 스크립트
+      let posts = [
+        {
+          title: "AI 프로젝트 모집합니다.",
+          content: "저희는 AI 기반 프로젝트를 진행하려고 합니다.",
+          status: "ongoing",
+          date: "2023-10-01",
+          views: 150,
+          popular: 20,
+          people: 3,
+          totalPeople: 4,
+        },
+        {
+          title: "데이터 분석 스터디 모집합니다.",
+          content: "데이터 분석 기법을 같이 공부 하고 싶습니다.",
+          status: "completed",
+          date: "2023-10-02",
+          views: 200,
+          popular: 35,
+          people: 4,
+          totalPeople: 4,
+        },
+        {
+          title: "웹 개발 스터디 모집합니다.",
+          content: "OO회사 취업을 위해 웹 개발 기초를 배우고 싶습니다",
+          status: "ongoing",
+          date: "2023-10-03",
+          views: 100,
+          popular: 15,
+          people: 1,
+          totalPeople: 3,
+        },
+        {
+          title: "모바일 앱 개발 스터디 모집합니다.",
+          content: "모바일 교통 관리 앱 개발을 배우고 싶습니다",
+          status: "ongoing",
+          date: "2023-10-04",
+          views: 250,
+          popular: 40,
+          people: 0,
+          totalPeople: 5,
+        },
+        {
+          title: "게임 개발 스터디 모집합니다.",
+          content: "OO회사에 필요한 게임 개발을 배우고 싶습니다",
+          status: "completed",
+          date: "2023-10-05",
+          views: 300,
+          popular: 50,
+          people: 4,
+          totalPeople: 4,
+        },
+        {
+          title: "프론트엔드 개발 스터디 모집합니다.",
+          content: "프론트엔드 기술을 배우고 싶습니다",
+          status: "ongoing",
+          date: "2023-10-06",
+          views: 180,
+          popular: 25,
+          people: 1,
+          totalPeople: 4,
+        },
+        {
+          title: "백엔드 개발 스터디 모집합니다.",
+          content: "백엔드 기술을 배우고 싶습니다",
+          status: "completed",
+          date: "2023-10-07",
+          views: 220,
+          popular: 30,
+          people: 3,
+          totalPeople: 3,
+        },
+        {
+          title: "데이터베이스  스터디 모집합니다.",
+          content: "데이터베이스 기초를 배우고 싶습니다",
+          status: "ongoing",
+          date: "2023-10-08",
+          views: 160,
+          popular: 20,
+          people: 0,
+          totalPeople: 5,
+        },
+        {
+          title: "클라우드 컴퓨팅 스터디 모집합니다.",
+          content: "클라우드 기술을 배우고 싶습니다",
+          status: "ongoing",
+          date: "2023-10-09",
+          views: 190,
+          popular: 28,
+          people: 2,
+          totalPeople: 4,
+        },
+        {
+          title: "인공지능 스터디 모집합니다.",
+          content: "인공지능 기초를 배우고 싶습니다",
+          status: "ongoing",
+          date: "2023-10-10",
+          views: 210,
+          popular: 32,
+          people: 1,
+          totalPeople: 3,
+        },
+        {
+          title: "모바일 게임 개발 스터디 모집합니다.",
+          content: "모바일 게임 개발을 배우고 싶습니다",
+          status: "completed",
+          date: "2023-10-11",
+          views: 240,
+          popular: 45,
+          people: 5,
+          totalPeople: 5,
+        },
+        {
+          title: "사물인터넷 스터디 모집합니다.",
+          content: "IoT 기술을 배우고 싶습니다",
+          status: "ongoing",
+          date: "2023-10-12",
+          views: 170,
+          popular: 22,
+          people: 2,
+          totalPeople: 4,
+        },
+        {
+          title: "UX/UI 디자인 스터디 모집합니다.",
+          content: "UX/UI 디자인 기초를 배우고 싶습니다",
+          status: "ongoing",
+          date: "2023-10-13",
+          views: 130,
+          popular: 18,
+          people: 1,
+          totalPeople: 3,
+        },
+        {
+          title: "네트워크 보안 스터디 모집합니다.",
+          content: "네트워크 보안을 배우고 싶습니다",
+          status: "completed",
+          date: "2023-10-14",
+          views: 200,
+          popular: 35,
+          people: 5,
+          totalPeople: 5,
+        },
+        {
+          title: "블록체인 스터디 모집합니다.",
+          content: "블록체인 기술을 배우고 싶습니다",
+          status: "ongoing",
+          date: "2023-10-15",
+          views: 250,
+          popular: 40,
+          people: 2,
+          totalPeople: 4,
+        },
+        {
+          title: "디지털 마케팅 스터디 모집합니다.",
+          content: "디지털 마케팅 기초를 배우고 싶습니다",
+          status: "ongoing",
+          date: "2023-10-16",
+          views: 180,
+          popular: 25,
+          people: 1,
+          totalPeople: 3,
+        },
+        {
+          title: "게임 디자인 스터디 모집합니다.",
+          content: "게임 디자인 기초를 배우고 싶습니다",
+          status: "ongoing",
+          date: "2023-10-17",
+          views: 220,
+          popular: 30,
+          people: 0,
+          totalPeople: 5,
+        },
+        {
+          title: "데이터 시각화 스터디 모집합니다.",
+          content: "데이터 시각화 기법을 배우고 싶습니다",
+          status: "completed",
+          date: "2023-10-18",
+          views: 160,
+          popular: 20,
+          people: 4,
+          totalPeople: 4,
+        },
+        {
+          title: "기계 학습 스터디 모집합니다.",
+          content: "기계 학습 기초를 배우고 싶습니다",
+          status: "ongoing",
+          date: "2023-10-19",
+          views: 190,
+          popular: 28,
+          people: 1,
+          totalPeople: 3,
+        },
+      ];
+      // people과 author 속성을 추가
+      posts.forEach((post) => {
+        post.author = "작성자 이름"; // 예시로 작성자 이름
+      });
 
-  // submenu의 li를 클릭했을 때 li 안에 a 태그가 작동
-  const submenuItems = document.querySelectorAll(".submenu li");
-  submenuItems.forEach((item) => {
-    item.addEventListener("click", function (event) {
-      const link = item.querySelector("a");
-      if (link) {
-        window.location.href = link.href; // 링크로 이동
-      }
-      event.stopPropagation(); // 상위 li의 클릭 이벤트 방지
-    });
-  });
-// 모집 중, 모집완료 버튼 동작 스크립트
-let posts = [
-    {title: "AI 프로젝트 모집합니다.", content: "저희는 AI 기반 프로젝트를 진행하려고 합니다.", status :"ongoing", date:"2023-10-01", views: 150, popular: 20, people: 3, totalPeople: 4},
-    {title: "데이터 분석 스터디 모집합니다.", content: "데이터 분석 기법을 같이 공부 하고 싶습니다.", status :"completed", date:"2023-10-02", views: 200, popular: 35, people: 4, totalPeople: 4},
-    {title: "웹 개발 스터디 모집합니다.", content: "OO회사 취업을 위해 웹 개발 기초를 배우고 싶습니다", status :"ongoing", date:"2023-10-03", views: 100, popular: 15, people: 1, totalPeople: 3},
-    {title: "모바일 앱 개발 스터디 모집합니다.", content: "모바일 교통 관리 앱 개발을 배우고 싶습니다", status :"ongoing", date:"2023-10-04", views: 250, popular: 40, people: 0, totalPeople: 5},
-    {title: "게임 개발 스터디 모집합니다.", content: "OO회사에 필요한 게임 개발을 배우고 싶습니다", status :"completed", date:"2023-10-05", views: 300, popular: 50, people: 4, totalPeople: 4},
-    {title: "프론트엔드 개발 스터디 모집합니다.", content: "프론트엔드 기술을 배우고 싶습니다", status :"ongoing", date:"2023-10-06", views: 180, popular: 25, people: 1, totalPeople: 4},
-    {title: "백엔드 개발 스터디 모집합니다.", content: "백엔드 기술을 배우고 싶습니다", status : "completed", date:"2023-10-07", views: 220, popular: 30, people: 3, totalPeople: 3},
-    {title: "데이터베이스  스터디 모집합니다.", content: "데이터베이스 기초를 배우고 싶습니다", status :"ongoing", date:"2023-10-08", views: 160, popular: 20, people: 0, totalPeople: 5},
-    {title: "클라우드 컴퓨팅 스터디 모집합니다.", content: "클라우드 기술을 배우고 싶습니다", status :"ongoing", date:"2023-10-09", views: 190, popular: 28, people: 2, totalPeople: 4},
-    {title: "인공지능 스터디 모집합니다.", content: "인공지능 기초를 배우고 싶습니다", status :"ongoing", date:"2023-10-10", views: 210, popular: 32, people: 1, totalPeople: 3},
-    {title: "모바일 게임 개발 스터디 모집합니다.", content: "모바일 게임 개발을 배우고 싶습니다", status :"completed", date:"2023-10-11", views: 240, popular: 45, people: 5, totalPeople: 5},
-    {title: "사물인터넷 스터디 모집합니다.", content: "IoT 기술을 배우고 싶습니다", status :"ongoing", date:"2023-10-12", views: 170, popular: 22, people: 2, totalPeople: 4},
-    {title: "UX/UI 디자인 스터디 모집합니다.", content: "UX/UI 디자인 기초를 배우고 싶습니다", status :"ongoing", date:"2023-10-13", views: 130, popular: 18, people: 1, totalPeople: 3},
-    {title: "네트워크 보안 스터디 모집합니다.", content: "네트워크 보안을 배우고 싶습니다", status :"completed", date:"2023-10-14", views: 200, popular: 35, people: 5, totalPeople: 5},
-    {title: "블록체인 스터디 모집합니다.", content: "블록체인 기술을 배우고 싶습니다", status :"ongoing", date:"2023-10-15", views: 250, popular: 40, people: 2, totalPeople: 4},
-    {title: "디지털 마케팅 스터디 모집합니다.", content: "디지털 마케팅 기초를 배우고 싶습니다", status :"ongoing", date:"2023-10-16", views: 180, popular: 25, people: 1, totalPeople: 3},
-    {title: "게임 디자인 스터디 모집합니다.", content: "게임 디자인 기초를 배우고 싶습니다", status :"ongoing", date:"2023-10-17", views: 220, popular: 30, people: 0, totalPeople: 5},
-    {title: "데이터 시각화 스터디 모집합니다.", content: "데이터 시각화 기법을 배우고 싶습니다", status :"completed", date:"2023-10-18", views: 160, popular: 20, people: 4, totalPeople: 4},
-    {title: "기계 학습 스터디 모집합니다.", content: "기계 학습 기초를 배우고 싶습니다", status :"ongoing", date:"2023-10-19", views: 190, popular: 28, people: 1, totalPeople: 3}
-];
- // people과 author 속성을 추가
- posts.forEach(post => {
-      post.author = "작성자 이름"; // 예시로 작성자 이름
-  });
-
-  function displayPosts(postsToDisplay) {
-      const postList = document.getElementById('postList');
-      postList.innerHTML = ''; // 기존 포스트 초기화
-      postsToDisplay.forEach(post => {
-          const postElement = document.createElement('div');
-          postElement.className = 'post';
+      function displayPosts(postsToDisplay) {
+        const postList = document.getElementById("postList");
+        postList.innerHTML = ""; // 기존 포스트 초기화
+        postsToDisplay.forEach((post) => {
+          const postElement = document.createElement("div");
+          postElement.className = "post";
           postElement.innerHTML = `<h3><a href="#">${post.title}</a></h3>
-                                   <p>내용: ${post.content} (현재인원: ${post.people}/${post.totalPeople})</p>
-                                   <div class="post-info">작성자: ${post.author} | 날짜: ${post.date} | 조회수: ${post.views} | 추천수: ${post.popular} | 상태: ${post.status === 'ongoing' ? '모집중' : '모집완료'}</div>`;
+                                   <p>내용: ${post.content} (현재인원: ${
+            post.people
+          }/${post.totalPeople})</p>
+                                   <div class="post-info">작성자: ${
+                                     post.author
+                                   } | 날짜: ${post.date} | 조회수: ${
+            post.views
+          } | 추천수: ${post.popular} | 상태: ${
+            post.status === "ongoing" ? "모집중" : "모집완료"
+          }</div>`;
           postList.appendChild(postElement);
-      });
-  }
+        });
+      }
 
-  function filterByStatus(status) {
-      const filteredPosts = posts.filter(post => {
-          return (status === 'ongoing' && post.status === 'ongoing') || 
-                 (status === 'completed' && post.status === 'completed');
-      });
-      displayPosts(filteredPosts);
-  }
+      function filterByStatus(status) {
+        const filteredPosts = posts.filter((post) => {
+          return (
+            (status === "ongoing" && post.status === "ongoing") ||
+            (status === "completed" && post.status === "completed")
+          );
+        });
+        displayPosts(filteredPosts);
+      }
 
-  function sortPosts(criteria) {
-      let sortedPosts = [...posts]; // 원본 배열 복사
-      if (criteria === 'latest') {
+      function sortPosts(criteria) {
+        let sortedPosts = [...posts]; // 원본 배열 복사
+        if (criteria === "latest") {
           sortedPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
-      } else if (criteria === 'popular') {
+        } else if (criteria === "popular") {
           sortedPosts.sort((a, b) => b.popular - a.popular);
-      } else if (criteria === 'views') {
+        } else if (criteria === "views") {
           sortedPosts.sort((a, b) => b.views - a.views);
+        }
+        displayPosts(sortedPosts);
       }
-      displayPosts(sortedPosts);
-  }
 
-  // 버튼 클릭 시 필터링 및 정렬
-  document.querySelector('.button-container').addEventListener('click', (event) => {
-      if (event.target.textContent === '모집중') {
-          filterByStatus('ongoing');
-      } else if (event.target.textContent === '모집완료') {
-          filterByStatus('completed');
-      }
-  });
+      // 버튼 클릭 시 필터링 및 정렬
+      document
+        .querySelector(".button-container")
+        .addEventListener("click", (event) => {
+          if (event.target.textContent === "모집중") {
+            filterByStatus("ongoing");
+          } else if (event.target.textContent === "모집완료") {
+            filterByStatus("completed");
+          }
+        });
 
-  document.querySelector('.filter-options').addEventListener('click', (event) => {
-      if (event.target.textContent === '최신순') {
-          sortPosts('latest');
-      } else if (event.target.textContent === '추천순') {
-          sortPosts('popular');
-      } else if (event.target.textContent === '조회순') {
-          sortPosts('views');
-      }
-  });
+      document
+        .querySelector(".filter-options")
+        .addEventListener("click", (event) => {
+          if (event.target.textContent === "최신순") {
+            sortPosts("latest");
+          } else if (event.target.textContent === "추천순") {
+            sortPosts("popular");
+          } else if (event.target.textContent === "조회순") {
+            sortPosts("views");
+          }
+        });
 
-  // 초기 포스트 표시
-  displayPosts(posts);
-
-</script>
-</body>
+      // 초기 포스트 표시
+      displayPosts(posts);
+    </script>
+  </body>
 </html>
