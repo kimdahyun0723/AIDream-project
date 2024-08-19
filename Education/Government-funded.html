@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>교육</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="company_top.css"> <!-- 링크 이름 바꾸기-->
+</head>
+
+<body>
+
+<!-- 고정 헤더 -->
+<header id="header">
+
+  <div id="headercat">
+
+    <div id="headerlogo">
+      <!-- 로고 누르면 메인 페이지로 이동 -->
+      <a href="../Main/main.html">AI Dream</a>
+    </div>
+    
+    <nav id="menu">
+      <ul id="headermenu">
+        <li><p class="headerp">소개</p>
+          <ul class="submenu">
+            <li><a href="#">기본개념</a></li>
+            <li><a href="#">역사</a></li>
+            <li><a href="#">응용분야</a></li>
+            <li><a href="#">미래전망</a></li>
+            <li><a href="#">용어사전</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">기업</p>
+          <ul class="submenu">
+            <li><a href="#">TOP10</a></li>
+            <li><a href="#">상세조회</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">채용</p>
+          <ul class="submenu">
+            <li><a href="#">TOP10</a></li>
+            <li><a href="#">상세조회</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">교육</p>
+          <ul class="submenu">
+            <li><a href="#">국비지원</a></li>
+            <li><a href="#">기업지원</a></li>
+            <li><a href="#">취업박람회</a></li>
+            <li><a href="#">페스티벌</a></li>
+            <li><a href="#">도서/강의</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">뉴스</p>
+          <ul class="submenu">
+            <li><a href="#">최신연구/개발</a></li>
+            <li><a href="#">대회</a></li>
+            <li><a href="#">윤리/사회적 이슈</a></li>
+            <li><a href="#">기업동향</a></li>
+          </ul>
+        </li>
+        <li><p class="headerp">게시판</p>
+          <ul class="submenu">
+            <li><a href="#"><span>질의응답</span></a></li>
+            <li><a href="#"><span>자유토론</span></a></li>
+            <li><a href="#"><span>스터디/프로젝트</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- 본문 -->
+<main id="contents">
+
+  <section id="upsection">
+  <h1>국비 지원 지원</h1>
+
+  <div id="filter">
+    <input type="radio" name="top" id="total" onclick="opentotal()" checked>
+    <label for="total">전체</label>
+    <input type="radio" name="top" id="popular" onclick="openpopular()">
+    <label for="popular">서울</label>
+    <input type="radio" name="top" id="salary" onclick="opensalary()">
+    <label for="salary">경기/인천</label>
+    <input type="radio" name="top" id="hot" onclick="openhot()">
+    <label for="hot">성장순</label>
+  </div>
+</main>
+</body>
+</html>
