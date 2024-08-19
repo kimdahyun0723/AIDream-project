@@ -1,18 +1,20 @@
 /* 영역 별 위치 지정 */
-*{
+@import url("https://webfontworld.github.io/gmarket/GmarketSans.css");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   width: 100%;
   min-height: 100vh;
   height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  font-family: "GmarketSans";
 }
-#header{
+#header {
   width: 100%;
   height: 100px;
   position: fixed;
@@ -25,7 +27,7 @@ body{
   width: 1440px;
   margin: 0 auto;
 }
-#contents{
+#contents {
   margin: 0 auto;
   width: 1440px;
   min-height: 100%;
@@ -37,45 +39,45 @@ body{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-#footer{
+#footer {
   width: 100%;
   height: 80px;
   background-color: #f8f9fa;
   font-size: 14px;
 }
-a{
+a {
   text-decoration: none;
 }
 
 /* 헤더 로고 */
-#headerlogo{
+#headerlogo {
   line-height: 100px;
   float: left;
   padding: 0 80px;
   height: 100px;
 }
-#headerlogo > a{
-  color: #4B89DC;
+#headerlogo > a {
+  color: #4b89dc;
   font-size: 40px;
   font-weight: bold;
 }
 
 /* 전체 메뉴 */
-#menu{
-    font-weight: bold;
-    width: 100%;
-    height: 100px;
-    line-height: 50px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 22px;
+#menu {
+  font-weight: bold;
+  width: 100%;
+  height: 100px;
+  line-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
 }
-#menu ul{
+#menu ul {
   list-style: none;
 }
 
 /* 메인메뉴 */
-#headermenu > li{
+#headermenu > li {
   float: left;
   width: 170px;
   position: relative;
@@ -86,28 +88,28 @@ a{
   left: 0; /* 좌측 정렬 */
 }
 #headermenu > li::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%; /* 중앙 정렬 */
   bottom: 0; /* 하단에 위치 */
   width: 0; /* 초기 너비 */
   height: 5px; /* 보더 두께 */
-  background-color: #4B89DC; /* 보더 색상 */
+  background-color: #4b89dc; /* 보더 색상 */
   transition: width 0.3s ease, left 0.3s ease; /* 애니메이션 추가 */
 }
 /* 호버했을때 보더 애니메이션 추가 */
 #headermenu > li:hover .submenu {
   display: block; /* main li 에 호버했을때 모든 서브메뉴를 보이도록 설정 */
-  background-color: #F4F5F7;
+  background-color: #f4f5f7;
 }
-.headerp{ 
+.headerp {
   padding: 24.5px 0;
   background-color: white;
   border-bottom: 1px solid #eee;
 }
 
 /* 서브 메뉴 */
-.submenu{
+.submenu {
   display: none;
   background: white;
   position: absolute; /* 부모 요소를 기준으로 절대 위치 설정 */
@@ -115,24 +117,24 @@ a{
   width: 100%;
   height: 260px;
 }
-.submenu > ul{
+.submenu > ul {
   width: 130px;
   position: absolute;
 }
-.submenu > li > a{
+.submenu > li > a {
   color: black;
   font-size: 18px;
 }
-#menu li:hover{
-  color: #4B89DC;
+#menu li:hover {
+  color: #4b89dc;
   cursor: pointer;
 }
-.submenu li:hover a{
-  color: #4B89DC;
+.submenu li:hover a {
+  color: #4b89dc;
 }
 
 /* main section1 */
-#intro{
+#intro {
   grid-column: 1/2;
   text-align: left;
   padding: 50px;
@@ -151,49 +153,49 @@ a{
   line-height: 1.5;
 }
 .highlight {
-  color: #4B89DC; /* 또는 원하는 강조 색상 */
+  color: #4b89dc; /* 또는 원하는 강조 색상 */
 }
 #intro .highlight-underline {
   position: relative;
   display: inline-block;
 }
 #intro .highlight-underline::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -5px;
   width: 100%;
   height: 3px;
-  background-color: #4B89DC;
+  background-color: #4b89dc;
 }
 
 /* main section2 */
-#login{
+#login {
   grid-column: 2/3;
   width: 400px;
   height: 450px;
   margin: 50px auto 0 auto;
-  border: 1px solid #4B89DC;
+  border: 1px solid #4b89dc;
   border-radius: 20px;
   text-align: center;
   box-sizing: border-box;
-  box-shadow: 10px 10px #4B89DC;
+  box-shadow: 10px 10px #4b89dc;
 }
-#login > img{
+#login > img {
   width: 400px;
   height: 250px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-#login > p{
-  color: #4B89DC;
+#login > p {
+  color: #4b89dc;
   font-size: 15px;
   margin: 25px;
 }
-.loginForm > input{
+.loginForm > input {
   width: 300px;
   height: 50px;
-  background-color: #4B89DC;
+  background-color: #4b89dc;
   color: white;
   font-size: 20px;
   border-radius: 30px;
@@ -201,22 +203,22 @@ a{
   border: none;
   margin-bottom: 20px;
 }
-.links{
+.links {
   text-align: center;
   margin-bottom: 10px;
 }
-.links > a{
-  color: #4B89DC;
+.links > a {
+  color: #4b89dc;
   text-decoration: none;
   background-color: white;
 }
-.links > a span{
+.links > a span {
   font-size: 13px;
   background-color: white;
   padding: 0 15px;
 }
-.links > a #bar{
-  border-right: 1px solid #4B89DC;
+.links > a #bar {
+  border-right: 1px solid #4b89dc;
   padding-right: 30px;
 }
 
@@ -231,7 +233,7 @@ a{
 }
 #footerlogo h2 {
   margin: 0;
-  color: #4B89DC;
+  color: #4b89dc;
   font-weight: bold;
 }
 #footermenu ul {
@@ -254,7 +256,6 @@ a{
 #footermenu ul li a:hover {
   color: #007bff;
 }
-.con{
-  color: #4B89DC;  
-  
+.con {
+  color: #4b89dc;
 }
