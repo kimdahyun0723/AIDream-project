@@ -83,19 +83,19 @@
         <input type="button" value="로그아웃 [→" id="mainlogout">
       </a>
       <ul id="tag">
-        <li id="mycompany">
+        <li class="myli" id="mycompany">
           <img src="icon_image/company.png" alt="company" class="mymenu">
           <p>나의 기업</p>
         </li>
-        <li id="myapply">
+        <li class="myli" id="myapply">
           <img src="icon_image/apply.png" alt="apply" class="mymenu">
           <p>나의 채용</p>
         </li>
-        <li id="mywriter">
+        <li class="myli" id="mywriter">
           <img src="icon_image/writer.png" alt="writer" class="mymenu">
           <p>내가 쓴 글</p>
         </li>
-        <li id="myproject">
+        <li class="myli" id="myproject">
           <img src="icon_image/project.png" alt="project" class="mymenu">
           <p>나의 프로젝트</p>
         </li>
@@ -243,97 +243,47 @@ headerMenuItems.forEach(item => {
   });
 });
 
-const mycompany = document.getElementById("mycompany");
-const myapply = document.getElementById("myapply");
-const mywriter = document.getElementById("mywriter");
-const myproject = document.getElementById("myproject");
-mycompany.addEventListener("mouseover", function(){
-  myapply.style.backgroundColor = "#4B89DC";
-  myapply.style.color = "black";
-})
-mycompany.addEventListener("mouseout", function(){
-  myapply.style.backgroundColor = "";
-  myapply.style.color = "";
-})
-mycompany.addEventListener("click", opencompany);
-function opencompany(){
+
+//마이페이지 이벤트
+const myli = document.querySelectorAll(".myli");
+const myli2 = document.querySelectorAll(".myli:not(#myapply)");
+const myapply = document.querySelector("#myapply");
+
+//클리하면 페이지 이동
+myli[0].addEventListener("click", function(){
   window.location.href = "mypage1_company.html";
-}
-myapply.addEventListener("click", openapply);
-function openapply(){
+})
+myli[1].addEventListener("click", function(){
   window.location.href = "mypage2_apply.html";
-}
-mywriter.addEventListener("mouseover", function(){
-  myapply.style.backgroundColor = "#4B89DC";
-  myapply.style.color = "black";
 })
-mywriter.addEventListener("mouseout", function(){
-  myapply.style.backgroundColor = "";
-  myapply.style.color = "";
-})
-mywriter.addEventListener("click", openwriter);
-function openwriter(){
+myli[2].addEventListener("click", function(){
   window.location.href = "mypage3_writer.html";
-}
-myproject.addEventListener("mouseover", function(){
-  myapply.style.backgroundColor = "#4B89DC";
-  myapply.style.color = "black";
 })
-myproject.addEventListener("mouseout", function(){
-  mycompany.style.backgroundColor = "";
-  mycompany.style.color = "";
-})
-myproject.addEventListener("click", openproject);
-function openproject(){
+myli[3].addEventListener("click", function(){
   window.location.href = "mypage4_project.html";
-}
+})
+
+//메뉴 호버하면 스타일 변경
+myli2.forEach((element) =>{
+  element.addEventListener("mouseover", function(event){
+    myapply.style.backgroundColor = "#4B89DC";
+    myapply.style.color = "black";
+  })
+  element.addEventListener("mouseout", function(event){
+    myapply.style.backgroundColor = "";
+    myapply.style.color = "";
+  })
+})
+
 
 //즐겨찾기 해제
-const box1 = document.getElementById("box1");
-const box1tag = document.getElementById("box1tag");
-box1tag.addEventListener("click", function(){
-  box1.style.display = "none";
-})
-const box2 = document.getElementById("box2");
-const box2tag = document.getElementById("box2tag");
-box2tag.addEventListener("click", function(){
-  box2.style.display = "none";
-})
-const box3 = document.getElementById("box3");
-const box3tag = document.getElementById("box3tag");
-box3tag.addEventListener("click", function(){
-  box3.style.display = "none";
-})
-const box4 = document.getElementById("box4");
-const box4tag = document.getElementById("box4tag");
-box4tag.addEventListener("click", function(){
-  box4.style.display = "none";
-})
-const box5 = document.getElementById("box5");
-const box5tag = document.getElementById("box5tag");
-box5tag.addEventListener("click", function(){
-  box5.style.display = "none";
-})
-const box6 = document.getElementById("box6");
-const box6tag = document.getElementById("box6tag");
-box6tag.addEventListener("click", function(){
-  box6.style.display = "none";
-})
-const box7 = document.getElementById("box7");
-const box7tag = document.getElementById("box7tag");
-box7tag.addEventListener("click", function(){
-  box7.style.display = "none";
-})
-const box8 = document.getElementById("box8");
-const box8tag = document.getElementById("box8tag");
-box8tag.addEventListener("click", function(){
-  box8.style.display = "none";
-})
-
-// $("#queryid").load("main_login.html #queryid");
-
-
-
+const infobox = document.querySelectorAll(".infobox");
+const tag = document.querySelectorAll(".tag");
+for(let i = 0; i < tag.length; i++){
+  tag[i].addEventListener("click", function(){
+    infobox[i].style.display = "none";
+  });
+}
 
 </script>
 </body>

@@ -1,4 +1,5 @@
 /* 영역 별 위치 지정 */
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
 *{
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ body{
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  font-family: 'GmarketSans';
 }
 #header{
   width: 100%;
@@ -187,7 +189,7 @@ a{
   background-color: white;
   border: 2px solid #eee;
   border-radius: 30px;
-  position: absolute;
+  position: absolute; /* 로그인박스를 기준으로 위치 지정 */
   bottom: 125px;
   right: 20px;
 }

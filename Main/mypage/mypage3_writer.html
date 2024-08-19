@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="mypage3_writer.css"> <!-- 링크 이름 바꾸기-->
+  <!-- 페이지네이션 화살표 이미지 -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+  integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  />
 </head>
 
 <body>
@@ -83,19 +91,19 @@
         <input type="button" value="로그아웃 [→" id="mainlogout">
       </a>
       <ul id="tag">
-        <li id="mycompany">
+        <li class="myli" id="mycompany">
           <img src="icon_image/company.png" alt="company" class="mymenu">
           <p>나의 기업</p>
         </li>
-        <li id="myapply">
+        <li class="myli" id="myapply">
           <img src="icon_image/apply.png" alt="apply" class="mymenu">
           <p>나의 채용</p>
         </li>
-        <li id="mywriter">
+        <li class="myli" id="mywriter">
           <img src="icon_image/writer.png" alt="writer" class="mymenu">
           <p>내가 쓴 글</p>
         </li>
-        <li id="myproject">
+        <li class="myli" id="myproject">
           <img src="icon_image/project.png" alt="project" class="mymenu">
           <p>나의 프로젝트</p>
         </li>
@@ -115,7 +123,7 @@
       <hr>
 
       <div id="box1">
-        <table>
+        <table id="my-table">
           <thead>
             <tr id="first">
               <th>번호</th>
@@ -128,34 +136,163 @@
           <tbody>
             <tr>
               <td>1</td>
-              <td class="title">다섯번째 질문입니다<span> new</span></td>
+              <td>스무번째 질문입니다<span> new</span></td>
               <td>2024.08.18</td>
               <td>0</td>
               <td>2</td>
             </tr>
             <tr>
               <td>2</td>
-              <td class="title">네번째 질문입니다</td>
+              <td>열아홉번째 질문입니다<span> new</span></td>
               <td>2024.08.17</td>
               <td>1</td>
               <td>12</td>
             </tr>
               <td>3</td>
-              <td class="title">세번째 질문입니다</td>
-              <td>2024.08.16</td>
+              <td>스물두번째 질문입니다</td>
+              <td>2024.08.08</td>
               <td>3</td>
               <td>36</td>
             </tr>
             <tr>
               <td>4</td>
-              <td class="title">두번째 질문입니다</td>
-              <td>2024.08.12</td>
+              <td>스물하나번째 질문입니다</td>
+              <td>2024.08.07</td>
               <td>5</td>
               <td>47</td>
             </tr>
-            <tr id="last">
+            <tr>
               <td>5</td>
-              <td class="title">첫번째 질문입니다</td>
+              <td>스무번째 질문입니다</td>
+              <td>2024.08.04</td>
+              <td>0</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>열아홉번째 질문입니다</td>
+              <td>2024.08.02</td>
+              <td>1</td>
+              <td>12</td>
+            </tr>
+              <td>7</td>
+              <td>열여덟번째 질문입니다</td>
+              <td>2024.07.28</td>
+              <td>3</td>
+              <td>36</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>열일곱번째 질문입니다</td>
+              <td>2024.07.22</td>
+              <td>5</td>
+              <td>47</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>열여섯번째 질문입니다</td>
+              <td>2024.07.20</td>
+              <td>3</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>열다섯번째 질문입니다</td>
+              <td>2024.07.18</td>
+              <td>0</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>열네번째 질문입니다</td>
+              <td>2024.07.17</td>
+              <td>1</td>
+              <td>12</td>
+            </tr>
+              <td>12</td>
+              <td>열세번째 질문입니다</td>
+              <td>2024.07.02</td>
+              <td>3</td>
+              <td>36</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>열두번째 질문입니다</td>
+              <td>2024.06.27</td>
+              <td>5</td>
+              <td>47</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>열한번째 질문입니다</td>
+              <td>2024.06.20</td>
+              <td>3</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>열번째 질문입니다</td>
+              <td>2024.06.18</td>
+              <td>0</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>아홉번째 질문입니다</td>
+              <td>2024.06.12</td>
+              <td>1</td>
+              <td>12</td>
+            </tr>
+              <td>17</td>
+              <td>여덟번째 질문입니다</td>
+              <td>2024.06.11</td>
+              <td>3</td>
+              <td>36</td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>일곱번째 질문입니다</td>
+              <td>2024.06.02</td>
+              <td>5</td>
+              <td>47</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>여섯번째 질문입니다</td>
+              <td>2024.05.26</td>
+              <td>3</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>다섯번째 질문입니다</td>
+              <td>2024.05.18</td>
+              <td>0</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>21</td>
+              <td>네번째 질문입니다</td>
+              <td>2024.05.17</td>
+              <td>1</td>
+              <td>12</td>
+            </tr>
+              <td>22</td>
+              <td>세번째 질문입니다</td>
+              <td>2024.04.16</td>
+              <td>3</td>
+              <td>36</td>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>두번째 질문입니다</td>
+              <td>2024.04.12</td>
+              <td>5</td>
+              <td>47</td>
+            </tr>
+            <tr>
+              <td>24</td>
+              <td>첫번째 질문입니다</td>
               <td>2024.08.10</td>
               <td>3</td>
               <td>20</td>
@@ -163,136 +300,66 @@
           </tbody>
         </table>
         <div class="pagination">
-          <p>1</p>
+          <i class="fa-solid fa-arrow-left"></i>
+          <ol id="numbers"></ol>
+          <i class="fa-solid fa-arrow-right"></i>
         </div>
       </div>
 
       <div id="box2">
-        <div id="idscussbox1">
+        <div class="discussbox" id="discussbox1">
           <h3>AI의 윤리적인 문제</h3>
-          <p>ai의 윤리적 문제에 대한 토론 인원을 모집합니다 자유롭게 신청해주세요~~~ (14/20)</p>
-          <ul>
-            <li>날짜:2024.08.03</li>
-            <li>조회수:87</li>
-            <li class="lastli">추천수:16</li>
-          </ul>
-        </div>
-        <div id="idscussbox2">
-          <h3>AI 기술 발전과 사화적 영향</h3>
-          <p>같이 토론하실 인원 모집합니다 :> (11/20)</p>
-          <ul>
-            <li>날짜:2024.08.10</li>
-            <li>조회수:54</li>
-            <li class="lastli">추천수:14</li>
-          </ul>
-        </div>
-        <div id="idscussbox3">
-          <h3>AI의 잘못, 누가 책임을 져야하나</h3>
-          <p>토론 인원 모집합니다 많관부!! (3/20)</p>
+          <p>ai의 윤리적 문제에 대한 토론 인원을 모집합니다 자유롭게 신청해주세요~~~ <span>(4/20)</span></p>
           <ul>
             <li>날짜:2024.08.15</li>
             <li>조회수:19</li>
             <li class="lastli">추천수:5</li>
           </ul>
         </div>
+        <div class="discussbox">
+          <h3>AI 기술 발전과 사화적 영향</h3>
+          <p>같이 토론하실 인원 모집합니다 :> <span>(11/20)</span></p>
+          <ul>
+            <li>날짜:2024.08.10</li>
+            <li>조회수:54</li>
+            <li class="lastli">추천수:14</li>
+          </ul>
+        </div>
+        <div class="discussbox">
+          <h3>AI의 잘못, 누가 책임을 져야하나</h3>
+          <p>토론 인원 모집합니다 많관부!! <span>(14/20)</span></p>
+          <ul>
+            <li>날짜:2024.08.03</li>
+            <li>조회수:87</li>
+            <li class="lastli">추천수:16</li>
+          </ul>
+        </div>
       </div>
 
       <div id="box3">
-
+        <div class="studybox" id="studybox1">
+          <h3>백엔드 개발 스터디 모집합니다</h3>
+          <p>인원: 5명 구하고 있습니다 데이터베이스 기초를 배우고 싶습니다<span> (0/5)</span></p>
+          <ul>
+            <li>날짜:2024.08.17</li>
+            <li>조회수:5</li>
+            <li class="lastli">추천수:1</li>
+          </ul>
+        </div>
+        <div class="studybox" id="studybox2">
+          <h3>프론트엔드 개발 스터디 모집합니다</h3>
+          <p>인원: 4명 구하고 있습니다 데이터베이스 기초를 배우고 싶습니다<span> (2/4)</span></p>
+          <ul>
+            <li>날짜:2024.08.11</li>
+            <li>조회수:19</li>
+            <li class="lastli">추천수:5</li>
+          </ul>
+        </div>
       </div>
 
     </section>
   </main>
 
-<script>
-// 헤더 동작
-const headerMenuItems = document.querySelectorAll('#headermenu > li');
-
-headerMenuItems.forEach(item => {
-  item.addEventListener('mouseenter', () => {
-    const allSubmenus = document.querySelectorAll('.submenu');
-    allSubmenus.forEach(submenu => {
-          submenu.style.display = 'block';
-    });
-  });
-
-  item.addEventListener('mouseleave', () => {
-    const allSubmenus = document.querySelectorAll('.submenu');
-    allSubmenus.forEach(submenu => {
-      submenu.style.display = 'none';
-    });
-  });
-});
-
-const mycompany = document.getElementById("mycompany");
-const myapply = document.getElementById("myapply");
-const mywriter = document.getElementById("mywriter");
-const myproject = document.getElementById("myproject");
-mycompany.addEventListener("mouseover", function(){
-  mywriter.style.backgroundColor = "#4B89DC";
-  mywriter.style.color = "black";
-})
-mycompany.addEventListener("mouseout", function(){
-  mywriter.style.backgroundColor = "";
-  mywriter.style.color = "";
-})
-mycompany.addEventListener("click", opencompany);
-function opencompany(){
-  window.location.href = "mypage1_company.html";
-}
-myapply.addEventListener("mouseover", function(){
-  mywriter.style.backgroundColor = "#4B89DC";
-  mywriter.style.color = "black";
-})
-myapply.addEventListener("mouseout", function(){
-  mywriter.style.backgroundColor = "";
-  mywriter.style.color = "";
-})
-myapply.addEventListener("click", openapply);
-function openapply(){
-  window.location.href = "mypage2_apply.html";
-}
-mywriter.addEventListener("click", openwriter);
-function openwriter(){
-  window.location.href = "mypage3_writer.html";
-}
-myproject.addEventListener("mouseover", function(){
-  mywriter.style.backgroundColor = "#4B89DC";
-  mywriter.style.color = "black";
-})
-myproject.addEventListener("mouseout", function(){
-  mywriter.style.backgroundColor = "";
-  mywriter.style.color = "";
-})
-myproject.addEventListener("click", openproject);
-function openproject(){
-  window.location.href = "mypage4_project.html";
-}
-
-const box1 = document.getElementById("box1");
-const box2 = document.getElementById("box2");
-const box3 = document.getElementById("box3");
-function openquestion(){
-  box1.style.display = "block";
-  box2.style.display = "none";
-  box3.style.display = "none";
-}
-function opendiscuss(){
-  box1.style.display = "none";
-  box2.style.display = "block";
-  box3.style.display = "none";
-}
-function openstudy(){
-  box1.style.display = "none";
-  box2.style.display = "none";
-  box3.style.display = "block";
-}
-
-// $("#queryid").load("main_login.html #queryid");
-
-
-
-
-</script>
+<script src="mypage3_writer.js"></script>
 </body>
 </html>

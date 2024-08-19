@@ -83,19 +83,19 @@
         <input type="button" value="로그아웃 [→" id="mainlogout">
       </a>
       <ul id="tag">
-        <li id="mycompany">
+        <li class="myli" id="mycompany">
           <img src="icon_image/company.png" alt="company" class="mymenu">
           <p>나의 기업</p>
         </li>
-        <li id="myapply">
+        <li class="myli" id="myapply">
           <img src="icon_image/apply.png" alt="apply" class="mymenu">
           <p>나의 채용</p>
         </li>
-        <li id="mywriter">
+        <li class="myli" id="mywriter">
           <img src="icon_image/writer.png" alt="writer" class="mymenu">
           <p>내가 쓴 글</p>
         </li>
-        <li id="myproject">
+        <li class="myli" id="myproject">
           <img src="icon_image/project.png" alt="project" class="mymenu">
           <p>나의 프로젝트</p>
         </li>
@@ -106,6 +106,89 @@
     <section id="rightsection">
       <h1>나의 프로젝트</h1>
       <hr>
+      <div id="box">
+        <div id="box1" class="boxs">
+          <a href="project.pdf" target="_blank">
+            <span id="new">new</span>
+            <p id="p1">2024년 2분기 프로젝트</p>
+            <p id="p2">[생성형 AI를 활용한 비즈니스]</p>
+            <p id="p3">바로보기 <span>▶</span></p>
+            <img src="pdf.png" alt="pdf">
+          </a>
+        </div>
+        <div id="box2" class="boxs">
+          <a href="project.pdf" target="_blank">
+            <p id="p1">2024년 1분기 프로젝트</p>
+            <p id="p2">[AI 활용서]</p>
+            <p id="p3">바로보기 <span>▶</span></p>
+            <img src="pdf.png" alt="pdf">
+          </a>
+        </div>
+        <div id="box3" class="boxs">
+          <a href="project.pdf" target="_blank">
+            <p id="p1">2023년 4분기 프로젝트</p>
+            <p id="p2">[AI는 어떻게 미래를 이끄는가]</p>
+            <p id="p3">바로보기 <span>▶</span></p>
+            <img src="pdf.png" alt="pdf">
+          </a>
+        </div>
+        <div id="box4" class="boxs">
+          <a href="project.pdf" target="_blank">
+            <p id="p1">2023년 3분기 프로젝트</p>
+            <p id="p2">[AI를 위한 소프트웨어 공학]</p>
+            <p id="p3">바로보기 <span>▶</span></p>
+            <img src="pdf.png" alt="pdf">
+          </a>
+        </div>
+        <div id="box5" class="boxs">
+          <a href="project.pdf" target="_blank">
+            <p id="p1">2023년 2분기 프로젝트</p>
+            <p id="p2">[로또번호 예측]</p>
+            <p id="p3">바로보기 <span>▶</span></p>
+            <img src="pdf.png" alt="pdf">
+          </a>
+        </div>
+        <div id="box6" class="boxs">
+          <a href="project.pdf" target="_blank">
+            <p id="p1">2023년 1분기 프로젝트</p>
+            <p id="p2">[수어 인식 자판 시스템]</p>
+            <p id="p3">바로보기 <span>▶</span></p>
+            <img src="pdf.png" alt="pdf">
+          </a>
+        </div>
+        <div id="box7" class="boxs">
+          <a href="project.pdf" target="_blank">
+            <p id="p1">2022년 4분기 프로젝트</p>
+            <p id="p2">[가짜 뉴스 탐지]</p>
+            <p id="p3">바로보기 <span>▶</span></p>
+            <img src="pdf.png" alt="pdf">
+          </a>
+        </div>
+        <div id="box8" class="boxs">
+          <a href="project.pdf" target="_blank">
+            <p id="p1">2022년 3분기 프로젝트</p>
+            <p id="p2">[영화 추천 시스템]</p>
+            <p id="p3">바로보기 <span>▶</span></p>
+            <img src="pdf.png" alt="pdf">
+          </a>
+        </div>
+        <div id="box9" class="boxs">
+          <a href="project.pdf" target="_blank">
+            <p id="p1">2022년 2분기 프로젝트</p>
+            <p id="p2">[시계열 데이터 이상 탐지]</p>
+            <p id="p3">바로보기 <span>▶</span></p>
+            <img src="pdf.png" alt="pdf">
+          </a>
+        </div>
+        <div id="box10" class="boxs">
+          <a href="project.pdf" target="_blank">
+            <p id="p1">2022년 1분기 프로젝트</p>
+            <p id="p2">[너가 취업할 확률]</p>
+            <p id="p3">바로보기 <span>▶</span></p>
+            <img src="pdf.png" alt="pdf">
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -129,52 +212,51 @@ headerMenuItems.forEach(item => {
   });
 });
 
-const mycompany = document.getElementById("mycompany");
-const myapply = document.getElementById("myapply");
-const mywriter = document.getElementById("mywriter");
-const myproject = document.getElementById("myproject");
-mycompany.addEventListener("mouseover", function(){
-  myproject.style.backgroundColor = "#4B89DC";
-  myproject.style.color = "black";
-})
-mycompany.addEventListener("mouseout", function(){
-  myproject.style.backgroundColor = "";
-  myproject.style.color = "";
-})
-mycompany.addEventListener("click", opencompany);
-function opencompany(){
-  window.location.href = "mypage1_company.html";
-}
-myapply.addEventListener("mouseover", function(){
-  myproject.style.backgroundColor = "#4B89DC";
-  myproject.style.color = "black";
-})
-myapply.addEventListener("mouseout", function(){
-  myproject.style.backgroundColor = "";
-  myproject.style.color = "";
-})
-myapply.addEventListener("click", openapply);
-function openapply(){
-  window.location.href = "mypage2_apply.html";
-}
-mywriter.addEventListener("mouseover", function(){
-  myproject.style.backgroundColor = "#4B89DC";
-  myproject.style.color = "black";
-})
-mywriter.addEventListener("mouseout", function(){
-  myproject.style.backgroundColor = "";
-  myproject.style.color = "";
-})
-mywriter.addEventListener("click", openwriter);
-function openwriter(){
-  window.location.href = "mypage3_writer.html";
-}
-myproject.addEventListener("click", openproject);
-function openproject(){
-  window.location.href = "mypage4_project.html";
-}
 
-// $("#queryid").load("main_login.html #queryid");
+//마이페이지 이벤트
+const myli = document.querySelectorAll(".myli");
+const myli2 = document.querySelectorAll(".myli:not(#myproject)");
+const myproject = document.querySelector("#myproject");
+
+//클리하면 페이지 이동
+myli[0].addEventListener("click", function(){
+  window.location.href = "mypage1_company.html";
+})
+myli[1].addEventListener("click", function(){
+  window.location.href = "mypage2_apply.html";
+})
+myli[2].addEventListener("click", function(){
+  window.location.href = "mypage3_writer.html";
+})
+myli[3].addEventListener("click", function(){
+  window.location.href = "mypage4_project.html";
+})
+
+//메뉴 호버하면 스타일 변경
+myli2.forEach((element) =>{
+  element.addEventListener("mouseover", function(event){
+    myproject.style.backgroundColor = "#4B89DC";
+    myproject.style.color = "black";
+  })
+  element.addEventListener("mouseout", function(event){
+    myproject.style.backgroundColor = "";
+    myproject.style.color = "";
+  })
+})
+
+
+//a링크 전체로 지정
+const boxs = document.querySelectorAll(".boxs");
+boxs.forEach((item) => {
+  item.addEventListener("click", function (event) {
+    const link = item.querySelector("a");
+    if (link) {
+      window.open(link.href); // 링크로 이동
+    }
+  });
+});
+
+
 
 
 

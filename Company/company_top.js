@@ -44,48 +44,34 @@ submenuItems.forEach((item) => {
   }
 
 //라디오버튼 필터
-const popular = document.getElementsByClassName("popularbox");
-const salary = document.getElementsByClassName("salarybox");
-const hot = document.getElementsByClassName("hotbox");
+const topbox = document.querySelectorAll(".topbox");
+const popular = document.querySelectorAll(".popularbox");
+const salary = document.querySelectorAll(".salarybox");
+const hot = document.querySelectorAll(".hotbox");
 function opentotal(){
-  for(let i = 0; i < popular.length; i++){
-    popular[i].style.display = "block";
-  }
-  for(let i = 0; i < salary.length; i++){
-    salary[i].style.display = "block";
-  }
-  for(let i = 0; i < hot.length; i++){
-    hot[i].style.display = "block";
+  for(let i = 0; i < topbox.length; i++){
+    topbox[i].style.display = "block"
   }
 }
 function openpopular(){
+  for(let i = 0; i < topbox.length; i++){
+    topbox[i].style.display = "none"
+  }
   for(let i = 0; i < popular.length; i++){
     popular[i].style.display = "block";
   }
-  for(let i = 0; i < salary.length; i++){
-    salary[i].style.display = "none";
-  }
-  for(let i = 0; i < hot.length; i++){
-    hot[i].style.display = "none";
-  }
 }
 function opensalary(){
-  for(let i = 0; i < popular.length; i++){
-    popular[i].style.display = "none";
+  for(let i = 0; i < topbox.length; i++){
+    topbox[i].style.display = "none"
   }
   for(let i = 0; i < salary.length; i++){
     salary[i].style.display = "block";
   }
-  for(let i = 0; i < hot.length; i++){
-    hot[i].style.display = "none";
-  }
 }
 function openhot(){
-  for(let i = 0; i < popular.length; i++){
-    popular[i].style.display = "none";
-  }
-  for(let i = 0; i < salary.length; i++){
-    salary[i].style.display = "none";
+  for(let i = 0; i < topbox.length; i++){
+    topbox[i].style.display = "none"
   }
   for(let i = 0; i < hot.length; i++){
     hot[i].style.display = "block";

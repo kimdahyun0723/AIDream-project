@@ -1,4 +1,5 @@
 /* 영역 별 위치 지정 */
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
 *{
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ body{
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  font-family: 'GmarketSans';
 }
 #header{
   width: 100%;
@@ -220,7 +222,6 @@ a{
 #filter input[type="radio"]+label{
   cursor: pointer;
   padding: 10px 40px;
-  margin-left: 25px;
   font-size: 24px;
   border-radius: 20px;
   font-weight: bold;
@@ -235,65 +236,137 @@ a{
   border-bottom-right-radius: 0;
 }
 
+/* Q&A 테이블  */
 #box1 table{
   width: 1000px;
   margin: 40px 40px 20px 40px;
   text-align: center;
   border-collapse: collapse;
-  
+  border-top: 2px solid #4B89DC;
+  border-bottom: 2px solid #4B89DC;
 }
 #box1 tr:not(#first){
   border-top: 1px solid #eee;
   cursor: pointer;
 }
-#box1 tr:hover{
+#box1 tr:not(#first):hover{
   background-color: #F4F5F7;
 }
 #box1 th, td{
   padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+#box1 span{
+  color: #4B89DC;
+}
+#box1 td:nth-child(1){
+  width: 129.7px;
+}
+#box1 td:nth-child(2){
+  text-align: left;
+  width: 341.57px;
+}
+#box1 td:nth-child(3){
+  width: 150.74px;
+}
+#box1 td:nth-child(4){
+  width: 147.15px;
+}
+#box1 td:nth-child(5){
+  width: 144.32px;
 }
 #first{
   background-color: #eee;
-  border-top: 2px solid #4B89DC;
-}
-#last{
-  border-bottom: 2px solid #4B89DC;
-}
-.title{
-  float: left;
-}
-.title span{
-  color: #4B89DC;
 }
 
-.pagination{
+/* Pagination. */
+.pagination {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.pagination p{
-  font-weight: bold;
-  color: #4B89DC;
+.pagination i {
+  color: black;
+  font-size: 1.2em;
 }
 
-#box2 div{
+#numbers {
+  padding: 0;
+  margin: 0 2rem;
+  list-style-type: none;
+  display: flex;
+}
+
+#numbers li a {
+  color: black;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+#numbers li a:hover {
+  opacity: 1;
+}
+
+#numbers li a.active {
+  opacity: 1;
+  color: #4b89dc;
+}
+.write {
+  text-align: center;
+  width: 100px;
+  line-height: 40px;
+  height: 40px;
+  position: absolute;
+  right: 250px;
+  top: 130px;
+  color: black;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.notice {
+  position: relative; /* 가상 요소를 절대 위치로 설정하기 위해 relative로 설정 */
+  z-index: 1; /* 가상 요소보다 위에 표시되도록 z-index 설정 */
+}
+
+.notice::before {
+  content: ''; /* 가상 요소에 내용을 추가하지 않음 */
+  position: absolute; /* 절대 위치 설정 */
+  top: -4px; /* 세로 중앙 정렬 */
+  left: -10px; /* 왼쪽으로 10px 이동 */
+  right: -10px; /* 오른쪽으로 10px 이동 */
+  height: 30px; /* 높이를 부모 요소와 같게 설정 */
+  background-color: #ddd; /* 배경 색상 설정 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  z-index: -1; /* 본체 요소 뒤에 배치 */
+}
+
+
+/* 자유토론 */
+.discussbox{
   width: 1000px;
   margin-left: 40px;
   border-bottom: 1px solid #eee;
   padding: 20px;
   cursor: pointer;
 }
-#box2 div:hover{
+.discussbox:hover{
   background-color: #F4F5F7;
 }
-#box2 h3, p{
+.discussbox h3, .discussbox p{
   margin-bottom: 20px;
   padding-left: 10px;
+}
+.discussbox span{
+  color: #4B89DC;
 }
 #box2 ul{
   list-style-position: inside;
   padding-left: 0;
-  margin-bottom: 15px;
 }
 #box2 li{
   list-style: none;
@@ -304,7 +377,41 @@ a{
 #box2 li:not(.lastli){
   border-right: 1px solid black;
 }
-#idscussbox1{
+#discussbox1{
+  margin-top: 40px;
+}
+
+.studybox{
+  width: 1000px;
+  margin-left: 40px;
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  cursor: pointer;
+}
+.studybox:hover{
+  background-color: #F4F5F7;
+}
+.studybox h3, .studybox p{
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.studybox span{
+  color: #4B89DC;
+}
+#box3 ul{
+  list-style-position: inside;
+  padding-left: 0;
+}
+#box3 li{
+  list-style: none;
+  display: inline;
+  font-size: 12px;
+  padding: 0 10px;
+}
+#box3 li:not(.lastli){
+  border-right: 1px solid black;
+}
+#studybox1{
   margin-top: 40px;
 }
 
