@@ -171,7 +171,6 @@ a {
 table {
   border-collapse: collapse;
   border-top: 2px solid #4b89dc;
-  border-spacing: 0;
   border-bottom: 2px solid #4b89dc;
   margin: 0 auto;
   margin-top: 20px;
@@ -320,18 +319,7 @@ h1 {
 .filter-button {
   margin-right: 10px; /* 버튼 간격 조정 */
 }
-/* team.css */
-.table-container {
-  display: flex; /* 플렉스 박스를 사용하여 가로 배치 */
+.waring{
+margin-right: 210px;
 }
 
-#sidebar {
-  width: 200px; /* 사이드바 너비 설정 */
-  padding: 10px; /* 내부 여백 */
-  box-sizing: border-box; /* 패딩 포함하여 크기 계산 */
-}
-
-#my-table {
-  flex-grow: 1; /* 테이블이 남은 공간을 차지하도록 설정 */
-  margin-left: 20px; /* 사이드바와의 간격 */
-}
