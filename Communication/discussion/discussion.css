@@ -226,23 +226,6 @@ h1 {
   border-radius: 5px;
 }
 
-.notice {
-  position: relative; /* 가상 요소를 절대 위치로 설정하기 위해 relative로 설정 */
-  z-index: 1; /* 가상 요소보다 위에 표시되도록 z-index 설정 */
-}
-
-.notice::before {
-  content: ""; /* 가상 요소에 내용을 추가하지 않음 */
-  position: absolute; /* 절대 위치 설정 */
-  top: -7px; /* 세로 중앙 정렬 */
-  left: -10px; /* 왼쪽으로 10px 이동 */
-  right: -10px; /* 오른쪽으로 10px 이동 */
-  height: 30px; /* 높이를 부모 요소와 같게 설정 */
-  background-color: #ddd; /* 배경 색상 설정 */
-  border-radius: 5px; /* 모서리 둥글게 */
-  z-index: -1; /* 본체 요소 뒤에 배치 */
-}
-
 .filter-button {
   text-align: center;
   width: 100px;
@@ -274,4 +257,24 @@ h1 {
 
 .filter-button {
   margin-right: 10px; /* 버튼 간격 조정 */
+}
+.waring {
+  margin-right: 210px;
+}
+
+.cat {
+  position: sticky;
+  top: 294px; /* 스크롤 시 상단에 고정될 위치 */
+  left: 5000px;
+}
+
+.cat p {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.cat a {
+  padding: 5px 0;
+  display: block;
+  color: black;
 }
