@@ -1,5 +1,4 @@
 /* 영역 별 위치 지정 */
-@import url("https://webfontworld.github.io/gmarket/GmarketSans.css");
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +11,6 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  font-family: "GmarketSans";
 }
 #header {
   width: 100%;
@@ -168,155 +166,52 @@ a {
 /* 여기까지 고정 css */
 
 /* 여기서 부터 메인 영역 필요한 부분 더 추가하세요*/
-table {
-  border-collapse: collapse;
-  border-top: 2px solid #4b89dc;
-  border-bottom: 2px solid #4b89dc;
+article {
+  text-align: center;
+}
+
+.goBack {
+  color: black;
+}
+.form {
+  width: 663px;
   margin: 0 auto;
-  margin-top: 20px;
-  width: 1000px;
 }
-th {
-  background-color: #ddd;
-  color: black;
-  padding: 20px;
+
+label {
+  float: left;
+  font-size: 18px;
 }
-td {
-  text-align: center;
-  padding: 20px;
-}
-th,
-td {
-  border-bottom: 1px solid #eee;
-}
-td:nth-child(1) {
-  width: 94.96px;
-}
-td:nth-child(2) {
-  text-align: left;
-  width: 360px;
-}
-td:nth-child(3) {
-  width: 167.15px;
-}
-td:nth-child(4) {
-  width: 150.94px;
-}
-td:nth-child(5) {
-  width: 101.75px;
-}
-td:nth-child(6) {
-  width: 125.22px;
-}
+
 h1 {
-  margin: 20px;
-  text-align: center;
+  margin: 40px 0 10px 0;
 }
 
-/* Pagination. */
-.pagination {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.pagination i {
-  color: black;
-  font-size: 1.2em;
+h3 {
+  padding-bottom: 20px;
 }
 
-#numbers {
-  padding: 0;
-  margin: 0 2rem;
-  list-style-type: none;
-  display: flex;
+main p {
+  padding: 10px;
 }
 
-#numbers li a {
-  color: black;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  opacity: 0.7;
-}
-
-#numbers li a:hover {
-  opacity: 1;
-}
-
-#numbers li a.active {
-  opacity: 1;
-  color: #4b89dc;
-}
-.write {
-  text-align: center;
-  width: 100px;
-  line-height: 40px;
+#title {
   height: 40px;
+  width: 663px;
+  font-size: 16px;
+}
+
+#request {
+  width: 663px;
+  height: 200px;
+  font-size: 16px;
+}
+.submit {
   position: absolute;
-  right: 250px;
-  top: 120px;
-  color: black;
-  background-color: #ddd;
-  border-radius: 5px;
+  right: 390px;
 }
 
-.notice {
-  position: relative; /* 가상 요소를 절대 위치로 설정하기 위해 relative로 설정 */
-  z-index: 1; /* 가상 요소보다 위에 표시되도록 z-index 설정 */
+.tag {
+  width: 60px;
+  height: 25px;
 }
-
-.notice::before {
-  content: ""; /* 가상 요소에 내용을 추가하지 않음 */
-  position: absolute; /* 절대 위치 설정 */
-  top: -7px; /* 세로 중앙 정렬 */
-  left: -10px; /* 왼쪽으로 10px 이동 */
-  right: -10px; /* 오른쪽으로 10px 이동 */
-  height: 30px; /* 높이를 부모 요소와 같게 설정 */
-  background-color: #ddd; /* 배경 색상 설정 */
-  border-radius: 5px; /* 모서리 둥글게 */
-  z-index: -1; /* 본체 요소 뒤에 배치 */
-}
-
-.button-group {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; /* 수직 정렬 추가 */
-  margin-bottom: 20px;
-}
-
-.filter-button {
-  text-align: center;
-  width: 100px;
-  line-height: 40px;
-  height: 40px;
-  color: black;
-  background-color: #ddd;
-  border-radius: 5px;
-  margin-right: 10px; /* 버튼 간격 */
-  text-decoration: none;
-
-}
-
-.filter-button:hover {
-  background-color: #4b89dc; /* 호버 시 색상 변경 */
-  color: white; /* 호버 시 글자 색상 변경 */
-}
-
-.button-container {
-  display: flex; /* 버튼을 일렬로 정렬 */
-  justify-content: space-between; /* 버튼 간격 조정 */
-  align-items: center; /* 수직 정렬 */
-  margin-top: 20px; /* Q&A와 버튼 간격 조정 */
-}
-
-.left-buttons {
-  display: flex; /* 왼쪽 버튼들을 일렬로 정렬 */
-  padding-left: 220px;
-}
-
-.filter-button {
-  margin-right: 10px; /* 버튼 간격 조정 */
-}
-

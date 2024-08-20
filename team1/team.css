@@ -303,7 +303,6 @@ h1 {
   background-color: #4b89dc; /* 호버 시 색상 변경 */
   color: white; /* 호버 시 글자 색상 변경 */
 }
-
 .button-container {
   display: flex; /* 버튼을 일렬로 정렬 */
   justify-content: space-between; /* 버튼 간격 조정 */
@@ -319,4 +318,6 @@ h1 {
 .filter-button {
   margin-right: 10px; /* 버튼 간격 조정 */
 }
-
+.right-buttons {
+width: 50px;
+}
