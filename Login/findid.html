@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>id찾기</title>
   <script>
-    // 전화번호 자동 하이픈 추가
-    function addHypen(obj) {
+  // 전화번호 자동 하이픈 추가
+  function addHypen(obj) {
   var number = obj.value.replace(/[^0-9]/g, "");
   var phone = "";
-
   if(number.length < 4) {
       return number;
   } else if(number.length < 7) {
@@ -30,7 +29,25 @@
       phone += number.substr(7);
   }
   obj.value = phone;
-}
+  }
+  
+  //아이디찾기 유효성 검사
+  const idAlert = function(){
+    const form = document.idForm;
+    if(form.member_name.value == ""){
+      alert("이름을 입력해 주세요");
+      form.member_name.focus();
+      return;
+    }
+    if(form.member_phone.value == ""){
+      alert("전화번호를 입력해 주세요");
+      form.member_phone.focus();
+      return;
+    }
+    alert("아이디 찾기에 성공했습니다");
+    form.submit();
+  }
+
   </script>
   <style>
     @import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
@@ -50,7 +67,7 @@
     }
     .container{
       width: 400px;
-      height: 600px;
+      height: 550px;
       padding: 50px;
       box-sizing: border-box;
       border: 2px solid #4B89DC;
@@ -75,7 +92,7 @@
       margin-bottom: 40px;
       background-color: #F4F5F7;
     }
-    #findId > input[type="submit"]{
+    #findId > input[type="button"]{
       background-color: #4B89DC;
       color: white;
       font-size: 20px;
@@ -104,15 +121,15 @@
 <body>
   <div class="container">
 
-    <h1>ID / Password</h1>
+    <h1>ID</h1>
     <h2>휴대폰 본인 확인</h2>
     <br>
-    <form action="userId.html" id="findId">
+    <form action="login.html" id="findId" name="idForm">
 
       <input type="text" name="member_name" placeholder="이름">
       <input onkeyup = "addHypen(this);" type="text" name="member_phone" placeholder="전화번호 ' - ' 없이 입력" maxlength="13"  >
 
-      <input type="submit" value="ID 찾기">
+      <input type="button" value="아이디 찾기" onclick="idAlert();">
 
     </form>
 
