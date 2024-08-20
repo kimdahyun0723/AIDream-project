@@ -296,7 +296,6 @@ h1 {
   border-radius: 5px;
   margin-right: 10px; /* 버튼 간격 */
   text-decoration: none;
-
 }
 
 .filter-button:hover {
@@ -319,4 +318,3 @@ h1 {
 .filter-button {
   margin-right: 10px; /* 버튼 간격 조정 */
 }
-
