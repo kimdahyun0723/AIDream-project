@@ -213,42 +213,6 @@ h1 {
   text-align: center;
 }
 
-/* Pagination. */
-.pagination {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.pagination i {
-  color: black;
-  font-size: 1.2em;
-}
-
-#numbers {
-  padding: 0;
-  margin: 0 2rem;
-  list-style-type: none;
-  display: flex;
-}
-
-#numbers li a {
-  color: black;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  opacity: 0.7;
-}
-
-#numbers li a:hover {
-  opacity: 1;
-}
-
-#numbers li a.active {
-  opacity: 1;
-  color: #4b89dc;
-}
 .write {
   text-align: center;
   width: 100px;
@@ -277,13 +241,6 @@ h1 {
   background-color: #ddd; /* 배경 색상 설정 */
   border-radius: 5px; /* 모서리 둥글게 */
   z-index: -1; /* 본체 요소 뒤에 배치 */
-}
-
-.button-group {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; /* 수직 정렬 추가 */
-  margin-bottom: 20px;
 }
 
 .filter-button {
