@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Password찾기</title>
   <script>
-    // 전화번호 자동 하이픈 추가
-    function addHypen(obj) {
+  // 전화번호 자동 하이픈 추가
+  function addHypen(obj) {
   var number = obj.value.replace(/[^0-9]/g, "");
   var phone = "";
-
   if(number.length < 4) {
       return number;
   } else if(number.length < 7) {
@@ -30,7 +29,24 @@
       phone += number.substr(7);
   }
   obj.value = phone;
-}
+  }
+
+  //비밀번호찾기 유효성 검사
+  const pwdAlert = function(){
+    const form = document.pwdForm;
+    if(form.member_id.value == ""){
+      alert("아이디를 입력해 주세요");
+      form.member_id.focus();
+      return;
+    }
+    if(form.member_phone.value == ""){
+      alert("전화번호를 입력해 주세요");
+      form.member_phone.focus();
+      return;
+    }
+    alert("비밀번호 찾기에 성공했습니다");
+    form.submit();
+  }
   </script>
   <style>
     @import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
@@ -50,7 +66,7 @@
     }
     .container{
       width: 400px;
-      height: 600px;
+      height: 550px;
       padding: 50px;
       position: fixed;
       box-sizing: border-box;
@@ -75,7 +91,7 @@
       margin-bottom: 40px;
       background-color: #F4F5F7;
     }
-    #findpwd > input[type="submit"]{
+    #findpwd > input[type="button"]{
       background-color: #4B89DC;
       color: white;
       font-size: 20px;
@@ -104,21 +120,21 @@
 <body>
   <div class="container">
 
-    <h1>ID / Password</h1>
+    <h1>Password</h1>
     <h2>휴대폰 본인 확인</h2>
     <br>
-    <form action="findpwd.html" id="findpwd">
+    <form action="login.html" id="findpwd" name="pwdForm">
 
-      <input type="text" name="member_Id" placeholder="ID">
+      <input type="text" name="member_id" placeholder="아이디">
       <input onkeyup = "addHypen(this);" type="text" name="member_phone" placeholder="전화번호 ' - ' 없이 입력" maxlength="13"  >
 
-      <input type="submit" value="비밀번호 찾기">
+      <input type="button" value="비밀번호 찾기" onclick="pwdAlert();">
 
     </form>
 
     <div class="links">
       <a href="login.html"><span id="bar">로그인</span></a>
-      <a href="findid.html"><span id="bar">ID 찾기</span></a>
+      <a href="findid.html"><span id="bar">아이디 찾기</span></a>
       <a href="signup_agree.html"><span>회원가입</span></a>
     </div>
 
