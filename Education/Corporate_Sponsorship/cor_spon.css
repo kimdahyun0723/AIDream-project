@@ -170,6 +170,11 @@ a {
 /* 여기서 부터 메인 영역 필요한 부분 더 추가하세요*/
 
 /* R&D 사업 섹션 스타일링 */
+.mark{ 
+  text-align: center;
+  font-size: 40px;
+}
+
 #rnd-section {
   padding: 20px;
   background-color: #f9f9f9;
@@ -261,7 +266,7 @@ a {
 /* 검색 입력 필드와 버튼을 감싸는 컨테이너 */
 .search-container {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   margin: 20px 0;
 }
 
