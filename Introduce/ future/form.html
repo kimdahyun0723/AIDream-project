@@ -1,148 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="form.css"> <!-- 링크 이름 바꾸기-->
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+    <!-- 링크 이름 바꾸기-->
+  </head>
 
-<body>
+  <body>
+    <!-- 고정 헤더 -->
+    <header id="header">
+      <div id="headercat">
+        <div id="headerlogo">
+          <!-- 로고 누르면 메인 페이지로 이동 -->
+          <a href="/Main/main.html">AI Dream</a>
+        </div>
 
-<!-- 고정 헤더 -->
-<header id="header">
-
-  <div id="headercat">
-
-    <div id="headerlogo">
-      <!-- 로고 누르면 메인 페이지로 이동 -->
-      <a href="/Main/main.html">AI Dream</a>
-    </div>
-    
-    <nav id="menu">
-      <ul id="headermenu">
-        <li><p class="headerp">소개</p>
-          <ul class="submenu">
-            <li><a href="/Introduce/aiDefaultConcept/form.html">기본개념</a></li>
+        <nav id="menu">
+          <ul id="headermenu">
+            <li>
+              <p class="headerp">소개</p>
+              <ul class="submenu">
+                <li>
+                  <a href="/Introduce/aiDefaultConcept/form.html">기본개념</a>
+                </li>
                 <li><a href="/Introduce/his/form.html">역사</a></li>
                 <li><a href="/Introduce/bunya/form.html">응용분야</a></li>
                 <li><a href="/Introduce/ future/form.html">미래전망</a></li>
                 <li><a href="/Introduce/AIword/form.html">용어사전</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">기업</p>
+              <ul class="submenu">
+                <li><a href="/Company/company_top.html">TOP10</a></li>
+                <li><a href="/Company/company_info.html">상세조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">채용</p>
+              <ul class="submenu">
+                <li><a href="/Apply/apply_top.html">TOP10</a></li>
+                <li><a href="/Apply/apply_info.html">상세조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">교육</p>
+              <ul class="submenu">
+                <li>
+                  <a href="/Education/Goverment_education/Gov_eud.html"
+                    >국비지원</a
+                  >
+                </li>
+                <li>
+                  <a href="/Education/Corporate_Sponsorship/cor_spon.html"
+                    >기업지원</a
+                  >
+                </li>
+                <li>
+                  <a href="/Education/classbook/book/form.html">도서/강의</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">뉴스</p>
+              <ul class="submenu">
+                <li><a href="/News/news/img/new.html">최신연구/개발</a></li>
+                <li><a href="/News/news/img/contest.html">대회</a></li>
+                <li><a href="/News/news/img/yoon.html">윤리/사회적 이슈</a></li>
+                <li><a href="/News/news/img/ki.html">기업동향</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">게시판</p>
+              <ul class="submenu">
+                <li>
+                  <a href="/Communication/Q&A/Q&A.html"
+                    ><span>질의응답</span></a
+                  >
+                </li>
+                <li>
+                  <a href="/Communication/discussion/discussion.html"
+                    ><span>자유토론</span></a
+                  >
+                </li>
+                <li>
+                  <a href="/Communication/team/team.html"
+                    ><span>스터디/프로젝트</span></a
+                  >
+                </li>
+              </ul>
+            </li>
           </ul>
-        </li>
-        <li><p class="headerp">기업</p>
-          <ul class="submenu">
-            <li><a href="#">TOP10</a></li>
-            <li><a href="#">상세조회</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">채용</p>
-          <ul class="submenu">
-            <li><a href="#">TOP10</a></li>
-            <li><a href="#">상세조회</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">교육</p>
-          <ul class="submenu">
-            <li><a href="#">국비지원</a></li>
-            <li><a href="#">기업지원</a></li>
-            <li><a href="#">취업박람회</a></li>
-            <li><a href="#">페스티벌</a></li>
-            <li><a href="#">도서/강의</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">뉴스</p>
-          <ul class="submenu">
-            <li><a href="#">최신연구/개발</a></li>
-            <li><a href="#">대회</a></li>
-            <li><a href="#">윤리/사회적 이슈</a></li>
-            <li><a href="#">기업동향</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">게시판</p>
-          <ul class="submenu">
-            <li><a href="#"><span>질의응답</span></a></li>
-            <li><a href="#"><span>자유토론</span></a></li>
-            <li><a href="#"><span>스터디/프로젝트</span></a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-<!-- 본문 -->
-  <main id="contents">
-    <h1>인공지능 기술의 발전 전망</h1><br>
-    <img src="/Introduce/ future/미래.jpg" alt="" width="500" class="imgbox">
-    <p>인공지능 기술의 발전은 빠르게 진행되고 있으며, 이는 더욱 지능적이고 자율적인 시스템의 등장을 예고하고 있습니다. 머신러닝, 딥러닝, 자연어 처리 등의 기술은 인공지능을 더욱 고도화하고 있습니다.</p><br>
-    <p>왜냐하면 이러한 기술들은 인공지능이 인간의 언어를 이해하고, 복잡한 문제를 스스로 학습하여 해결할 수 있는 능력을 부여하기 때문입니다. 예를 들어, 자연어 처리 기술의 발전은 인공지능이 인간과 <br>
-      자연스러운 대화를 나눌 수 있게 만들고 있습니다.</p>
-    <p>또한, 딥러닝 기술의 발전은 인공지능이 이미지, 음성, 텍스트 등 다양한 형태의 데이터를 처리하고 이해할 수 있는 능력을 향상시키고 있습니다. 이는 인공지능이 더욱 다양한 분야에서 활용될 수 있는 기반을 마련하고 있습니다.</p><br>
-    <p>앞으로 인공지능 기술의 발전은 사이버 보안, 자율 주행 차량, 로봇 공학 등 새로운 분야에서의 혁신을 촉진할 것입니다. 이러한 발전은 인공지능이 인간의 삶을 더욱 편리하고 안전하게 만드는 데 기여할 것입니다.</p><br>
-    <p>인공지능 기술의 발전 전망을 살펴보면, 이 기술이 미래 사회에 미칠 영향은 매우 크며, 이에 대비하기 위한 준비가 필요함을 알 수 있습니다. 왜냐하면 인공지능 기술의 발전은 우리의 일상과 비즈니스 방식에<br> 
-      근본적인 변화를 가져올 수 있기 때문입니다.</p>
-    <h1>인공지능과 함께하는 미래</h1><br>
-    <img src="ai전망.webp" alt="ai 미래 사진" width="500" class="imgbox">
-    <p>인공지능 기술의 발전은 우리 사회에 많은 기회와 도전을 동시에 제시하고 있습니다. 인공지능이 가져올 변화에 대비하기 위해서는 기술적, 윤리적, 사회적 측면에서의 고민과 논의가 필요합니다.</p><br>
-    <p>왜냐하면 인공지능 기술의 발전은 인간의 역할과 일자리, 사회 구조에 영향을 미칠 수 있기 때문입니다. 따라서 인공지능 기술의 발전을 책임감 있게 이끌고, 이를 통해 사회적 가치를 창출하는 것이 중요합니다.</p><br>
-    <p>앞으로 인공지능과 함께하는 미래는 더욱 풍요롭고 혁신적일 것입니다. 이를 위해 인공지능 기술의 발전을 지속적으로 연구하고, 이 기술이 사회에 긍정적인 영향을 미칠 수 있도록 노력해야 합니다.</p><br>
-    <p>결론적으로, 인공지능의 현재와 미래를 살펴보며, 이 기술이 우리의 삶과 비즈니스에 가져올 변화와 그에 대비하기 위한 방안을 고민하는 것은 매우 중요합니다. 왜냐하면 인공지능 기술의 발전은 끊임없이 진행되고 있으며, 이는 우리 사회에
-      광범위한 영향을 미치고 있기 때문입니다.</p>
-  </main>
-
-
-<!-- 고정 푸터 -->
-  <footer id="footer">
-
-    <div class="footer-content">
-      <div id="footerlogo">
-        <h2>AI Dream</h2>
+        </nav>
       </div>
-      <nav id="footermenu">
-        <ul>
-          <li><a href="#" onclick="openmodal('#');">사이트 소개</a></li>
-          <li><a href="#" onclick="openmodal('#');">개인정보처리방침</a></li>
-          <li><a href="#" onclick="openmodal('#');">이용약관</a></li>
-          <li><a href="#" onclick="openmodal('#');">고객센터</a></li>
-        </ul>
-      </nav>
-    </div>
-  </footer>
+    </header>
 
+    <!-- 본문 -->
+    <main id="contents">
+      <h1>인공지능 기술의 발전 전망</h1>
+      <br />
+      <img
+        src="/Introduce/ future/미래.jpg"
+        alt=""
+        width="500"
+        class="imgbox"
+      />
+      <p>
+        인공지능 기술의 발전은 빠르게 진행되고 있으며, 이는 더욱 지능적이고
+        자율적인 시스템의 등장을 예고하고 있습니다. 머신러닝, 딥러닝, 자연어
+        처리 등의 기술은 인공지능을 더욱 고도화하고 있습니다.
+      </p>
+      <br />
+      <p>
+        왜냐하면 이러한 기술들은 인공지능이 인간의 언어를 이해하고, 복잡한
+        문제를 스스로 학습하여 해결할 수 있는 능력을 부여하기 때문입니다. 예를
+        들어, 자연어 처리 기술의 발전은 인공지능이 인간과 <br />
+        자연스러운 대화를 나눌 수 있게 만들고 있습니다.
+      </p>
+      <p>
+        또한, 딥러닝 기술의 발전은 인공지능이 이미지, 음성, 텍스트 등 다양한
+        형태의 데이터를 처리하고 이해할 수 있는 능력을 향상시키고 있습니다. 이는
+        인공지능이 더욱 다양한 분야에서 활용될 수 있는 기반을 마련하고 있습니다.
+      </p>
+      <br />
+      <p>
+        앞으로 인공지능 기술의 발전은 사이버 보안, 자율 주행 차량, 로봇 공학 등
+        새로운 분야에서의 혁신을 촉진할 것입니다. 이러한 발전은 인공지능이
+        인간의 삶을 더욱 편리하고 안전하게 만드는 데 기여할 것입니다.
+      </p>
+      <br />
+      <p>
+        인공지능 기술의 발전 전망을 살펴보면, 이 기술이 미래 사회에 미칠 영향은
+        매우 크며, 이에 대비하기 위한 준비가 필요함을 알 수 있습니다. 왜냐하면
+        인공지능 기술의 발전은 우리의 일상과 비즈니스 방식에<br />
+        근본적인 변화를 가져올 수 있기 때문입니다.
+      </p>
+      <h1>인공지능과 함께하는 미래</h1>
+      <br />
+      <img src="ai전망.webp" alt="ai 미래 사진" width="500" class="imgbox" />
+      <p>
+        인공지능 기술의 발전은 우리 사회에 많은 기회와 도전을 동시에 제시하고
+        있습니다. 인공지능이 가져올 변화에 대비하기 위해서는 기술적, 윤리적,
+        사회적 측면에서의 고민과 논의가 필요합니다.
+      </p>
+      <br />
+      <p>
+        왜냐하면 인공지능 기술의 발전은 인간의 역할과 일자리, 사회 구조에 영향을
+        미칠 수 있기 때문입니다. 따라서 인공지능 기술의 발전을 책임감 있게
+        이끌고, 이를 통해 사회적 가치를 창출하는 것이 중요합니다.
+      </p>
+      <br />
+      <p>
+        앞으로 인공지능과 함께하는 미래는 더욱 풍요롭고 혁신적일 것입니다. 이를
+        위해 인공지능 기술의 발전을 지속적으로 연구하고, 이 기술이 사회에
+        긍정적인 영향을 미칠 수 있도록 노력해야 합니다.
+      </p>
+      <br />
+      <p>
+        결론적으로, 인공지능의 현재와 미래를 살펴보며, 이 기술이 우리의 삶과
+        비즈니스에 가져올 변화와 그에 대비하기 위한 방안을 고민하는 것은 매우
+        중요합니다. 왜냐하면 인공지능 기술의 발전은 끊임없이 진행되고 있으며,
+        이는 우리 사회에 광범위한 영향을 미치고 있기 때문입니다.
+      </p>
+    </main>
 
-<script>
-  // 헤더 동작
-const headerMenuItems = document.querySelectorAll('#headermenu > li');
+    <!-- 고정 푸터 -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div id="footerlogo">
+          <h2>AI Dream</h2>
+        </div>
+        <nav id="footermenu">
+          <ul>
+            <li><a href="#" onclick="openmodal('#');">사이트 소개</a></li>
+            <li><a href="#" onclick="openmodal('#');">개인정보처리방침</a></li>
+            <li><a href="#" onclick="openmodal('#');">이용약관</a></li>
+            <li><a href="#" onclick="openmodal('#');">고객센터</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
 
-headerMenuItems.forEach(item => {
-  item.addEventListener('mouseenter', () => {
-    const allSubmenus = document.querySelectorAll('.submenu');
-    allSubmenus.forEach(submenu => {
-          submenu.style.display = 'block';
-    });
-  });
+    <script>
+      // 헤더 동작
+      const headerMenuItems = document.querySelectorAll("#headermenu > li");
 
-  item.addEventListener('mouseleave', () => {
-    const allSubmenus = document.querySelectorAll('.submenu');
-    allSubmenus.forEach(submenu => {
-      submenu.style.display = 'none';
-    });
-  });
-});
+      headerMenuItems.forEach((item) => {
+        item.addEventListener("mouseenter", () => {
+          const allSubmenus = document.querySelectorAll(".submenu");
+          allSubmenus.forEach((submenu) => {
+            submenu.style.display = "block";
+          });
+        });
 
-// submenu의 li를 클릭해을때 li 안에 a 태그가 작동
-const submenuItems = document.querySelectorAll(".submenu li");
-submenuItems.forEach((item) => {
-  item.addEventListener("click", function (event) {
-    const link = item.querySelector("a");
-    if (link) {
-      window.location.href = link.href; // 링크로 이동
-    }
-    event.stopPropagation(); // 상위 li의 클릭 이벤트 방지
-  });
-});
-</script>
-</body>
+        item.addEventListener("mouseleave", () => {
+          const allSubmenus = document.querySelectorAll(".submenu");
+          allSubmenus.forEach((submenu) => {
+            submenu.style.display = "none";
+          });
+        });
+      });
+
+      // submenu의 li를 클릭해을때 li 안에 a 태그가 작동
+      const submenuItems = document.querySelectorAll(".submenu li");
+      submenuItems.forEach((item) => {
+        item.addEventListener("click", function (event) {
+          const link = item.querySelector("a");
+          if (link) {
+            window.location.href = link.href; // 링크로 이동
+          }
+          event.stopPropagation(); // 상위 li의 클릭 이벤트 방지
+        });
+      });
+    </script>
+  </body>
 </html>

@@ -28,3 +28,33 @@ submenuItems.forEach((item) => {
     event.stopPropagation(); // 상위 li의 클릭 이벤트 방지
   });
 });
+
+// 메인 동영상 처리
+const video = document.getElementById("introVideo");
+const videoContainer = document.getElementById("videoContainer");
+const skipButton = document.getElementById("skipButton");
+const header = document.getElementById("header");
+const contents = document.getElementById("contents");
+const footer = document.getElementById("footer");
+
+function fadeOut(element) {
+  element.style.transition = "opacity 0.8s ease";
+  element.style.opacity = "0";
+  setTimeout(() => {
+    element.style.display = "none";
+  }, 500); // 0.5초 후 display: none
+}
+
+skipButton.addEventListener("click", () => {
+  fadeOut(videoContainer);
+  header.style.opacity = "1";
+  contents.style.opacity = "1";
+  footer.style.opacity = "1";
+});
+
+video.addEventListener("ended", () => {
+  fadeOut(videoContainer);
+  header.style.opacity = "1";
+  contents.style.opacity = "1";
+  footer.style.opacity = "1";
+});

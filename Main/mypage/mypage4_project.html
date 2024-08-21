@@ -1,208 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
       integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  <link rel="stylesheet" href="mypage4_project.css"> <!-- 링크 이름 바꾸기-->
-</head>
+    <link rel="stylesheet" href="mypage4_project.css" />
+    <!-- 링크 이름 바꾸기-->
+  </head>
 
-<body>
+  <body>
+    <!-- 고정 헤더 -->
+    <header id="header">
+      <div id="headercat">
+        <div id="headerlogo">
+          <!-- 로고 누르면 메인 페이지로 이동 -->
+          <a href="/Main/main.html">AI Dream</a>
+        </div>
 
-<!-- 고정 헤더 -->
-<header id="header">
-
-  <div id="headercat">
-
-    <div id="headerlogo">
-      <!-- 로고 누르면 메인 페이지로 이동 -->
-      <a href="../main.html">AI Dream</a>
-    </div>
-    
-    <nav id="menu">
-      <ul id="headermenu">
-        <li><p class="headerp">소개</p>
-          <ul class="submenu">
-            <li><a href="#">기본개념</a></li>
-            <li><a href="#">역사</a></li>
-            <li><a href="#">응용분야</a></li>
-            <li><a href="#">미래전망</a></li>
-            <li><a href="#">용어사전</a></li>
+        <nav id="menu">
+          <ul id="headermenu">
+            <li>
+              <p class="headerp">소개</p>
+              <ul class="submenu">
+                <li>
+                  <a href="/Introduce/aiDefaultConcept/form.html">기본개념</a>
+                </li>
+                <li><a href="/Introduce/his/form.html">역사</a></li>
+                <li><a href="/Introduce/bunya/form.html">응용분야</a></li>
+                <li><a href="/Introduce/ future/form.html">미래전망</a></li>
+                <li><a href="/Introduce/AIword/form.html">용어사전</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">기업</p>
+              <ul class="submenu">
+                <li><a href="/Company/company_top.html">TOP10</a></li>
+                <li><a href="/Company/company_info.html">상세조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">채용</p>
+              <ul class="submenu">
+                <li><a href="/Apply/apply_top.html">TOP10</a></li>
+                <li><a href="/Apply/apply_info.html">상세조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">교육</p>
+              <ul class="submenu">
+                <li>
+                  <a href="/Education/Goverment_education/Gov_eud.html"
+                    >국비지원</a
+                  >
+                </li>
+                <li>
+                  <a href="/Education/Corporate_Sponsorship/cor_spon.html"
+                    >기업지원</a
+                  >
+                </li>
+                <li>
+                  <a href="/Education/classbook/book/form.html">도서/강의</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">뉴스</p>
+              <ul class="submenu">
+                <li><a href="/News/news/img/new.html">최신연구/개발</a></li>
+                <li><a href="/News/news/img/contest.html">대회</a></li>
+                <li><a href="/News/news/img/yoon.html">윤리/사회적 이슈</a></li>
+                <li><a href="/News/news/img/ki.html">기업동향</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">게시판</p>
+              <ul class="submenu">
+                <li>
+                  <a href="/Communication/Q&A/Q&A.html"
+                    ><span>질의응답</span></a
+                  >
+                </li>
+                <li>
+                  <a href="/Communication/discussion/discussion.html"
+                    ><span>자유토론</span></a
+                  >
+                </li>
+                <li>
+                  <a href="/Communication/team/team.html"
+                    ><span>스터디/프로젝트</span></a
+                  >
+                </li>
+              </ul>
+            </li>
           </ul>
-        </li>
-        <li><p class="headerp">기업</p>
-          <ul class="submenu">
-            <li><a href="#">TOP10</a></li>
-            <li><a href="#">상세조회</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">채용</p>
-          <ul class="submenu">
-            <li><a href="#">TOP10</a></li>
-            <li><a href="#">상세조회</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">교육</p>
-          <ul class="submenu">
-            <li><a href="#">국비지원</a></li>
-            <li><a href="#">기업지원</a></li>
-            <li><a href="#">취업박람회</a></li>
-            <li><a href="#">페스티벌</a></li>
-            <li><a href="#">도서/강의</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">뉴스</p>
-          <ul class="submenu">
-            <li><a href="#">최신연구/개발</a></li>
-            <li><a href="#">대회</a></li>
-            <li><a href="#">윤리/사회적 이슈</a></li>
-            <li><a href="#">기업동향</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">게시판</p>
-          <ul class="submenu">
-            <li><a href="#"><span>질의응답</span></a></li>
-            <li><a href="#"><span>자유토론</span></a></li>
-            <li><a href="#"><span>스터디/프로젝트</span></a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-<!-- 본문 -->
-  <main id="contents">
-
-    <section id="leftsection">
-      <img src="icon_image/profile.png" alt="profile" id="profile">
-      <h2>마이페이지</h2> 
-      <h3>Welcome Mypage</h3>
-      <a href="../main.html" onclick="logoutAlert()">
-        <input type="button" value="로그아웃 [→" id="mainlogout">
-      </a>
-      <ul id="tag">
-        <li class="myli" id="mycompany">
-          <img src="icon_image/company.png" alt="company" class="mymenu">
-          <p>나의 기업</p>
-        </li>
-        <li class="myli" id="myapply">
-          <img src="icon_image/apply.png" alt="apply" class="mymenu">
-          <p>나의 채용</p>
-        </li>
-        <li class="myli" id="mywriter">
-          <img src="icon_image/writer.png" alt="writer" class="mymenu">
-          <p>내가 쓴 글</p>
-        </li>
-        <li class="myli" id="myproject">
-          <img src="icon_image/project.png" alt="project" class="mymenu">
-          <p>나의 프로젝트</p>
-        </li>
-
-      </ul>
-    </section>
-
-    <section id="rightsection">
-      <h1>나의 프로젝트</h1>
-      <hr>
-      <div id="box">
-        <div id="box1" class="boxs">
-          <a href="project.pdf" target="_blank">
-            <span id="new">new</span>
-            <p id="p1">2024년 2분기 프로젝트</p>
-            <p id="p2">[생성형 AI를 활용한 비즈니스]</p>
-            <p id="p3">바로보기 <span>▶</span></p>
-            <img src="pdf.png" alt="pdf">
-          </a>
-        </div>
-        <div id="box2" class="boxs">
-          <a href="project.pdf" target="_blank">
-            <p id="p1">2024년 1분기 프로젝트</p>
-            <p id="p2">[AI 활용서]</p>
-            <p id="p3">바로보기 <span>▶</span></p>
-            <img src="pdf.png" alt="pdf">
-          </a>
-        </div>
-        <div id="box3" class="boxs">
-          <a href="project.pdf" target="_blank">
-            <p id="p1">2023년 4분기 프로젝트</p>
-            <p id="p2">[AI는 어떻게 미래를 이끄는가]</p>
-            <p id="p3">바로보기 <span>▶</span></p>
-            <img src="pdf.png" alt="pdf">
-          </a>
-        </div>
-        <div id="box4" class="boxs">
-          <a href="project.pdf" target="_blank">
-            <p id="p1">2023년 3분기 프로젝트</p>
-            <p id="p2">[AI를 위한 소프트웨어 공학]</p>
-            <p id="p3">바로보기 <span>▶</span></p>
-            <img src="pdf.png" alt="pdf">
-          </a>
-        </div>
-        <div id="box5" class="boxs">
-          <a href="project.pdf" target="_blank">
-            <p id="p1">2023년 2분기 프로젝트</p>
-            <p id="p2">[로또번호 예측]</p>
-            <p id="p3">바로보기 <span>▶</span></p>
-            <img src="pdf.png" alt="pdf">
-          </a>
-        </div>
-        <div id="box6" class="boxs">
-          <a href="project.pdf" target="_blank">
-            <p id="p1">2023년 1분기 프로젝트</p>
-            <p id="p2">[수어 인식 자판 시스템]</p>
-            <p id="p3">바로보기 <span>▶</span></p>
-            <img src="pdf.png" alt="pdf">
-          </a>
-        </div>
-        <div id="box7" class="boxs">
-          <a href="project.pdf" target="_blank">
-            <p id="p1">2022년 4분기 프로젝트</p>
-            <p id="p2">[가짜 뉴스 탐지]</p>
-            <p id="p3">바로보기 <span>▶</span></p>
-            <img src="pdf.png" alt="pdf">
-          </a>
-        </div>
-        <div id="box8" class="boxs">
-          <a href="project.pdf" target="_blank">
-            <p id="p1">2022년 3분기 프로젝트</p>
-            <p id="p2">[영화 추천 시스템]</p>
-            <p id="p3">바로보기 <span>▶</span></p>
-            <img src="pdf.png" alt="pdf">
-          </a>
-        </div>
-        <div id="box9" class="boxs">
-          <a href="project.pdf" target="_blank">
-            <p id="p1">2022년 2분기 프로젝트</p>
-            <p id="p2">[시계열 데이터 이상 탐지]</p>
-            <p id="p3">바로보기 <span>▶</span></p>
-            <img src="pdf.png" alt="pdf">
-          </a>
-        </div>
-        <div id="box10" class="boxs">
-          <a href="project.pdf" target="_blank">
-            <p id="p1">2022년 1분기 프로젝트</p>
-            <p id="p2">[너가 취업할 확률]</p>
-            <p id="p3">바로보기 <span>▶</span></p>
-            <img src="pdf.png" alt="pdf">
-          </a>
-        </div>
+        </nav>
       </div>
-      <div class="pagination">
-        <i class="fa-solid fa-arrow-left"></i>
-        <ol id="numbers"></ol>
-        <i class="fa-solid fa-arrow-right"></i>
-      </div>
-    </section>
-  </main>
-<script src="mypage4_project.js"></script>
-</body>
+    </header>
+
+    <!-- 본문 -->
+    <main id="contents">
+      <section id="leftsection">
+        <img src="icon_image/profile.png" alt="profile" id="profile" />
+        <h2>마이페이지</h2>
+        <h3>Welcome Mypage</h3>
+        <a href="../main.html" onclick="logoutAlert()">
+          <input type="button" value="로그아웃 [→" id="mainlogout" />
+        </a>
+        <ul id="tag">
+          <li class="myli" id="mycompany">
+            <img src="icon_image/company.png" alt="company" class="mymenu" />
+            <p>나의 기업</p>
+          </li>
+          <li class="myli" id="myapply">
+            <img src="icon_image/apply.png" alt="apply" class="mymenu" />
+            <p>나의 채용</p>
+          </li>
+          <li class="myli" id="mywriter">
+            <img src="icon_image/writer.png" alt="writer" class="mymenu" />
+            <p>내가 쓴 글</p>
+          </li>
+          <li class="myli" id="myproject">
+            <img src="icon_image/project.png" alt="project" class="mymenu" />
+            <p>나의 프로젝트</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="rightsection">
+        <h1>나의 프로젝트</h1>
+        <hr />
+        <div id="box">
+          <div id="box1" class="boxs">
+            <a href="project.pdf" target="_blank">
+              <span id="new">new</span>
+              <p id="p1">2024년 2분기 프로젝트</p>
+              <p id="p2">[생성형 AI를 활용한 비즈니스]</p>
+              <p id="p3">바로보기 <span>▶</span></p>
+              <img src="pdf.png" alt="pdf" />
+            </a>
+          </div>
+          <div id="box2" class="boxs">
+            <a href="project.pdf" target="_blank">
+              <p id="p1">2024년 1분기 프로젝트</p>
+              <p id="p2">[AI 활용서]</p>
+              <p id="p3">바로보기 <span>▶</span></p>
+              <img src="pdf.png" alt="pdf" />
+            </a>
+          </div>
+          <div id="box3" class="boxs">
+            <a href="project.pdf" target="_blank">
+              <p id="p1">2023년 4분기 프로젝트</p>
+              <p id="p2">[AI는 어떻게 미래를 이끄는가]</p>
+              <p id="p3">바로보기 <span>▶</span></p>
+              <img src="pdf.png" alt="pdf" />
+            </a>
+          </div>
+          <div id="box4" class="boxs">
+            <a href="project.pdf" target="_blank">
+              <p id="p1">2023년 3분기 프로젝트</p>
+              <p id="p2">[AI를 위한 소프트웨어 공학]</p>
+              <p id="p3">바로보기 <span>▶</span></p>
+              <img src="pdf.png" alt="pdf" />
+            </a>
+          </div>
+          <div id="box5" class="boxs">
+            <a href="project.pdf" target="_blank">
+              <p id="p1">2023년 2분기 프로젝트</p>
+              <p id="p2">[로또번호 예측]</p>
+              <p id="p3">바로보기 <span>▶</span></p>
+              <img src="pdf.png" alt="pdf" />
+            </a>
+          </div>
+          <div id="box6" class="boxs">
+            <a href="project.pdf" target="_blank">
+              <p id="p1">2023년 1분기 프로젝트</p>
+              <p id="p2">[수어 인식 자판 시스템]</p>
+              <p id="p3">바로보기 <span>▶</span></p>
+              <img src="pdf.png" alt="pdf" />
+            </a>
+          </div>
+          <div id="box7" class="boxs">
+            <a href="project.pdf" target="_blank">
+              <p id="p1">2022년 4분기 프로젝트</p>
+              <p id="p2">[가짜 뉴스 탐지]</p>
+              <p id="p3">바로보기 <span>▶</span></p>
+              <img src="pdf.png" alt="pdf" />
+            </a>
+          </div>
+          <div id="box8" class="boxs">
+            <a href="project.pdf" target="_blank">
+              <p id="p1">2022년 3분기 프로젝트</p>
+              <p id="p2">[영화 추천 시스템]</p>
+              <p id="p3">바로보기 <span>▶</span></p>
+              <img src="pdf.png" alt="pdf" />
+            </a>
+          </div>
+          <div id="box9" class="boxs">
+            <a href="project.pdf" target="_blank">
+              <p id="p1">2022년 2분기 프로젝트</p>
+              <p id="p2">[시계열 데이터 이상 탐지]</p>
+              <p id="p3">바로보기 <span>▶</span></p>
+              <img src="pdf.png" alt="pdf" />
+            </a>
+          </div>
+          <div id="box10" class="boxs">
+            <a href="project.pdf" target="_blank">
+              <p id="p1">2022년 1분기 프로젝트</p>
+              <p id="p2">[너가 취업할 확률]</p>
+              <p id="p3">바로보기 <span>▶</span></p>
+              <img src="pdf.png" alt="pdf" />
+            </a>
+          </div>
+        </div>
+        <div class="pagination">
+          <i class="fa-solid fa-arrow-left"></i>
+          <ol id="numbers"></ol>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </section>
+    </main>
+    <script src="mypage4_project.js"></script>
+  </body>
 </html>

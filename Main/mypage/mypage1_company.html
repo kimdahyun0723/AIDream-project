@@ -1,267 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="mypage1_company.css"> <!-- 링크 이름 바꾸기-->
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mypage1_company.css" />
+    <!-- 링크 이름 바꾸기-->
+  </head>
 
-<body>
+  <body>
+    <!-- 고정 헤더 -->
+    <header id="header">
+      <div id="headercat">
+        <div id="headerlogo">
+          <!-- 로고 누르면 메인 페이지로 이동 -->
+          <a href="/Main/main.html">AI Dream</a>
+        </div>
 
-<!-- 고정 헤더 -->
-<header id="header">
-
-  <div id="headercat">
-
-    <div id="headerlogo">
-      <!-- 로고 누르면 메인 페이지로 이동 -->
-      <a href="../main.html">AI Dream</a>
-    </div>
-    
-    <nav id="menu">
-      <ul id="headermenu">
-        <li><p class="headerp">소개</p>
-          <ul class="submenu">
-            <li><a href="#">기본개념</a></li>
-            <li><a href="#">역사</a></li>
-            <li><a href="#">응용분야</a></li>
-            <li><a href="#">미래전망</a></li>
-            <li><a href="#">용어사전</a></li>
+        <nav id="menu">
+          <ul id="headermenu">
+            <li>
+              <p class="headerp">소개</p>
+              <ul class="submenu">
+                <li>
+                  <a href="/Introduce/aiDefaultConcept/form.html">기본개념</a>
+                </li>
+                <li><a href="/Introduce/his/form.html">역사</a></li>
+                <li><a href="/Introduce/bunya/form.html">응용분야</a></li>
+                <li><a href="/Introduce/ future/form.html">미래전망</a></li>
+                <li><a href="/Introduce/AIword/form.html">용어사전</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">기업</p>
+              <ul class="submenu">
+                <li><a href="/Company/company_top.html">TOP10</a></li>
+                <li><a href="/Company/company_info.html">상세조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">채용</p>
+              <ul class="submenu">
+                <li><a href="/Apply/apply_top.html">TOP10</a></li>
+                <li><a href="/Apply/apply_info.html">상세조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">교육</p>
+              <ul class="submenu">
+                <li>
+                  <a href="/Education/Goverment_education/Gov_eud.html"
+                    >국비지원</a
+                  >
+                </li>
+                <li>
+                  <a href="/Education/Corporate_Sponsorship/cor_spon.html"
+                    >기업지원</a
+                  >
+                </li>
+                <li>
+                  <a href="/Education/classbook/book/form.html">도서/강의</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">뉴스</p>
+              <ul class="submenu">
+                <li><a href="/News/news/img/new.html">최신연구/개발</a></li>
+                <li><a href="/News/news/img/contest.html">대회</a></li>
+                <li><a href="/News/news/img/yoon.html">윤리/사회적 이슈</a></li>
+                <li><a href="/News/news/img/ki.html">기업동향</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">게시판</p>
+              <ul class="submenu">
+                <li>
+                  <a href="/Communication/Q&A/Q&A.html"
+                    ><span>질의응답</span></a
+                  >
+                </li>
+                <li>
+                  <a href="/Communication/discussion/discussion.html"
+                    ><span>자유토론</span></a
+                  >
+                </li>
+                <li>
+                  <a href="/Communication/team/team.html"
+                    ><span>스터디/프로젝트</span></a
+                  >
+                </li>
+              </ul>
+            </li>
           </ul>
-        </li>
-        <li><p class="headerp">기업</p>
-          <ul class="submenu">
-            <li><a href="#">TOP10</a></li>
-            <li><a href="#">상세조회</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">채용</p>
-          <ul class="submenu">
-            <li><a href="#">TOP10</a></li>
-            <li><a href="#">상세조회</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">교육</p>
-          <ul class="submenu">
-            <li><a href="#">국비지원</a></li>
-            <li><a href="#">기업지원</a></li>
-            <li><a href="#">취업박람회</a></li>
-            <li><a href="#">페스티벌</a></li>
-            <li><a href="#">도서/강의</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">뉴스</p>
-          <ul class="submenu">
-            <li><a href="#">최신연구/개발</a></li>
-            <li><a href="#">대회</a></li>
-            <li><a href="#">윤리/사회적 이슈</a></li>
-            <li><a href="#">기업동향</a></li>
-          </ul>
-        </li>
-        <li><p class="headerp">게시판</p>
-          <ul class="submenu">
-            <li><a href="#"><span>질의응답</span></a></li>
-            <li><a href="#"><span>자유토론</span></a></li>
-            <li><a href="#"><span>스터디/프로젝트</span></a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-<!-- 본문 -->
-  <main id="contents">
-
-    <section id="leftsection">
-      <img src="icon_image/profile.png" alt="profile" id="profile">
-      <h2>마이페이지</h2> 
-      <h3>Welcome Mypage</h3>
-      <a href="../main.html" onclick="logoutAlert()">
-        <input type="button" value="로그아웃 [→" id="mainlogout">
-      </a>
-      <ul id="tag">
-        <li class="myli" id="mycompany">
-          <img src="icon_image/company.png" alt="company" class="mymenu">
-          <p>나의 기업</p>
-        </li>
-        <li class="myli" id="myapply">
-          <img src="icon_image/apply.png" alt="apply" class="mymenu">
-          <p>나의 채용</p>
-        </li>
-        <li class="myli" id="mywriter">
-          <img src="icon_image/writer.png" alt="writer" class="mymenu">
-          <p>내가 쓴 글</p>
-        </li>
-        <li class="myli" id="myproject">
-          <img src="icon_image/project.png" alt="project" class="mymenu">
-          <p>나의 프로젝트</p>
-        </li>
-
-      </ul>
-    </section>
-
-    <section id="rightsection">
-      <h1>즐겨찾기 기업 조회</h1>
-      <hr>
-      <div id="box">
-        <div id="box1" class="topbox">
-          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box1tag">
-          <a href="http://www.samsung.com/sec" target="_blank">
-            <img src="company_image/samsung_electronics.jpg" alt="삼성전자" class="logo">
-            <h2>[삼성전자]</h2>
-            <p>기업 : 대기업</p>
-            <p>산업 : 이동전화기 제조업</p>
-            <p>주소 : 경기도 수원시 영통구</p>
-          </a>
-        </div>
-        <div id="box2" class="topbox">
-          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box2tag">
-          <a href="http://www.sktelecom.com/" target="_blank">
-            <img src="company_image/sktelecom.png" alt="SK텔레콤" class="logo">
-            <h2>[SK텔레콤]</h2>
-            <p>기업 : 대기업</p>
-            <p>산업 : 무선/위선 통신업</p>
-            <p>주소 : 서울시 중구</p>
-          </a>
-        </div>
-        <div id="box3" class="topbox">
-          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box3tag">
-          <a href="http://www.navercorp.com/" target="_blank">
-            <img src="company_image/naver.jpg" alt="네이버" class="logo">
-            <h2>[네이버]</h2>
-            <p>기업 : 대기업</p>
-            <p>산업 : 인터넷 정보매개 서비스업</p>
-            <p>주소 : 경기도 성남시 분당구</p>
-          </a>
-        </div>
-        <div id="box4" class="topbox">
-          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box4tag">
-          <a href="http://www.kakaocorp.com/" target="_blank">
-            <img src="company_image/kakao.jpg" alt="카카오" class="logo">
-            <h2>[카카오]</h2>
-            <p>기업 : 대기업</p>
-            <p>산업 : 인터넷 정보매개 서비스업</p>
-            <p>주소 : 경기도 성남시 분당구</p>
-          </a>
-        </div>
-        <div id="box5" class="topbox">
-          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box5tag">
-          <a href="http://www.hyundai.com/" target="_blank">
-            <img src="company_image/hyundai_motor.jpg" alt="현대자동차" class="logo">
-            <h2>[현대자동차]</h2>
-            <p>기업 : 대기업</p>
-            <p>산업 : 자동차 제조업</p>
-            <p>주소 : 서울시 서초구</p>
-          </a>
-        </div>
-        <div id="box6" class="topbox">
-          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box6tag">
-          <a href="http://www.lge.co.kr/" target="_blank">
-            <img src="company_image/lg_display.jpg" alt="LG전자" class="logo">
-            <h2>[LG전자]</h2>
-            <p>기업 : 대기업</p>
-            <p>산업 : 통신/방송 장비 제조업</p>
-            <p>주소 : 서울시 영등포구</p>    
-          </a>
-        </div> 
-        <div id="box7" class="topbox">
-          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box7tag">
-          <a href="http://www.doosanrobotics.com/" target="_blank">
-            <img src="company_image/doosan_robotics.jpg" alt="두산로보틱스" class="logo">
-            <h2>[두산로보틱스]</h2>
-            <p>기업 : 대기업</p>
-            <p>산업 : 컴퓨터/하드웨어/장비 제조업</p>
-            <p>주소 : 서울시 서초구</p>
-          </a>
-        </div>
-        <div id="box8" class="topbox">
-          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box8tag">
-          <a href="http://www.kt.com/" target="_blank">
-            <img src="company_image/kt.png" alt="KT" class="logo">
-            <h2>[KT]</h2>
-            <p>기업 : 대기업</p>
-            <p>산업 : 무선/위성 통신업</p>
-            <p>주소 : 경기도 성남시 분당구</p>
-          </a>
-        </div>
-        <div id="box9" class="topbox">
-          <img src="company_image/checkstar.png" alt="즐겨찾기" class="tag" id="box9tag">
-          <a href="http://www.posco.com/" target="_blank">
-            <img src="company_image/posco.jpg" alt="포스코" class="logo">
-            <h2>[포스코]</h2>
-            <p>기업 : 대기업</p>
-            <p>산업 : 제강업</p>
-            <p>주소 : 경상북도 포항시 남구</p>
-          </a>
-        </div>
+        </nav>
       </div>
-    </section>
-  </main>
+    </header>
 
-<script>
-// 헤더 동작
-const headerMenuItems = document.querySelectorAll('#headermenu > li');
+    <!-- 본문 -->
+    <main id="contents">
+      <section id="leftsection">
+        <img src="icon_image/profile.png" alt="profile" id="profile" />
+        <h2>마이페이지</h2>
+        <h3>Welcome Mypage</h3>
+        <a href="../main.html" onclick="logoutAlert()">
+          <input type="button" value="로그아웃 [→" id="mainlogout" />
+        </a>
+        <ul id="tag">
+          <li class="myli" id="mycompany">
+            <img src="icon_image/company.png" alt="company" class="mymenu" />
+            <p>나의 기업</p>
+          </li>
+          <li class="myli" id="myapply">
+            <img src="icon_image/apply.png" alt="apply" class="mymenu" />
+            <p>나의 채용</p>
+          </li>
+          <li class="myli" id="mywriter">
+            <img src="icon_image/writer.png" alt="writer" class="mymenu" />
+            <p>내가 쓴 글</p>
+          </li>
+          <li class="myli" id="myproject">
+            <img src="icon_image/project.png" alt="project" class="mymenu" />
+            <p>나의 프로젝트</p>
+          </li>
+        </ul>
+      </section>
 
-headerMenuItems.forEach(item => {
-  item.addEventListener('mouseenter', () => {
-    const allSubmenus = document.querySelectorAll('.submenu');
-    allSubmenus.forEach(submenu => {
-          submenu.style.display = 'block';
-    });
-  });
+      <section id="rightsection">
+        <h1>즐겨찾기 기업 조회</h1>
+        <hr />
+        <div id="box">
+          <div id="box1" class="topbox">
+            <img
+              src="company_image/checkstar.png"
+              alt="즐겨찾기"
+              class="tag"
+              id="box1tag"
+            />
+            <a href="http://www.samsung.com/sec" target="_blank">
+              <img
+                src="company_image/samsung_electronics.jpg"
+                alt="삼성전자"
+                class="logo"
+              />
+              <h2>[삼성전자]</h2>
+              <p>기업 : 대기업</p>
+              <p>산업 : 이동전화기 제조업</p>
+              <p>주소 : 경기도 수원시 영통구</p>
+            </a>
+          </div>
+          <div id="box2" class="topbox">
+            <img
+              src="company_image/checkstar.png"
+              alt="즐겨찾기"
+              class="tag"
+              id="box2tag"
+            />
+            <a href="http://www.sktelecom.com/" target="_blank">
+              <img
+                src="company_image/sktelecom.png"
+                alt="SK텔레콤"
+                class="logo"
+              />
+              <h2>[SK텔레콤]</h2>
+              <p>기업 : 대기업</p>
+              <p>산업 : 무선/위선 통신업</p>
+              <p>주소 : 서울시 중구</p>
+            </a>
+          </div>
+          <div id="box3" class="topbox">
+            <img
+              src="company_image/checkstar.png"
+              alt="즐겨찾기"
+              class="tag"
+              id="box3tag"
+            />
+            <a href="http://www.navercorp.com/" target="_blank">
+              <img src="company_image/naver.jpg" alt="네이버" class="logo" />
+              <h2>[네이버]</h2>
+              <p>기업 : 대기업</p>
+              <p>산업 : 인터넷 정보매개 서비스업</p>
+              <p>주소 : 경기도 성남시 분당구</p>
+            </a>
+          </div>
+          <div id="box4" class="topbox">
+            <img
+              src="company_image/checkstar.png"
+              alt="즐겨찾기"
+              class="tag"
+              id="box4tag"
+            />
+            <a href="http://www.kakaocorp.com/" target="_blank">
+              <img src="company_image/kakao.jpg" alt="카카오" class="logo" />
+              <h2>[카카오]</h2>
+              <p>기업 : 대기업</p>
+              <p>산업 : 인터넷 정보매개 서비스업</p>
+              <p>주소 : 경기도 성남시 분당구</p>
+            </a>
+          </div>
+          <div id="box5" class="topbox">
+            <img
+              src="company_image/checkstar.png"
+              alt="즐겨찾기"
+              class="tag"
+              id="box5tag"
+            />
+            <a href="http://www.hyundai.com/" target="_blank">
+              <img
+                src="company_image/hyundai_motor.jpg"
+                alt="현대자동차"
+                class="logo"
+              />
+              <h2>[현대자동차]</h2>
+              <p>기업 : 대기업</p>
+              <p>산업 : 자동차 제조업</p>
+              <p>주소 : 서울시 서초구</p>
+            </a>
+          </div>
+          <div id="box6" class="topbox">
+            <img
+              src="company_image/checkstar.png"
+              alt="즐겨찾기"
+              class="tag"
+              id="box6tag"
+            />
+            <a href="http://www.lge.co.kr/" target="_blank">
+              <img
+                src="company_image/lg_display.jpg"
+                alt="LG전자"
+                class="logo"
+              />
+              <h2>[LG전자]</h2>
+              <p>기업 : 대기업</p>
+              <p>산업 : 통신/방송 장비 제조업</p>
+              <p>주소 : 서울시 영등포구</p>
+            </a>
+          </div>
+          <div id="box7" class="topbox">
+            <img
+              src="company_image/checkstar.png"
+              alt="즐겨찾기"
+              class="tag"
+              id="box7tag"
+            />
+            <a href="http://www.doosanrobotics.com/" target="_blank">
+              <img
+                src="company_image/doosan_robotics.jpg"
+                alt="두산로보틱스"
+                class="logo"
+              />
+              <h2>[두산로보틱스]</h2>
+              <p>기업 : 대기업</p>
+              <p>산업 : 컴퓨터/하드웨어/장비 제조업</p>
+              <p>주소 : 서울시 서초구</p>
+            </a>
+          </div>
+          <div id="box8" class="topbox">
+            <img
+              src="company_image/checkstar.png"
+              alt="즐겨찾기"
+              class="tag"
+              id="box8tag"
+            />
+            <a href="http://www.kt.com/" target="_blank">
+              <img src="company_image/kt.png" alt="KT" class="logo" />
+              <h2>[KT]</h2>
+              <p>기업 : 대기업</p>
+              <p>산업 : 무선/위성 통신업</p>
+              <p>주소 : 경기도 성남시 분당구</p>
+            </a>
+          </div>
+          <div id="box9" class="topbox">
+            <img
+              src="company_image/checkstar.png"
+              alt="즐겨찾기"
+              class="tag"
+              id="box9tag"
+            />
+            <a href="http://www.posco.com/" target="_blank">
+              <img src="company_image/posco.jpg" alt="포스코" class="logo" />
+              <h2>[포스코]</h2>
+              <p>기업 : 대기업</p>
+              <p>산업 : 제강업</p>
+              <p>주소 : 경상북도 포항시 남구</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  item.addEventListener('mouseleave', () => {
-    const allSubmenus = document.querySelectorAll('.submenu');
-    allSubmenus.forEach(submenu => {
-      submenu.style.display = 'none';
-    });
-  });
-});
+    <script>
+      // 헤더 동작
+      const headerMenuItems = document.querySelectorAll("#headermenu > li");
 
+      headerMenuItems.forEach((item) => {
+        item.addEventListener("mouseenter", () => {
+          const allSubmenus = document.querySelectorAll(".submenu");
+          allSubmenus.forEach((submenu) => {
+            submenu.style.display = "block";
+          });
+        });
 
-//마이페이지 이벤트
-const myli = document.querySelectorAll(".myli");
-const myli2 = document.querySelectorAll(".myli:not(#mycompany)");
-const mycompany = document.querySelector("#mycompany");
+        item.addEventListener("mouseleave", () => {
+          const allSubmenus = document.querySelectorAll(".submenu");
+          allSubmenus.forEach((submenu) => {
+            submenu.style.display = "none";
+          });
+        });
+      });
 
-//클리하면 페이지 이동
-myli[0].addEventListener("click", function(){
-  window.location.href = "mypage1_company.html";
-})
-myli[1].addEventListener("click", function(){
-  window.location.href = "mypage2_apply.html";
-})
-myli[2].addEventListener("click", function(){
-  window.location.href = "mypage3_writer.html";
-})
-myli[3].addEventListener("click", function(){
-  window.location.href = "mypage4_project.html";
-})
+      //마이페이지 이벤트
+      const myli = document.querySelectorAll(".myli");
+      const myli2 = document.querySelectorAll(".myli:not(#mycompany)");
+      const mycompany = document.querySelector("#mycompany");
 
-//메뉴 호버하면 스타일 변경
-myli2.forEach((element) =>{
-  element.addEventListener("mouseover", function(event){
-    mycompany.style.backgroundColor = "#4B89DC";
-    mycompany.style.color = "black";
-  })
-  element.addEventListener("mouseout", function(event){
-    mycompany.style.backgroundColor = "";
-    mycompany.style.color = "";
-  })
-})
+      //클리하면 페이지 이동
+      myli[0].addEventListener("click", function () {
+        window.location.href = "mypage1_company.html";
+      });
+      myli[1].addEventListener("click", function () {
+        window.location.href = "mypage2_apply.html";
+      });
+      myli[2].addEventListener("click", function () {
+        window.location.href = "mypage3_writer.html";
+      });
+      myli[3].addEventListener("click", function () {
+        window.location.href = "mypage4_project.html";
+      });
 
+      //메뉴 호버하면 스타일 변경
+      myli2.forEach((element) => {
+        element.addEventListener("mouseover", function (event) {
+          mycompany.style.backgroundColor = "#4B89DC";
+          mycompany.style.color = "black";
+        });
+        element.addEventListener("mouseout", function (event) {
+          mycompany.style.backgroundColor = "";
+          mycompany.style.color = "";
+        });
+      });
 
-//즐겨찾기 해제
-const topbox = document.querySelectorAll(".topbox");
-const tag = document.querySelectorAll(".tag");
-for(let i = 0; i < tag.length; i++){
-  tag[i].addEventListener("click", function(){
-    topbox[i].style.display = "none";
-  });
-}
-</script>
-</body>
+      //즐겨찾기 해제
+      const topbox = document.querySelectorAll(".topbox");
+      const tag = document.querySelectorAll(".tag");
+      for (let i = 0; i < tag.length; i++) {
+        tag[i].addEventListener("click", function () {
+          topbox[i].style.display = "none";
+        });
+      }
+    </script>
+  </body>
 </html>
