@@ -284,3 +284,24 @@ article {
   font-size: 12px; /* 출처 텍스트 크기 조정 */
   margin-top: 5px;
 }
+
+.rating {
+  direction: rtl; /* 오른쪽에서 왼쪽으로 별점이 설정됨 */
+  display: inline-flex;
+}
+
+.star {
+  font-size: 2rem;
+  color: #ccc; /* 기본 별 색상 */
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: #f5b301; /* 별을 클릭하거나 마우스를 올릴 때 색상 */
+}
+
+.star.selected {
+  color: #f5b301; /* 선택된 별의 색상 */
+}
