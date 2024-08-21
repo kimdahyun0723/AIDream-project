@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+    <!-- 링크 이름 바꾸기-->
+  </head>
+
+  <body>
+    <!-- 고정 헤더 -->
+    <header id="header">
+      <div id="headercat">
+        <div id="headerlogo">
+          <!-- 로고 누르면 메인 페이지로 이동 -->
+          <a href="main.html">AI Dream</a>
+        </div>
+
+        <nav id="menu">
+          <ul id="headermenu">
+            <li>
+              <p class="headerp">소개</p>
+              <ul class="submenu">
+                <li><a href="#">기본개념</a></li>
+                <li><a href="#">역사</a></li>
+                <li><a href="#">응용분야</a></li>
+                <li><a href="#">미래전망</a></li>
+                <li><a href="#">용어사전</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">기업</p>
+              <ul class="submenu">
+                <li><a href="#">TOP10</a></li>
+                <li><a href="#">상세조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">채용</p>
+              <ul class="submenu">
+                <li><a href="#">TOP10</a></li>
+                <li><a href="#">상세조회</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">교육</p>
+              <ul class="submenu">
+                <li><a href="#">국비지원</a></li>
+                <li><a href="#">기업지원</a></li>
+                <li><a href="#">취업박람회</a></li>
+                <li><a href="#">페스티벌</a></li>
+                <li><a href="#">도서/강의</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">뉴스</p>
+              <ul class="submenu">
+                <li><a href="#">최신연구/개발</a></li>
+                <li><a href="#">대회</a></li>
+                <li><a href="#">윤리/사회적 이슈</a></li>
+                <li><a href="#">기업동향</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="headerp">게시판</p>
+              <ul class="submenu">
+                <li>
+                  <a href="#"><span>질의응답</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>자유토론</span></a>
+                </li>
+                <li>
+                  <a href="#"><span>스터디/프로젝트</span></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 본문 -->
+    <main id="contents">
+      <article>
+        <section>
+          <h1>도서/강의</h1>
+          <h2>입문자용 강의</h2>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.coursera.org/learn/machine-learning';"
+          >
+            <img src="news/img/1.jpg" alt="" />
+            <h3>
+              Machine Learning by Andrew Ng (Coursera)
+
+            </h3>
+            <p>
+              머신러닝의 기초 개념을 다루며, 지도학습과 비지도학습을 포함해 데이터 모델링, 회귀 분석, 신경망 등을 배웁니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.edx.org/?utm_source=google&utm_campaign=18736834920&utm_medium=cpc&utm_term=edx&hsa_acc';"
+          >
+            <img src="news/img/2.jpg" alt="AI 경제 이미지" />
+            <h3>Introduction to Artificial Intelligence (edX)</h3>
+            <p>
+              AI의 전반적인 개념과 응용 분야를 소개하는 강의로, 다양한 AI 기술의 기초를 학습할 수 있습니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.coursera.org/learn/ai-for-everyone';"
+          >
+            <img src="news/img/3.jpg" alt="AI 연구 이미지" />
+            <h3>AI For Everyone (Coursera)</h3>
+            <p>
+              기술 배경이 없는 입문자를 위한 AI 개론으로, AI의 기본 개념과 사회적 영향, 비즈니스 응용에 대해 다룹니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.elementsofai.com/';"
+          >
+            <img src="news/img/4.jpg" alt="AI 타임스 이미지" />
+            <h3>
+              Elements of AI (University of Helsinki)
+            </h3>
+            <p>
+              AI의 기본 개념을 이해할 수 있도록 설계된 무료 온라인 코스. AI의 역사, 윤리적 문제, 기술적 기초를 다룹니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.edx.org/?utm_source=google&utm_campaign=18736834920&utm_medium=cpc&utm_term=edx&hsa_acc=7245054034&hsa_cam=18736834920&hsa_grp=146772912710&hsa_ad=631521652757&hsa_src=g&hsa_tgt=kwd-350091615047&hsa_kw=edx&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjw_ZC2BhAQEiwAXSgClok1uz6kQ7Tq9WpOi026VhFLQSeTdS9AgKfrQRmsWzrpeNiGrKSUqRoC5zUQAvD_BwE';"
+          >
+            <img src="news/img/5.png" alt="NVIDIA 연구 이미지" />
+            <h3>
+              CS50’s Introduction to Artificial Intelligence with Python (edX)
+            </h3>
+            <p>
+              하버드 대학교의 CS50 시리즈 중 하나로, Python을 사용한 AI 개발을 배우는 기초 강의입니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://course18.fast.ai/ml.html';"
+          >
+            <img src="news/img/6.jpg" alt="AI 기술 이미지" />
+            <h3>
+              Introduction to Machine Learning for Coders (fast.ai)
+            </h3>
+            <p>
+              코딩 경험이 있는 사람을 위한 머신러닝 입문 과정으로, 실제 코드 예제를 통해 배우는 실습 위주의 강의입니다.
+
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://pytorch.org/docs/stable/index.html';"
+          >
+            <img src="news/img/7.jpg" alt="AI 연구 이미지" />
+            <h3>
+              Intro to Machine Learning with Pytorch (Udacity)
+            </h3>
+            <p>
+              PyTorch를 사용한 머신러닝 입문 과정으로, 기본 알고리즘과 실습을 통해 이해를 돕습니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.coursera.org/?irclickid=wo1zCo17exyKROt2wdW3Owy0UkCwOFww%3AUbPzs0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=204240&utm_content=b2c';"
+          >
+            <img src="news/img/8.jpg" alt="AI 뉴스 이미지" />
+            <h3>
+              Artificial Intelligence: A Guide for Thinking Humans (FutureLearn)
+            </h3>
+            <p>
+              I의 개념과 윤리적 문제, 인간과의 상호작용을 다루며 AI에 대한 비판적 사고를 촉진하는 강의입니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.udemy.com/?utm_source=aff-campaign&utm_medium=udemyads&LSNPUBID=a1LgFw09t88&ranMID=47907&ranEAID=a1LgFw09t88&ranSiteID=a1LgFw09t88-0cYfOhE3J8.w3LVrnAj0cw';"
+          >
+            <img src="news/img/9.png" alt="ZDNet 이미지" />
+            <h3>
+              The Beginner's Guide to Artificial Intelligence in Unity (Udemy)
+            </h3>
+            <p>
+              구글 인공지능(AI)이 국제수학올림피아드(IMO)에서 은메달 수준의
+              성과를 달성하며 수학 추론 능력에 있어 중요한 진전을 이뤘다...
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.udemy.com/?utm_source=aff-campaign&utm_medium=udemyads&LSNPUBID=a1LgFw09t88&ranMID=47907&ranEAID=a1LgFw09t88&ranSiteID=a1LgFw09t88-0cYfOhE3J8.w3LVrnAj0cw';"
+          >
+            <img src="news/img/10.jpg" alt="연합뉴스 이미지" />
+            <h3>Google AI's Introduction to AI (Google AI)</h3>
+            <p>
+              AI의 기초와 Google의 AI 프로젝트에 대해 학습할 수 있는 무료 강의입니다.
+            </p>
+          </div>
+          <h2>전문가용 강의</h2>
+          <div
+            class="news-box"
+            onclick="window.location=' https://www.coursera.org/specializations/deep-learning';"
+          >
+            <img src="news/img/11.jpg" alt="AI 대회 이미지" />
+            <h3>Deep Learning Specialization by Andrew Ng</h3>
+            <p>
+              딥러닝의 기초부터 최신 기술까지 다루는 강의로, 심층 신경망, CNN, RNN, LSTM, 생성 모델 등 다양한 주제를 포함합니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.coursera.org/specializations/aml';"
+          >
+            <img src="news/img/12.jpg" alt="AI 대회 이미지" />
+            <h3>Advanced Machine Learning Specialization</h3>
+            <p>머신러닝의 고급 주제를 다루며, 딥러닝, 강화학습, NLP, 컴퓨터 비전 등 다양한 분야에서 심화된 내용을 학습할 수 있습니다.</p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.coursera.org/specializations/ai-for-medicine';"
+          >
+            <img src="news/img/13.jpg" alt="AI 대회 이미지" />
+            <h3>AI for Medicine Specialization</h3>
+            <p>
+              의료 분야에서의 AI 응용을 다루는 고급 강의로, 의료 데이터 분석, 이미지 분석, 치료 예측 모델링 등을 학습합니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893';"
+          >
+            <img src="news/img/14.jpg" alt="AI 대회 이미지" />
+            <h3>Deep Reinforcement Learning Nanodegree</h3>
+            <p>
+              강화학습의 기초부터 심화 주제를 다루며, 정책 그라디언트, Q-learning, Actor-Critic 방법 등을 배웁니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.coursera.org/specializations/natural-language-processing';"
+          >
+            <img src="news/img/15.png" alt="전문가 5" />
+            <h3>Natural Language Processing Specialization</h3>
+            <p>
+              NLP의 최신 기술과 심화 개념을 다루며, 텍스트 처리, 단어 임베딩, Transformer, BERT, GPT 등을 학습합니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.coursera.org/professional-certificates/ibm-ai-engineering';"
+          >
+            <img src="news/img/16.jpg" alt="AI 대회 이미지" />
+            <h3>
+              Applied AI with DeepLearning (IBM AI Engineering)
+            </h3>
+            <p>
+              심층 학습 모델을 실제 문제에 적용하는 방법을 배우며, AI 엔지니어링의 고급 기술을 학습합니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.coursera.org/specializations/probabilistic-graphical-models';"
+          >
+            <img src="news/img/17.jpg" alt="AI 대회 이미지" />
+            <h3>Probabilistic Graphical Models</h3>
+            <p>
+              확률 그래픽 모델의 이론과 응용을 다루며, Bayesian Networks, Markov Random Fields 등을 학습합니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.coursera.org/professional-certificates/advanced-computer-vision-with-tensorflow';"
+          >
+            <img src="news/img/18.jpg" alt="AI 대회 이미지" />
+            <h3>Advanced Computer Vision with TensorFlow</h3>
+            <p>
+              컴퓨터 비전의 고급 개념을 다루며, 객체 탐지, 이미지 분할, 스타일 트랜스퍼 등을 TensorFlow로 구현합니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.coursera.org/learn/bayesian-methods-in-machine-learning';"
+          >
+            <img src="news/img/19.jpg" alt="AI 대회 이미지" />
+            <h3>Bayesian Methods for Machine Learning</h3>
+            <p>
+              베이지안 방법론을 중심으로 머신러닝 기법을 심도 있게 학습하며, Monte Carlo Methods, Bayesian Networks 등을 포함합니다.
+            </p>
+          </div>
+          
+          <div
+            class="news-box"
+            onclick="window.location='https://www.asiatoday.co.kr/view.php?key=20240729010018204';">
+            <img src="news/img/20.jpg" alt="AI 윤리 이미지" />
+            <h3>Generative Adversarial Networks (GANs) Specialization</h3>
+            <p>
+              GAN의 기본 개념부터 응용까지 심도 있게 학습하며, 다양한 GAN 아키텍처와 생성 모델을 학습합니다.
+            </p>
+            
+          </div>
+          <h2>입문자용 도서</h2>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.digitaltoday.co.kr/news/articleView.html?idxno=527462';"
+          >
+            <img src="news/img/21.jpg" alt="디지털투데이 이미지" />
+            <h3>Artificial Intelligence: A Guide for Thinking Humans</h3>
+            <p>
+              AI의 기본 개념과 현재의 AI 기술을 비판적으로 분석하는 도서입니다. AI의 역사와 주요 기술, 윤리적 문제를 다루며, AI의 발전 방향에 대한 통찰을 제공합니다.
+            </p>
+            </div>
+            <div
+            class="news-box"
+            onclick="window.location='https://www.digitaltoday.co.kr/news/articleView.html?idxno=527462';"
+          >
+            <img src="news/img/21.jpg" alt="디지털투데이 이미지" />
+            <h3>Artificial Intelligence: Foundations of Computational Agents</h3>
+            <p>
+              AI의 이론적 기초와 실용적인 응용을 설명하는 교과서로, 기계 학습, 추론, 계획 등 AI의 주요 개념을 포괄적으로 다룹니다.
+            </p>
+            </div>
+            <div
+            class="news-box"
+            onclick="window.location='https://www.digitaltoday.co.kr/news/articleView.html?idxno=527462';"
+          >
+            <img src="news/img/21.jpg" alt="디지털투데이 이미지" />
+            <h3>AI: A Very Short Introduction</h3>
+            <p>
+              AI의 기초와 현재의 발전 상황을 간결하게 설명한 도서입니다. AI의 역사, 현재의 기술, 사회적 영향 등을 포괄적으로 다룹니다.
+            </p>
+            </div>
+            <div
+            class="news-box"
+            onclick="window.location='https://www.digitaltoday.co.kr/news/articleView.html?idxno=527462';"
+          >
+            <img src="news/img/21.jpg" alt="디지털투데이 이미지" />
+            <h3>Machine Learning Yearning</h3>
+            <p>
+              앤드류 응이 쓴 이 책은 머신러닝 프로젝트를 성공적으로 수행하기 위한 전략과 기법을 설명합니다. 기술적 세부사항보다는 머신러닝 프로젝트 관리에 중점을 둡니다.
+            </p>
+            </div>
+            <div
+            class="news-box"
+            onclick="window.location='https://www.digitaltoday.co.kr/news/articleView.html?idxno=527462';"
+          >
+            <img src="news/img/21.jpg" alt="디지털투데이 이미지" />
+            <h3>Deep Learning</h3>
+            <p>
+              딥러닝의 기초부터 고급 개념까지 포괄적으로 다루는 권위 있는 교과서입니다. 신경망, CNN, RNN 등 다양한 딥러닝 기술을 설명합니다.
+            </p>
+           
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.tokenpost.kr/article-189527';"
+          >
+            <img src="news/img/22.jpg" alt="토큰포스트 이미지" />
+            <h3>Python Machine Learning</h3>
+            <p>
+              Python을 사용하여 머신러닝을 실습할 수 있는 도서로, 기초부터 시작해 실제 코드 예제와 함께 다양한 머신러닝 알고리즘을 설명합니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://zdnet.co.kr/view/?no=20240719172000';"
+          >
+            <img src="news/img/23.jpg" alt="ZDNet 이미지" />
+            <h3>Introduction to Machine Learning with Python</h3>
+            <p>
+              Python을 사용한 머신러닝의 기초를 다루며, Scikit-learn 라이브러리를 활용한 실습 중심의 접근 방식을 제공합니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.hankyung.com/article/202407207204i';"
+          >
+            <img src="news/img/24.jpg" alt="한국경제 이미지" />
+            <h3>
+              Data Science for Business
+            </h3>
+            <p>
+              데이터 과학의 기초와 비즈니스 응용을 다루며, 데이터 분석과 예측 모델링의 중요성을 설명합니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.aitimes.com/news/articleView.html?idxno=161988';"
+          >
+            <img src="news/img/30.jpg" alt="AI타임스 이미지" />
+            <h3>The Hundred-Page Machine Learning Book</h3>
+            <p>
+              머신러닝의 주요 개념을 짧고 간결하게 설명하는 도서입니다. 기초부터 중급 개념까지 빠르게 학습할 수 있습니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://biz.newdaily.co.kr/site/data/html/2024/07/23/2024072300382.html';"
+          >
+            <img src="news/img/31.jpg" alt="뉴데일리 이미지" />
+            <h3>
+              Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow
+            </h3>
+            <p>
+              Scikit-Learn, Keras, TensorFlow를 활용한 머신러닝 및 딥러닝 실습을 다룹니다. 실제 코드 예제와 함께 설명합니다.
+            </p>
+          </div>
+    
+          <h2>전문가용 도서</h2>
+          <div
+            class="news-box"
+            onclick="window.location='https://news.mt.co.kr/mtview.php?no=2024061411434854201';"
+          >
+            <img src="news/img/35.jpg" alt="머니투데이 이미지" />
+            <h3>Probabilistic Graphical Models: Principles and Techniques</h3>
+            <p>
+              확률적 그래픽 모델의 이론과 응용을 다루며, Bayesian Networks, Markov Random Fields 등 다양한 모델을 심도 있게 설명합니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.sedaily.com/NewsView/2DBYCTJIUV';"
+          >
+            <img src="news/img/36.jpg" alt="AI 기업 이미지" />
+            <h3>Machine Learning for Data Science and Analytics</h3>
+            <p>
+              데이터 과학과 분석을 위한 머신러닝 기술을 다루며, 데이터 처리, 모델링, 평가 등의 과정을 상세히 설명합니다.
+              추천 이유: 데이터 과학 및 분석에서 머신러닝의 실용적인 응용을 깊이 이해할 수 있습니다.              
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.enewstoday.co.kr/news/articleView.html?idxno=2158126';"
+          >
+            <img src="news/img/37.jpg" alt="AI 기업 이미지" />
+            <h3>Deep Learning for Computer Vision</h3>
+            <p>
+              컴퓨터 비전 분야에서의 딥러닝 응용을 다루며, 객체 탐지, 이미지 분할, 신경망 구조 설계 등의 주제를 설명합니다.
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.hankyung.com/article/2024072956211';"
+          >
+            <img src="news/img/38.jpg" alt="AI 기업 이미지" />
+            <h3>Advanced Deep Learning with TensorFlow 2 and Keras</h3>
+            <p>
+              TensorFlow 2와 Keras를 활용한 고급 딥러닝 기술을 다루며, 복잡한 신경망 모델과 고급 기법을 설명합니다. 
+            </p>
+          </div>
+          <div
+            class="news-box"
+            onclick="window.location='https://www.inews24.com/view/1742520';"
+          >
+            <img src="news/img/39.png" alt="AI 기업 이미지" />
+            <h3>
+              Data Science at the Command Line: Facing the Future with Time-Tested Tools
+            </h3>
+            <p>
+              데이터 과학을 위한 커맨드라인 도구와 기술을 다루며, 데이터 처리, 분석, 시각화 등을 효율적으로 수행하는 방법을 설명합니다.
+            </p>
+          </div>
+          <div
+          class="news-box"
+          onclick="window.location='https://www.hankyung.com/article/2024072956211';"
+        >
+          <img src="news/img/38.jpg" alt="AI 기업 이미지" />
+          <h3>Deep Learning: Methods and Applications</h3>
+          <p>
+            딥러닝의 다양한 방법론과 실제 응용 사례를 다루며, 음성 인식, 이미지 처리, 자연어 처리 등에서의 활용을 설명합니다.
+          </p>
+        </div>
+        <div
+        class="news-box"
+        onclick="window.location='https://www.hankyung.com/article/2024072956211';"
+      >
+        <img src="news/img/38.jpg" alt="AI 기업 이미지" />
+        <h3>Hands-On Machine Learning with R: Build Intelligent Data Science Applications</h3>
+        <p>
+          R을 활용하여 머신러닝을 실습하며, 다양한 기법을 실제 데이터에 적용하는 방법을 설명합니다.
+        </p>
+      </div>
+      <div
+      class="news-box"
+      onclick="window.location='https://www.hankyung.com/article/2024072956211';"
+    >
+      <img src="news/img/38.jpg" alt="AI 기업 이미지" />
+      <h3>Artificial Intelligence: A Modern Approach</h3>
+      <p>
+        AI의 전반적인 개념과 기술을 포괄적으로 다루며, 검색 알고리즘, 지식 표현, 계획, 학습 등 다양한 주제를 설명합니다.
+      </p>
+    </div>
+    <div
+    class="news-box"
+    onclick="window.location='https://www.hankyung.com/article/2024072956211';"
+  >
+    <img src="news/img/38.jpg" alt="AI 기업 이미지" />
+    <h3>Computer Vision: Algorithms and Applications</h3>
+    <p>
+      TensorFlow 2와 Keras를 활용한 고급 딥러닝 기술을 다루며, 복잡한 신경망 모델과 고급 기법을 설명합니다. 
+    </p>
+  </div>
+  <div
+  class="news-box"
+  onclick="window.location='https://www.hankyung.com/article/2024072956211';"
+>
+  <img src="news/img/38.jpg" alt="AI 기업 이미지" />
+  <h3>Advanced Deep Learning with TensorFlow 2 and Keras</h3>
+  <p>
+    TensorFlow 2와 Keras를 활용한 고급 딥러닝 기술을 다루며, 복잡한 신경망 모델과 고급 기법을 설명합니다. 
+  </p>
+</div>
+        </section>
+        <section>
+          <div class="popular-articles">
+          
+            <h2>많이 시청한 강의</h2>
+            <ul>
+              <li>
+                <a href="https://www.coursera.org/learn/ai-for-everyone">
+                  <img src="news/img/39.png" alt="">
+                  <div class = text></div>
+                  AI For Everyone (Coursera)
+                </a>
+              </li>
+                <li>
+                  <a href="https://www.edx.org/?utm_source=google&utm_campaign=18736834920&utm_medium=cpc&utm_term=edx&hsa_acc">
+                    <img src="news/img/37.jpg" alt="">
+                    <div class = text></div>
+                    Introduction to Artificial Intelligence (edX)
+                  
+                  </a>
+                </li>
+                  <div>
+                    <li>
+                    <a href="https://www.udemy.com/?utm_source=aff-campaign&utm_medium=udemyads&LSNPUBID=a1LgFw09t88&ranMID=47907&ranEAID=a1LgFw09t88&ranSiteID=a1LgFw09t88-0cYfOhE3J8.w3LVrnAj0cw">
+                      <img src="news/img/11.jpg" alt="">
+                      <div class = text></div>
+                      The Beginner's Guide to Artificial Intelligence in Unity (Udemy)
+                    
+                    </a>
+                  </li>
+               
+          </div>
+        </section>  
+      </article>
+    </main>
+
+    <!-- 고정 푸터 -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div id="footerlogo">
+          <h2>AI Dream</h2>
+        </div>
+        <nav id="footermenu">
+          <ul>
+            <li><a href="#" onclick="openmodal('#');">사이트 소개</a></li>
+            <li><a href="#" onclick="openmodal('#');">개인정보처리방침</a></li>
+            <li><a href="#" onclick="openmodal('#');">이용약관</a></li>
+            <li><a href="#" onclick="openmodal('#');">고객센터</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      // 헤더 동작
+      const headerMenuItems = document.querySelectorAll("#headermenu > li");
+
+      headerMenuItems.forEach((item) => {
+        item.addEventListener("mouseenter", () => {
+          const allSubmenus = document.querySelectorAll(".submenu");
+          allSubmenus.forEach((submenu) => {
+            submenu.style.display = "block";
+          });
+        });
+
+        item.addEventListener("mouseleave", () => {
+          const allSubmenus = document.querySelectorAll(".submenu");
+          allSubmenus.forEach((submenu) => {
+            submenu.style.display = "none";
+          });
+        });
+      });
+
+      // submenu의 li를 클릭해을때 li 안에 a 태그가 작동
+      const submenuItems = document.querySelectorAll(".submenu li");
+      submenuItems.forEach((item) => {
+        item.addEventListener("click", function (event) {
+          const link = item.querySelector("a");
+          if (link) {
+            window.location.href = link.href; // 링크로 이동
+          }
+          event.stopPropagation(); // 상위 li의 클릭 이벤트 방지
+        });
+      });
+    </script>
+  </body>
+</html>
