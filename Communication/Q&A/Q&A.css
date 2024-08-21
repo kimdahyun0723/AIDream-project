@@ -256,7 +256,7 @@ h1 {
   height: 40px;
   position: absolute;
   right: 250px;
-  top: 120px;
+  top: 220px;
   color: black;
   background-color: #ddd;
   border-radius: 5px;
@@ -282,7 +282,7 @@ h1 {
 .cat {
   position: sticky;
   top: 294px; /* 스크롤 시 상단에 고정될 위치 */
-  left: 5000px;
+  width: 100px;
 }
 
 .cat p {
@@ -295,4 +295,3 @@ h1 {
   display: block;
   color: black;
 }
-

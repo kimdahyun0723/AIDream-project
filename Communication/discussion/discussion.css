@@ -220,7 +220,7 @@ h1 {
   height: 40px;
   position: absolute;
   right: 250px;
-  top: 120px;
+  top: 325px;
   color: black;
   background-color: #ddd;
   border-radius: 5px;
@@ -258,14 +258,10 @@ h1 {
 .filter-button {
   margin-right: 10px; /* 버튼 간격 조정 */
 }
-.waring {
-  margin-right: 210px;
-}
-
 .cat {
   position: sticky;
   top: 294px; /* 스크롤 시 상단에 고정될 위치 */
-  left: 5000px;
+  width: 100px;
 }
 
 .cat p {
@@ -277,4 +273,8 @@ h1 {
   padding: 5px 0;
   display: block;
   color: black;
+}
+
+.waring {
+  text-align: center;
 }
