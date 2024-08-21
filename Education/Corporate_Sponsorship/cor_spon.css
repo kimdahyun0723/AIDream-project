@@ -168,3 +168,173 @@ a {
 /* 여기까지 고정 css */
 
 /* 여기서 부터 메인 영역 필요한 부분 더 추가하세요*/
+
+/* R&D 사업 섹션 스타일링 */
+#rnd-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+#rnd-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.rnd-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 세 개의 카드가 한 줄에 표시되도록 설정 */
+  gap: 20px;
+}
+
+.rnd-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.rnd-item:hover {
+  transform: scale(1.05);
+}
+
+.rnd-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.rnd-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+.rnd-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* 검색 입력 필드와 버튼을 감싸는 컨테이너 */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* 검색 입력 필드 스타일 */
+#searchInput {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* 검색 입력 필드 포커스 시 스타일 */
+#searchInput:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+/* 검색 버튼 스타일 */
+#searchButton {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* 검색 버튼 호버 시 스타일 */
+#searchButton:hover {
+  background-color: #0056b3;
+}
+
+/* 데이터 카드 표시 영역 스타일 */
+#rndContainer {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* 각 데이터 카드 스타일 */
+#rndContainer div {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+/* 각 데이터 카드 제목 스타일 */
+#rndContainer h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  color: #333;
+}
+
+/* 각 데이터 카드 설명 스타일 */
+#rndContainer p {
+  margin: 10px 0;
+  color: #555;
+}
+
+/* 더보기 링크 스타일 */
+#rndContainer a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#rndContainer a:hover {
+  text-decoration: underline;
+}

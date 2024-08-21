@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="cor_spon.css" />
     <!-- 링크 이름 바꾸기-->
   </head>
 
@@ -75,6 +75,62 @@
       </div>
     </header>
 
+
+    <!-- 본문 -->
+      <main id="contents">
+
+        
+        <div id="rnd-section" class="category-section">
+          <h2>R&D 사업</h2>
+          <p>한국 기업에서 지원하는 다양한 R&D 사업들을 확인하세요.</p>
+          <div class="search-container">
+            <input type="text" id="searchInput" placeholder="검색어를 입력하세요">
+            <button id="searchButton">검색</button>
+        </div>
+    
+        <div id="rndContainer">
+            <!-- 검색 결과가 여기에 표시됩니다. -->
+        </div>
+
+          
+          <div id="rnd-list" class="rnd-list">
+              <!-- JavaScript로 동적으로 R&D 사업 카드가 로드됩니다. -->
+          </div>
+      
+          <!-- Modal for detailed view -->
+          <div id="rnd-modal" class="rnd-modal">
+              <div class="modal-content">
+                  <span id="modal-close" class="close">&times;</span>
+                  <h3 id="modal-title"></h3>
+                  <p id="modal-description"></p>
+                  <a id="modal-link" href="#" target="_blank">더 알아보기</a>
+              </div>
+          </div>
+      </div>
+      
+
+
+      </main>
+
+
+      <!-- 고정 푸터 -->
+  <footer id="footer">
+
+    <div class="footer-content">
+      <div id="footerlogo">
+        <h2>AI Dream</h2>
+      </div>
+      <nav id="footermenu">
+        <ul>
+          <li><a href="#" onclick="openmodal('#');">사이트 소개</a></li>
+          <li><a href="#" onclick="openmodal('#');">개인정보처리방침</a></li>
+          <li><a href="#" onclick="openmodal('#');">이용약관</a></li>
+          <li><a href="#" onclick="openmodal('#');">고객센터</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
     <script>
       // 헤더 동작
       const headerMenuItems = document.querySelectorAll("#headermenu > li");
@@ -106,6 +162,9 @@
           event.stopPropagation(); // 상위 li의 클릭 이벤트 방지
         });
       });
+      
     </script>
+    <script src="cor_spon.js"></script>
+
   </body>
 </html>
