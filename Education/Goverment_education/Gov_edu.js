@@ -1,34 +1,44 @@
-//라디오버튼 필터
-const edu = document.querySelectorAll(".edu");
-const seoul = document.querySelectorAll(".seoul");
-const incheon = document.querySelectorAll(".incheon");
-const gyeonggi = document.querySelectorAll(".gyeonggi");
-function opentotal(){
-  for(let i = 0; i < edu.length; i++){
-    edu[i].style.display = "block"
+  // 모든 지역의 교육 정보 숨기기
+  function hideAll() {
+    const regions = document.querySelectorAll('.edu');
+    regions.forEach(region => {
+      region.style.display = 'none';
+    });
   }
-}
-function openseoul(){
-  for(let i = 0; i < edu.length; i++){
-    edu[i].style.display = "none"
+
+  // 선택된 지역만 보여주기
+  function showRegion(regionClass) {
+    hideAll();
+    const selectedRegions = document.querySelectorAll(`.${regionClass}`);
+    selectedRegions.forEach(region => {
+      region.style.display = 'block';
+    });
   }
-  for(let i = 0; i < seoul.length; i++){
-    seoul[i].style.display = "block";
+
+  // 전체 보기 (모든 지역 보이기)
+  function opentotal() {
+    const regions = document.querySelectorAll('.edu');
+    regions.forEach(region => {
+      region.style.display = 'block';
+    });
   }
-}
-function openincheon(){
-  for(let i = 0; i < edu.length; i++){
-    edu[i].style.display = "none"
+
+  // 서울 지역 보기
+  function openseoul() {
+    showRegion('seouledu');
   }
-  for(let i = 0; i < incheon.length; i++){
-    incheon[i].style.display = "block";
+
+  // 인천 지역 보기
+  function openincheon() {
+    showRegion('incheonedu');
   }
-}
-function opengyeonggi(){
-  for(let i = 0; i < edu.length; i++){
-    edu[i].style.display = "none"
+
+  // 경기 지역 보기
+  function opengyeonggi() {
+    showRegion('gyeonggiedu');
   }
-  for(let i = 0; i < gyeonggi.length; i++){
-    gyeonggi[i].style.display = "block";
-  }
-}
+
+  // 페이지 로드 시 전체 보기 활성화
+  document.addEventListener('DOMContentLoaded', () => {
+    opentotal();
+  });
