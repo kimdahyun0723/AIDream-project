@@ -288,6 +288,7 @@ article {
 .rating {
   direction: rtl; /* 오른쪽에서 왼쪽으로 별점이 설정됨 */
   display: inline-flex;
+  right: 150px;
 }
 
 .star {
