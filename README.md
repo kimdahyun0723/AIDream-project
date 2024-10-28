@@ -33,12 +33,12 @@
 > 기획, 설계   
 > 메인, 로그인, 회원가입, 기업, 채용, 마이페이지 구현 
 >
-> **김민서(FRONTEND)**
-> PPT, 발표
+> **김민서(FRONTEND)**   
+> PPT, 발표   
 > 메인, 뉴스, 게시판 구현
 > 
 > **문성준(FRONTEND)**   
-> 동영상 제작
+> 동영상 제작   
 > 메인, 교육 구현
 
 # 기획 및 설계
@@ -84,17 +84,13 @@
 # 주요 화면
 |메인|회원가입|
 |------|---|
-|<img src="Images/main.png" width="400px" height="250px" alt="main"></img>|
-<img src="Images/sign.png" width="400px" height="250px" alt="sign"></img>|
+|<img src="Images/main.png" width="400px" height="250px" alt="main"></img>|<img src="Images/sign.png" width="400px" height="250px" alt="sign"></img>|
 |소개|기업|
-|<img src="Images/info.png" width="400px" height="250px" alt="info"></img>|
-<img src="Images/company.png" width="400px" height="250px" alt="company"></img>|
+|<img src="Images/info.png" width="400px" height="250px" alt="info"></img>|<img src="Images/company.png" width="400px" height="250px" alt="company"></img>|
 |교육|뉴스|
-|<img src="Images/education.png" width="400px" height="250px" alt="education"></img>|
-<img src="Images/news.png" width="400px" height="250px" alt="news"></img>|
+|<img src="Images/education.png" width="400px" height="250px" alt="education"></img>|<img src="Images/news.png" width="400px" height="250px" alt="news"></img>|
 |게시판|마이페이지|
-|<img src="Images/board.png" width="400px" height="250px" alt="board"></img>|
-<img src="Images/mypage.png" width="400px" height="250px" alt="mypage"></img>|
+|<img src="Images/board.png" width="400px" height="250px" alt="board"></img>|<img src="Images/mypage.png" width="400px" height="250px" alt="mypage"></img>|
 
 
 
