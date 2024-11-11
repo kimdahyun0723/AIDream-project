@@ -48,7 +48,7 @@
 <img src="Images/menu.png" width="100%" height="500px" alt="menu"></img><br/> 
 
 # 기술 스택
-<img src="Images/front.png" width="100%" height="400px" alt="front"></img><br/>
+<img src="Images/fronttools.png" width="100%" height="400px" alt="front"></img><br/>
 
 # 주요 기능
 ### 요약
